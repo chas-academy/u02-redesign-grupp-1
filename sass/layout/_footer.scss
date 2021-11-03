@@ -1,0 +1,9 @@
+@import '../abstracts/variables'; //should use 'use'?
+
+footer {
+    background: $backgroundColor1;
+    color: $textColor1;
+    ul {
+        list-style: none;
+    }
+}

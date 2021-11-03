@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AEEA,AAAA,MAAM,CAAC;EACH,UAAU,EDHK,qBAAqB;ECIpC,KAAK,EDHI,OAAsB;CCOlC;;AAND,AAGI,MAHE,CAGF,EAAE,CAAC;EACC,UAAU,EAAE,IAAI;CACnB;;AFKL;;;;;;;;;;;;;;EAcE",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/abstracts/_variables.scss",
+        "../sass/layout/_footer.scss",
+        "../sass/abstracts/_variables.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

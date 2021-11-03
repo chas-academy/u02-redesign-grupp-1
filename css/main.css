@@ -1,15 +1,12 @@
-@import 'abstracts/variables';
-//@import 'abstracts/mixins';
+footer {
+  background: rgba(10, 10, 10, 0.6);
+  color: #c8c8c8;
+}
 
-//@import 'vendors/bootstrap';
+footer ul {
+  list-style: none;
+}
 
-//@import 'base/reset';
-//@import 'base/typography';
-
-//@import 'layout/navigation';
-//@import 'layout/grid';
-//@import 'layout/header';
-@import 'layout/footer';
 /*
 @import 'layout/sidebar';
 @import 'layout/forms';
@@ -25,3 +22,4 @@
 @import 'themes/theme';
 @import 'themes/admin';
 */
+/*# sourceMappingURL=main.css.map */
