@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Konstnärsnämnden</title>
-<link rel="stylesheet" href="/dist/main.css">
+    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     <header>
@@ -48,16 +48,74 @@ Header + navbar
       <!-- 
 News section (main)
  -->
- <section>
-   <div>
-     <div>
-       <div>
-         
-       </div>
-     </div>
-   </div>
- </section>
-
+      <section class="carousel">
+        <div class="slider">
+          <input type="radio" name="slider" id="slide1 checked">
+          <input type="radio" name="slider" id="slide2">
+          <input type="radio" name="slider" id="slide3">
+          <input type="radio" name="slider" id="slide4">
+          <input type="radio" name="slider" id="slide5">
+          <input type="radio" name="slider" id="slide6">
+          <div class="slides">
+            <div class="overflow">
+              <div class="inner">
+                <div class="slide_1">
+                  <div class="slide-content">
+                    <h2>Slide 1</h2>
+                    <p>Content for Slide 1</p>
+                  </div>
+                </div>
+                <div class="slide_2">
+                  <div class="slide-content">
+                    <h2>Slide 2</h2>
+                    <p>Content for Slide 2</p>
+                  </div>
+                </div>
+                <div class="slide_3">
+                  <div class="slide-content">
+                    <h2>Slide 3</h2>
+                    <p>Content for Slide 3</p>
+                  </div>
+                </div>
+                <div class="slide_4">
+                  <div class="slide-content">
+                    <h2>Slide 4</h2>
+                    <p>Content for Slide 4</p>
+                  </div>
+                </div>
+                <div class="slide_5">
+                  <div class="slide-content">
+                    <h2>Slide 5</h2>
+                    <p>Content for Slide 5</p>
+                  </div>
+                </div>
+                <div class="slide_6">
+                  <div class="slide-content">
+                    <h2>Slide 6</h2>
+                    <p>Content for Slide 6</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+            <label for="slide5"></label>
+            <label for="slide6"></label>
+          </div>
+          <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+            <label for="slide5"></label>
+            <label for="slide6"></label>
+          </div>
+        </div>
+      </section>
       <!-- 
 Konsnarsguiden 
 -->
@@ -124,6 +182,34 @@ Konsnarsguiden
       <!--
 footer
 -->
+
+    <ul class="footer-links">
+        <li>
+          <a href="#" class="facebook"></a>
+        </li>
+
+        <li>
+          <a href="#"  class="twitter"></a>
+        </li>
+
+        <li>
+          <a href="#" class="linkedin"></a>
+        </li>
+
+        <li>
+          <a href="#" class="youtube"></a>
+        </li>
+      </ul>
+
+    <p id="kontakt-rubrik">Kontakt</p>
+    <p id="telefonnummer"> Telefonväxel : 08-506 550 00</p>    
+    <p id="epost"> info@konstnarsnamnden.se:</p>
+    <p class= "adress"> Maria skolgata 83, 2 tr</p>
+    <p class= "adress">  118 53  Stockholm</p>
+    <p id= "orgnummer">  Organisationsnummer 202100-3252</p>
+    <p id="kontakt" class="copyright">copyright © Konstnärsnämden 2011-2021. all rights reserved </p>
+
+ 
     </footer>
   </body>
 </html>

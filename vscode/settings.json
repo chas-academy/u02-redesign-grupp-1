@@ -1,0 +1,25 @@
+{
+    "workbench.colorTheme": "Readable Code Material Darker",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showSuggestionsAsSnippets": true,
+
+    "liveSassCompile.settings.formats": [
+        {
+          "format": "expanded",
+          "extensionName": ".css",
+          "savePath": "~/../css",
+          "savePathSegmentKeys": null,
+          "savePathReplaceSegmentsWith": null
+        }
+    ],
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "emmet.preferences": {
+        "output.inlineBreak": 1
+    }
+    
+}
+
