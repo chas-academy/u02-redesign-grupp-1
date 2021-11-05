@@ -65,6 +65,13 @@
   text-decoration: none;
 }
 
+.klank {
+  padding: 2% 0% 1% 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (max-width: 767px) {
   .kguide {
     width: 100%;
