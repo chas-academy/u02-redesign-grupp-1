@@ -1,0 +1,42 @@
+.dws_menu {
+    display: grid;
+    grid-template-columns: 20% 55% 25%;
+
+    > a img {
+        max-height: 45px;
+    }
+
+    ul { 
+        list-style: none;
+    }
+}
+
+.topmenu {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        height: 45px;
+        max-width: 200px;
+        min-width: 140px;
+        text-align: center;
+        position: relative;
+        background-color: goldenrod;
+    }
+
+    li a {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        padding: 13px;
+        font-weight: bold;
+        transition: all 0.5s ease;
+    }
+
+    li a:hover {
+        background-color: black;
+        color: goldenrod;
+        transition: all 0.5s ease;
+    }
+}
