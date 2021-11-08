@@ -56,12 +56,20 @@
 
 }
 
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:link:active, a:visited:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .klank {
   padding: 2% 0% 1% 4%;
   display: flex;
 }
-
-
 
 @media screen
     and (max-width : 767px) { 
