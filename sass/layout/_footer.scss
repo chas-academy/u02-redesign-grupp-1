@@ -1,4 +1,5 @@
 @import '../abstracts/variables'; //should use 'use'?
+@import '../abstracts/mixins'; 
 
 footer {
     background: $backgroundColor1;
@@ -12,19 +13,11 @@ footer {
     //grid-template-columns: auto;
     //grid-template-rows: auto;
     justify-content: stretch;
-    align-items: end;
+    //align-items: end;
     //grid-area:  a b c;
 
-    ul {
-        list-style: none;
-    }
-
-    img {
-        filter: invert(90%);
-    }
     .footerContainer1 {
         //grid-area: a;
-        
         grid-column: 1;
         grid-row: 1;
         border: dashed red; //debug
@@ -32,22 +25,46 @@ footer {
         //text styles -> should be moved to separate mixin in abstracts?
         h2 {
             font-size: 1rem;
+            padding: 0px 20px 0px 20px;
         }
+        //padding: 0 10px 0 10px; 
     }
     .footerContainer2 {
         //grid-area: b;
+        grid-column: 2;
+        grid-row: 1;
+        border: dashed green; //debug
+        h2, ul {
+            list-style: none;
+            padding: 0 20px 0 20px;
+            // add command to align list items with kontakt
+        }
+    }
+    .footerContainer3 {
+        //grid-area: b;
         grid-column: 1;
         grid-row: 2;
-        border: dashed green; //debug
+        border: dashed rgb(255, 255, 3); //debug
+        p {padding: 0px 20px 0px 20px;} 
     }
     .iconPanel {
        // grid-area: c;
         grid-column: 2;
-        grid-row: 1 / 2;
+        grid-row: 2; //1 / 2
         display: flex;
         justify-content: flex-end;
-        gap: 5px;
+        gap: 10px;
+        padding: 0px 20px 0px 20px;
         border: dashed blue; //debug
+        /* 
+        img {
+            filter: invert(90%);
+        } */
+        @include footer-icons;
+    }
+    @include media-q (650px) {
+        display: flex;
+        flex-direction: column;
     }
 }
 

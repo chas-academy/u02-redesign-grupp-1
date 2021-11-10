@@ -1,12 +1,12 @@
 @import 'abstracts/variables';
-//@import 'abstracts/mixins';
+@import 'abstracts/mixins';
 
 //@import 'vendors/bootstrap';
 
 //@import 'base/reset';
 //@import 'base/typography';
 
-//@import 'layout/navigation';
+@import 'layout/navigation';
 //@import 'layout/grid';
 //@import 'layout/header';
 @import 'layout/footer';
