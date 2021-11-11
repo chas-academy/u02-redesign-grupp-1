@@ -1,0 +1,72 @@
+.guidesection {
+  width: 95%;
+  height: auto;
+  background-color: gray;
+  justify-content: space-around;
+  display: flex;
+  /* padding: px; */
+  padding:20px 0;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+}
+
+// .guidesection > a {
+//     color: inherit;
+//     text-decoration: none;
+// }
+
+.kguide {
+  background-color: white;
+  height: auto;
+  width: 22%;
+  display: flex;
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.kguide  p {
+    display: flex;
+    width: 50%;
+    vertical-align: middle;
+    margin: auto;
+  
+}
+
+.kguide > img {
+    width: auto;
+    height: 50%;
+    vertical-align: middle;
+    margin-top: inherit;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ngt {
+  height: auto;
+  width: 100%;
+  display: flex;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.kguide a {
+  text-decoration: none; 
+
+}
+
+.klank {
+  padding: 2% 0% 1% 4%;
+  display: flex;
+}
+
+
+
+@media screen
+    and (max-width : 767px) { 
+      .kguide {
+      
+        width: 100%;
+      }
+    }

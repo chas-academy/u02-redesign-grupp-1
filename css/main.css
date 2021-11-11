@@ -155,4 +155,85 @@ footer .iconPanel img:hover {
 @import 'themes/theme';
 @import 'themes/admin';
 */
+=======
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;
+}
+
+.guidesection {
+  width: 95%;
+  height: auto;
+  background-color: gray;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* padding: px; */
+  padding: 20px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+}
+
+.kguide {
+  background-color: white;
+  height: auto;
+  width: 22%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.kguide p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.kguide > img {
+  width: auto;
+  height: 50%;
+  vertical-align: middle;
+  margin-top: inherit;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ngt {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.kguide a {
+  text-decoration: none;
+}
+
+.klank {
+  padding: 2% 0% 1% 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .kguide {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
