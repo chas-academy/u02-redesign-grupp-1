@@ -1,0 +1,63 @@
+@import 'variables';
+
+@mixin regular-text($font-color: #d6d6d6) {
+  font: {
+    family: Arial; //some google font?
+    size: 1rem;
+    weight: normal;
+  }
+  color: $font-color;
+}
+
+@mixin large-text($font-color: #d6d6d6) {
+  font: {
+    family: Arial;
+    size: 1.5rem;
+    weight: bold;
+  }
+  color: $font-color;
+}
+
+@mixin small-text($font-color: #d6d6d6) {
+  font: {                                       //note the use of namespace! compiles to font-family, font-size, font-weight
+    family: Arial;
+    size: 20px;
+    weight: bold;
+  }
+  color: $font-color;
+}
+
+@mixin normal-box () {
+    padding: 0 10px 0 10px; 
+    // what else?
+}
+
+@mixin main-nav {
+    li {
+        width: (100% / $numberOfItems);
+    }
+
+    a {
+        color: $textColor1;
+        &:hover {
+            color: $highlightColor;
+        }
+    }
+}
+
+@mixin footer-icons {
+    img {
+        filter: invert(80%);
+        &:hover {
+            filter: invert(100%);
+        }
+        
+    }
+}
+
+@mixin media-q ($arg){                          //parse in width in px
+    @media screen and (max-width: $arg) {
+        @content;                               //parse in other stuff where mixin in called
+                                                // could consider if statement to auto select the right media query based on screen size etc.
+    }
+}
