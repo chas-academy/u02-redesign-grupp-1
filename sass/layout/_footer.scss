@@ -63,7 +63,7 @@ footer {
         @include footer-icons;
     }
     @include media-q (650px) {
-        display: flex;
+        //display: flex;
         flex-direction: column;
     }
 }

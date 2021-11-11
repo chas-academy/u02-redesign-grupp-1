@@ -57,6 +57,8 @@
 
 @mixin media-q ($arg){                          //parse in width in px
     @media screen and (max-width: $arg) {
+      //display: flex;
+      font-size: 16px;
         @content;                               //parse in other stuff where mixin in called
                                                 // could consider if statement to auto select the right media query based on screen size etc.
     }
