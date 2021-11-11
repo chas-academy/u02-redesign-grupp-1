@@ -1,0 +1,27 @@
+/*Sub menu*/
+.dws_menu li ul {
+    position: absolute;
+    min-width: 180px;
+    display: none;
+}
+
+.dws_menu li:hover > ul {
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.dws_menu li > ul li {
+    border: 1px solid black;
+    text-align: start;
+}
+
+.dws_menu li > ul li a {
+    padding: 15px;
+    text-transform: none;
+    background-color: goldenrod;
+}
+
+.dws_menu li:hover > li {
+    display: block;
+
+}
