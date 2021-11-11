@@ -8,6 +8,14 @@ $bigFontSize: 1.5rem;
 
 $mainFont:    Helvetica, sans-serif;
 $specialFont: arial; */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /* $regFontSize: 1rem;
 $bigFontSize: 1.5rem;
 
@@ -83,6 +91,24 @@ $specialFont: arial; */
   color: goldenrod;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url("../../images/bg_header_1.jpg") center center/cover no-repeat;
+  width: 100%;
+  position: relative;
+  padding: 15px;
+  text-align: right;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin-top: 100px;
+  color: #fff;
 }
 
 /* $regFontSize: 1rem;
