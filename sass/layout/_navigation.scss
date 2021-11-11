@@ -1,0 +1,7 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.menu_main {
+    @include main-nav;
+    background: $backgroundColor1;
+}

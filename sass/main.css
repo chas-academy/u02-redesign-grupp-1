@@ -1,0 +1,21 @@
+@use '../abstracts/variables';
+footer {
+  background: rgba(10, 10, 10, 0);
+}
+
+/*
+@import 'layout/sidebar';
+@import 'layout/forms';
+
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/cover';
+@import 'components/dropdown';
+
+@import 'pages/home';
+@import 'pages/contact';
+
+@import 'themes/theme';
+@import 'themes/admin';
+*/
+/*# sourceMappingURL=main.css.map */
