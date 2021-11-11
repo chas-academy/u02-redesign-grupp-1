@@ -1,25 +1,24 @@
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
 // @import 'vendors/bootstrap';
 
-@import 'base/reset';
-@import 'base/typography';
+@import "base/reset";
+@import "base/typography";
 
-@import 'layout/navigation';
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/sidebar';
-@import 'layout/forms';
-@import 'layout/konstnarsguiden';
+@import "layout/navigation";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+@import "layout/forms";
+@import "layout/konstnarsguiden";
 
-@import 'components/buttons';
-@import 'components/carousel';
-@import 'components/cover';
-@import 'components/dropdown';
+@import "components/buttons";
+@import "components/carousel";
+@import "components/cover";
+@import "components/dropdown";
 
-@import 'pages/admin';
-@import 'pages/theme';
-
+@import "pages/admin";
+@import "pages/theme";
 
