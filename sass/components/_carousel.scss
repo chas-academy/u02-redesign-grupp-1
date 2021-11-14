@@ -5,13 +5,13 @@
   height: 450px;
   position: relative;
   border-radius: 2px;
-  background: rgb(59, 59, 59);
+  background: $backgroundColor1; //rgb(59, 59, 59)
 }
 
 .border-slider {
   width: 70%;
   height: 600px;
-  background: #fafafa;
+  background: $backgroundColor2; //#fafafa
   margin: 0 auto;
 }
 
@@ -46,13 +46,13 @@ form {
 }
 
 .nyheter h2 {
-  color: #141414;
-  font-size: 16px;
+  color: $textColor2; //#141414
+  font-size: $regFontSize; //16px
   font-weight: bold;
 }
 
 .slide h2 {
-  color: #fff;
+  color: $textColor1; //#fff
 }
 
 .slidershow {
@@ -79,18 +79,18 @@ form {
 .bar {
   width: 50px;
   height: 10px;
-  border: 2px solid #fff;
+  border: 2px solid $backgroundColor2; //#fff
   margin: 6px;
   cursor: pointer;
   transition: 0.4s;
 }
 
 .bar:hover {
-  background: #fff;
+  background: $backgroundColor2; //#fff
 }
 
 .bar:checked {
-  background: #fff;
+  background: $backgroundColor2; //#fff
 }
 
 input[name="r"] {

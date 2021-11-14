@@ -1,13 +1,3 @@
-/* $regFontSize: 1rem;
-$bigFontSize: 1.5rem;
-
-$mainFont:    Helvetica, sans-serif;
-$specialFont: arial; */
-/* $regFontSize: 1rem;
-$bigFontSize: 1.5rem;
-
-$mainFont:    Helvetica, sans-serif;
-$specialFont: arial; */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 * {
   padding: 0;
@@ -16,16 +6,6 @@ $specialFont: arial; */
           box-sizing: border-box;
 }
 
-/* $regFontSize: 1rem;
-$bigFontSize: 1.5rem;
-
-$mainFont:    Helvetica, sans-serif;
-$specialFont: arial; */
-/* $regFontSize: 1rem;
-$bigFontSize: 1.5rem;
-
-$mainFont:    Helvetica, sans-serif;
-$specialFont: arial; */
 .menu_main {
   background: rgba(10, 10, 10, 0.9);
 }
@@ -111,17 +91,13 @@ header h1 {
   color: #fff;
 }
 
-/* $regFontSize: 1rem;
-$bigFontSize: 1.5rem;
-
-$mainFont:    Helvetica, sans-serif;
-$specialFont: arial; */
-/* $regFontSize: 1rem;
-$bigFontSize: 1.5rem;
-
-$mainFont:    Helvetica, sans-serif;
-$specialFont: arial; */
 footer {
+  /* width: $contentWidth;
+    margin-left: auto;
+    margin-right: auto; */
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   background: rgba(10, 10, 10, 0.9);
   color: #c8c8c8;
   /*
@@ -205,7 +181,7 @@ footer .iconPanel img:hover {
           filter: invert(100%);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -214,6 +190,11 @@ footer .iconPanel img:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    /*  .iconPanel {
+            img {
+                width: 10%;
+            }
+    } */
   }
 }
 
@@ -259,8 +240,10 @@ form button:before {
 
 .guidesection {
   width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
-  background-color: gray;
+  background-color: #787878;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   display: -webkit-box;
@@ -270,8 +253,6 @@ form button:before {
   padding: 20px 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 30px;
   margin-bottom: 5%;
 }
@@ -336,7 +317,7 @@ a:link:active, a:visited:active {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 736px) {
   .kguide {
     width: 100%;
   }
@@ -393,13 +374,13 @@ a:link:active, a:visited:active {
   height: 450px;
   position: relative;
   border-radius: 2px;
-  background: #3b3b3b;
+  background: rgba(10, 10, 10, 0.9);
 }
 
 .border-slider {
   width: 70%;
   height: 600px;
-  background: #fafafa;
+  background: white;
   margin: 0 auto;
 }
 
@@ -449,13 +430,13 @@ form label {
 }
 
 .nyheter h2 {
-  color: #141414;
+  color: #0a0a0a;
   font-size: 16px;
   font-weight: bold;
 }
 
 .slide h2 {
-  color: #fff;
+  color: #c8c8c8;
 }
 
 .slidershow {
@@ -486,7 +467,7 @@ form label {
 .bar {
   width: 50px;
   height: 10px;
-  border: 2px solid #fff;
+  border: 2px solid white;
   margin: 6px;
   cursor: pointer;
   -webkit-transition: 0.4s;
@@ -494,11 +475,11 @@ form label {
 }
 
 .bar:hover {
-  background: #fff;
+  background: white;
 }
 
 .bar:checked {
-  background: #fff;
+  background: white;
 }
 
 input[name="r"] {
