@@ -1,0 +1,40 @@
+.lang_buttons {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+}
+
+.head_btn {
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 35px;
+    border-radius: 45px;
+    margin: 25px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: black;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover {
+        background: whitesmoke;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+        transform: translateY(-7px);
+    }
+}
+
+
+.log_btn {
+    background-color: rgb(93, 245, 6);
+}
+
+.apply_btn {
+    background-color: #ebc20c;
+}

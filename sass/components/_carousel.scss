@@ -15,7 +15,7 @@
   margin: 0 auto;
 }
 
-form {
+.subscribe {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
@@ -24,8 +24,15 @@ form {
     transform: translateY(-140%);
   }
   input {
+    background-color: #fff;
     width: 350px;
     height: 20px;
+    transition: none;
+    padding: 0;
+    position: relative;
+    border-radius: 2px;
+    top: 0;
+    right: 0;
   }
   button {
     text-decoration: none;
@@ -33,10 +40,13 @@ form {
     border: none;
     box-shadow: none;
     cursor: pointer;
+    position: relative;
+    top: -2px;
+    right: 0;
   }
   img {
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
   }
   label {
     margin-right: 5px;
@@ -44,18 +54,21 @@ form {
   }
 }
 
-.nyheter a {
-  text-decoration: none;
-  display: flex;
-  padding: 0;
-  justify-content: start;
-  margin: 0 0 1rem 18rem;
-}
+.nyheter {
+  margin: 0 auto;
+  width: 70%;
+  a {
+    text-decoration: none;
+    display: flex;
+    padding: 0;
+    margin: 20px 0 -30px 0;
+  }
 
-.nyheter h2 {
-  color: #141414;
-  font-size: 16px;
-  font-weight: bold;
+  h2 {
+    color: #141414;
+    font-size: 16px;
+    font-weight: 500;
+  }
 }
 
 .slidershow {
@@ -81,6 +94,14 @@ form {
   h3 {
     text-transform: uppercase;
     font-size: 26px;
+  }
+  a {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    text-decoration: underline;
   }
 }
 

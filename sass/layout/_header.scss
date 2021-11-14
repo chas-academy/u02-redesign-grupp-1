@@ -1,1 +1,18 @@
+header {
+    box-sizing: border-box;
+    background: url("../../images/bg_header_1.jpg") center center/cover no-repeat;
+    width: 100%;
+    position: relative;
+    padding: 15px;
+    text-align: right;
 
+
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        margin-top: 100px;
+        color: #fff
+    }
+}

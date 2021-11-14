@@ -1,7 +1,7 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
-//@import 'vendors/bootstrap';
+// @import 'vendors/bootstrap';
 
 @import "base/reset";
 @import "base/typography";
@@ -16,11 +16,9 @@
 
 @import "components/buttons";
 @import "components/carousel";
+@import "components/carouselMQ";
 @import "components/cover";
 @import "components/dropdown";
 
 @import "pages/admin";
 @import "pages/theme";
-
-// @import 'themes/theme';
-// @import 'themes/admin';
