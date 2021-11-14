@@ -424,6 +424,15 @@ form input {
   height: 20px;
 }
 
+form button {
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+}
+
 form img {
   width: 25px;
   height: 25px;
@@ -462,6 +471,32 @@ form label {
   width: 100%;
   height: 450px;
   overflow: hidden;
+}
+
+.slideshow-item-text1,
+.slideshow-item-text2,
+.slideshow-item-text3,
+.slideshow-item-text4,
+.slideshow-item-text5 {
+  opacity: 0;
+  position: absolute;
+  max-width: 50%;
+  top: 70%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 2px 1px;
+}
+
+.slideshow-item-text1 h3,
+.slideshow-item-text2 h3,
+.slideshow-item-text3 h3,
+.slideshow-item-text4 h3,
+.slideshow-item-text5 h3 {
+  text-transform: uppercase;
+  font-size: 26px;
 }
 
 .middle {
@@ -530,6 +565,10 @@ input[name="r"] {
   margin-left: 0;
 }
 
+#r1:checked ~ .s1 .slideshow-item-text1 {
+  opacity: 1;
+}
+
 #r2:checked ~ .s1 {
   margin-left: -20%;
 }
@@ -572,5 +611,22 @@ input[name="r"] {
 
 .dws_menu li:hover > li {
   display: block;
+}
+
+#r2:checked ~ .s2 .slideshow-item-text2 {
+  opacity: 1;
+  
+}
+
+#r3:checked ~ .s3 .slideshow-item-text3 {
+  opacity: 1;
+}
+
+#r4:checked ~ .s4 .slideshow-item-text4 {
+  opacity: 1;
+}
+
+#r5:checked ~ .s5 .slideshow-item-text5 {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
