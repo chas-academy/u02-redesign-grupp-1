@@ -403,7 +403,7 @@ a:link:active, a:visited:active {
   margin: 0 auto;
 }
 
-form {
+.subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,36 +413,62 @@ form {
   margin-top: 3rem;
 }
 
-form h3 {
+.subscribe h3 {
   position: absolute;
   -webkit-transform: translateY(-140%);
           transform: translateY(-140%);
 }
 
-form input {
+.subscribe input {
+  background-color: #fff;
   width: 350px;
   height: 20px;
+  -webkit-transition: none;
+  transition: none;
+  padding: 0;
+  position: relative;
+  border-radius: 2px;
+  top: 0;
+  right: 0;
 }
 
+<<<<<<< HEAD
 form button {
+=======
+.subscribe button {
+>>>>>>> origin/davidmel
   text-decoration: none;
   list-style: none;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   cursor: pointer;
+  position: relative;
+  top: -2px;
+  right: 0;
 }
 
+<<<<<<< HEAD
 form img {
   width: 25px;
   height: 25px;
+=======
+.subscribe img {
+  width: 23px;
+  height: 23px;
+>>>>>>> origin/davidmel
 }
 
-form label {
+.subscribe label {
   margin-right: 5px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.nyheter {
+  margin: 0 auto;
+  width: 70%;
 }
 
 .nyheter a {
@@ -451,20 +477,21 @@ form label {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  margin: 0 0 1rem 18rem;
+  margin: 20px 0 -30px 0;
 }
 
 .nyheter h2 {
   color: #141414;
   font-size: 16px;
+<<<<<<< HEAD
   font-weight: bold;
 }
 
 .slide h2 {
   color: #fff;
+=======
+  font-weight: 500;
+>>>>>>> origin/davidmel
 }
 
 .slidershow {
@@ -499,6 +526,22 @@ form label {
   font-size: 26px;
 }
 
+<<<<<<< HEAD
+=======
+.slideshow-item-text1 a,
+.slideshow-item-text2 a,
+.slideshow-item-text3 a,
+.slideshow-item-text4 a,
+.slideshow-item-text5 a {
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  text-decoration: underline;
+}
+
+>>>>>>> origin/davidmel
 .middle {
   position: absolute;
   top: 50%;
@@ -585,6 +628,156 @@ input[name="r"] {
   margin-left: -80%;
 }
 
+<<<<<<< HEAD
+=======
+#r2:checked ~ .s2 .slideshow-item-text2 {
+  opacity: 1;
+}
+
+#r3:checked ~ .s3 .slideshow-item-text3 {
+  opacity: 1;
+}
+
+#r4:checked ~ .s4 .slideshow-item-text4 {
+  opacity: 1;
+}
+
+#r5:checked ~ .s5 .slideshow-item-text5 {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 700px) {
+  .border {
+    width: 90%;
+    height: 66%;
+  }
+  .border-slider {
+    width: 95%;
+    height: 300px;
+  }
+  .slidershow {
+    height: 100%;
+  }
+  .nyheter h2 {
+    font-size: 16px;
+  }
+  .nyheter a {
+    margin: 20px 0 -45px 0;
+  }
+  .slideshow-item-text1,
+  .slideshow-item-text2,
+  .slideshow-item-text3,
+  .slideshow-item-text4,
+  .slideshow-item-text5 {
+    top: 40%;
+    height: 6rem;
+  }
+  .slideshow-item-text1 p,
+  .slideshow-item-text2 p,
+  .slideshow-item-text3 p,
+  .slideshow-item-text4 p,
+  .slideshow-item-text5 p {
+    visibility: hidden;
+  }
+  .slideshow-item-text1 h3,
+  .slideshow-item-text2 h3,
+  .slideshow-item-text3 h3,
+  .slideshow-item-text4 h3,
+  .slideshow-item-text5 h3 {
+    font-size: 20px;
+  }
+  .slideshow-item-text1 a,
+  .slideshow-item-text2 a,
+  .slideshow-item-text3 a,
+  .slideshow-item-text4 a,
+  .slideshow-item-text5 a {
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nyheter {
+    width: 95%;
+  }
+  .slideshow-item-text1 a {
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
+  }
+  .slideshow-item-text2 a {
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+  }
+  .slideshow-item-text3 a {
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+  }
+  .slideshow-item-text4 a {
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
+  }
+  .slideshow-item-text5 a {
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+  }
+  .bar {
+    width: 40px;
+    margin: 6px 6px 0 6px;
+  }
+  .subscribe input {
+    width: 190px;
+  }
+  .subscribe img {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+  .border {
+    width: 90%;
+    height: 70%;
+  }
+  .border-slider {
+    width: 85%;
+    height: 500px;
+  }
+  .slidershow {
+    height: 100%;
+  }
+  .slideshow-item-text1,
+  .slideshow-item-text2,
+  .slideshow-item-text3,
+  .slideshow-item-text4,
+  .slideshow-item-text5 {
+    top: 40%;
+  }
+  .nyheter {
+    width: 85%;
+  }
+  .slideshow-item-text1 a {
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+  }
+  .slideshow-item-text2 a {
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+  }
+  .slideshow-item-text3 a {
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+  }
+  .slideshow-item-text4 a {
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
+  }
+  .slideshow-item-text5 a {
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+  }
+}
+
+>>>>>>> origin/davidmel
 /*Sub menu*/
 .dws_menu li ul {
   position: absolute;
@@ -611,6 +804,7 @@ input[name="r"] {
 
 .dws_menu li:hover > li {
   display: block;
+<<<<<<< HEAD
 }
 
 #r2:checked ~ .s2 .slideshow-item-text2 {
@@ -628,5 +822,7 @@ input[name="r"] {
 
 #r5:checked ~ .s5 .slideshow-item-text5 {
   opacity: 1;
+=======
+>>>>>>> origin/davidmel
 }
 /*# sourceMappingURL=main.css.map */
