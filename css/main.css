@@ -432,11 +432,7 @@ a:link:active, a:visited:active {
   right: 0;
 }
 
-<<<<<<< HEAD
-form button {
-=======
 .subscribe button {
->>>>>>> origin/davidmel
   text-decoration: none;
   list-style: none;
   border: none;
@@ -448,15 +444,9 @@ form button {
   right: 0;
 }
 
-<<<<<<< HEAD
-form img {
-  width: 25px;
-  height: 25px;
-=======
 .subscribe img {
   width: 23px;
   height: 23px;
->>>>>>> origin/davidmel
 }
 
 .subscribe label {
@@ -483,15 +473,7 @@ form img {
 .nyheter h2 {
   color: #141414;
   font-size: 16px;
-<<<<<<< HEAD
-  font-weight: bold;
-}
-
-.slide h2 {
-  color: #fff;
-=======
   font-weight: 500;
->>>>>>> origin/davidmel
 }
 
 .slidershow {
@@ -526,8 +508,6 @@ form img {
   font-size: 26px;
 }
 
-<<<<<<< HEAD
-=======
 .slideshow-item-text1 a,
 .slideshow-item-text2 a,
 .slideshow-item-text3 a,
@@ -541,7 +521,6 @@ form img {
   text-decoration: underline;
 }
 
->>>>>>> origin/davidmel
 .middle {
   position: absolute;
   top: 50%;
@@ -628,8 +607,6 @@ input[name="r"] {
   margin-left: -80%;
 }
 
-<<<<<<< HEAD
-=======
 #r2:checked ~ .s2 .slideshow-item-text2 {
   opacity: 1;
 }
@@ -777,7 +754,6 @@ input[name="r"] {
   }
 }
 
->>>>>>> origin/davidmel
 /*Sub menu*/
 .dws_menu li ul {
   position: absolute;
@@ -804,25 +780,5 @@ input[name="r"] {
 
 .dws_menu li:hover > li {
   display: block;
-<<<<<<< HEAD
-}
-
-#r2:checked ~ .s2 .slideshow-item-text2 {
-  opacity: 1;
-  
-}
-
-#r3:checked ~ .s3 .slideshow-item-text3 {
-  opacity: 1;
-}
-
-#r4:checked ~ .s4 .slideshow-item-text4 {
-  opacity: 1;
-}
-
-#r5:checked ~ .s5 .slideshow-item-text5 {
-  opacity: 1;
-=======
->>>>>>> origin/davidmel
 }
 /*# sourceMappingURL=main.css.map */
