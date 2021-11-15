@@ -5,72 +5,85 @@
           box-sizing: border-box;
 }
 
-.dws_menu {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 20% 55% 25%;
-      grid-template-columns: 20% 55% 25%;
+.head_menu {
+  background-image: url("../images/ep_naturalwhite.png");
+  height: 70px;
+  padding-top: 8px;
 }
 
-.dws_menu > a img {
-  max-height: 45px;
+.head_menu img {
+  max-width: 185px;
+  max-height: 80px;
 }
 
-.dws_menu ul {
+.dws-menu {
+  margin: -55px;
+}
+
+.dws-menu ul,
+.dws-menu ol {
   list-style: none;
 }
 
-.topmenu {
+.dws-menu > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.topmenu li {
-  height: 45px;
-  max-width: 200px;
-  min-width: 140px;
-  text-align: center;
+.dws-menu > ul li {
   position: relative;
-  background-color: goldenrod;
 }
 
-.topmenu li a {
+.dws-menu > ul li a {
   display: block;
+  background: #c9c9c9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), color-stop(2%, #f6f6f6), color-stop(98%, #c4c5c7), to(#757577));
+  background: linear-gradient(to bottom, #c9c9c9 0%, #f6f6f6 2%, #c4c5c7 98%, #757577 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 );
+  padding: 15px 30px 15px 40px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #454547;
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
-  padding: 13px;
-  font-weight: bold;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.topmenu li a:hover {
-  background-color: black;
-  color: goldenrod;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+.dws-menu li a:hover {
+  background: #e0e1e5;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e0e1e5), color-stop(2%, #454547), color-stop(98%, #454547), to(#e0e1e5));
+  background: linear-gradient(to bottom, #e0e1e5 0%, #454547 2%, #454547 98%, #e0e1e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e1e5', endColorstr='#e0e1e5',GradientType=0 );
+  color: #ffffff;
+  -webkit-box-shadow: 1px 5px 10px -5px black;
+          box-shadow: 1px 5px 10px -5px black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 header {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background: url("../../images/bg_header_1.jpg") center center/cover no-repeat;
+  font-family: Cuprum, Arial, Helvetica, sans-serif;
+  min-height: 350px;
   width: 100%;
   position: relative;
   padding: 15px;
-  text-align: right;
 }
 
-header h1 {
+.head_rest {
+  background: url("../images/head_bg_2.jpg") center center/cover no-repeat;
+  height: 300px;
+}
+
+.head_rest h1 {
   text-align: center;
   font-size: 40px;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 100px 0 30px 0;
   color: #fff;
 }
 
@@ -196,7 +209,7 @@ form button:before {
 }
 
 .head_btn:hover {
-  background: whitesmoke;
+  background: #eed4d4;
   -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
           box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
   -webkit-transform: translateY(-7px);
@@ -211,31 +224,117 @@ form button:before {
   background-color: #ebc20c;
 }
 
-/*Sub menu*/
-.dws_menu li ul {
+.dws-menu li ul {
   position: absolute;
-  min-width: 180px;
+  min-width: 150px;
   display: none;
 }
 
-.dws_menu li:hover > ul {
-  display: block;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.dws_menu li > ul li {
-  border: 1px solid black;
-  text-align: start;
-}
-
-.dws_menu li > ul li a {
-  padding: 15px;
+.dws-menu li > ul li a {
+  padding: 10px;
   text-transform: none;
-  background-color: goldenrod;
+  background: #e4e4e5;
 }
 
-.dws_menu li:hover > li {
+.dws-menu li > ul li ul {
+  position: absolute;
+  right: -150px;
+  top: 0;
+}
+
+.dws-menu li:hover > ul {
   display: block;
+}
+
+.dws-menu [type="checkbox"],
+.dws-menu label.toggleSubmenu {
+  display: none;
+}
+
+.dws-menu label.toggleMenu {
+  background: #c9c9c9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), color-stop(2%, #f6f6f6), color-stop(98%, #c4c5c7), to(#757577));
+  background: linear-gradient(to bottom, #c9c9c9 0%, #f6f6f6 2%, #c4c5c7 98%, #757577 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 );
+  display: none;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.dws-menu label.toggleMenu .fa {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  font-size: 18px;
+}
+
+@media all and (max-width: 1000px) {
+  header img {
+    max-width: 250px;
+    max-height: 90px;
+  }
+  .head_menu {
+    min-height: 300px;
+    max-height: 4000px;
+  }
+  .dws-menu {
+    overflow: hidden;
+    margin: 0;
+  }
+  .dws-menu ul {
+    display: block;
+    max-height: 0;
+    -webkit-transition: max-height 0.3s;
+    transition: max-height 0.3s;
+  }
+  .dws-menu li > ul li ul {
+    position: absolute;
+    right: auto;
+    top: auto;
+  }
+  .dws-menu label.toggleMenu {
+    display: block;
+  }
+  input.toggleMenu:checked + label.toggleMenu {
+    background: #000;
+    color: #fff;
+  }
+  input.toggleMenu:checked ~ ul,
+  input.toggleSubmenu:checked ~ ul {
+    display: block;
+    position: relative;
+    max-height: 5000px;
+    -webkit-transition: max-height 2s ease-in;
+    transition: max-height 2s ease-in;
+  }
+  .dws-menu label.toggleSubmenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: block;
+  }
+  input.toggleSubmenu:checked ~ a {
+    background: #454547;
+    color: #fff;
+  }
+  .dws-menu label.toggleSubmenu .fa:before {
+    content: "\f0d7";
+    color: #454547;
+  }
+  .dws-menu label.toggleSubmenu .fa {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+  .dws-menu input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before {
+    content: "\f0d8";
+    color: #ffffff;
+  }
 }
 /*# sourceMappingURL=main.css.map */
