@@ -1,7 +1,8 @@
 header {
     box-sizing: border-box;
     background: url("../../images/bg_header_1.jpg") center center/cover no-repeat;
-    width: 100%;
+    //width: $contentWidth2; //100%
+    @include content-centering;
     position: relative;
     padding: 15px;
     text-align: right;
@@ -11,8 +12,8 @@ header {
     h1 {
         text-align: center;
         font-size: 40px;
-        font-family: Roboto, Arial, Helvetica, sans-serif;
+        font-family: $mainFont;
         margin-top: 100px;
-        color: #fff
+        color: $textColor1; //#fff
     }
 }

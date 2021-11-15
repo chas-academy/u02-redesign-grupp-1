@@ -1,10 +1,11 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
 
-.menu_main {
+/* .menu_main {
     @include main-nav;
     background: $backgroundColor1;
-}
+} */
+
 .dws_menu {
     display: grid;
     grid-template-columns: 20% 55% 25%;
@@ -28,22 +29,22 @@
         min-width: 140px;
         text-align: center;
         position: relative;
-        background-color: goldenrod;
+        background-color: $backgroundSpecial; //goldenrod;
     }
 
     li a {
         display: block;
         text-decoration: none;
         text-transform: uppercase;
-        color: black;
+        color: $textColor2; //black;
         padding: 13px;
         font-weight: bold;
         transition: all 0.5s ease;
     }
 
     li a:hover {
-        background-color: black;
-        color: goldenrod;
+        background-color: $backgroundColor1; //black;
+        color: $backgroundSpecial; //goldenrod;
         transition: all 0.5s ease;
     }
 }
