@@ -1,9 +1,3 @@
-.lang_buttons {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-}
-
 .head_btn {
     text-decoration: none;
     display: inline-block;
@@ -24,7 +18,8 @@
     cursor: pointer;
 
     &:hover {
-        background: rgb(238, 212, 212);
+        background: black;
+        color: white;
         box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
         transform: translateY(-7px);
     }
