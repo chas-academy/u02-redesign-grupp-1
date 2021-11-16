@@ -1,16 +1,18 @@
 .guidesection {
-  width: 95%;
+  //width: $contentWidth; //95%
+  @include content-centering;
   height: auto;
-  background-color: gray;
+  background-color: $backgroundColor3; //grey
   justify-content: space-around;
   display: flex;
   /* padding: px; */
   padding:20px 0;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
+  //margin-left: auto;
+  //margin-right: auto;
   border-radius: 30px;
   margin-bottom: 5%;
+ 
 }
 
 // .guidesection > a {
@@ -19,9 +21,9 @@
 // }
 
 .kguide {
-  background-color: white;
+  background-color: $backgroundColor2;
   height: auto;
-  width: 22%;
+  width: $divWidth;
   display: flex;
   margin: 20px;
   border-radius: 30px;
@@ -72,10 +74,8 @@ a:link:active, a:visited:active {
   display: flex;
 }
 
-@media screen
-    and (max-width : 767px) { 
+@include media-q ($mobileWidthL) { 
       .kguide {
-      
         width: 100%;
       }
     }
