@@ -1300,20 +1300,20 @@ input[name="r"] {
             transform: translateY(-400%);
   }
   .slideshow-item-text2 a {
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%);
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
   }
   .slideshow-item-text3 a {
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%);
+    -webkit-transform: translateY(-500%);
+            transform: translateY(-500%);
   }
   .slideshow-item-text4 a {
     -webkit-transform: translateY(-400%);
             transform: translateY(-400%);
   }
   .slideshow-item-text5 a {
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%);
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
   }
   .bar {
     width: 40px;
