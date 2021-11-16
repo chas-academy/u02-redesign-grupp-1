@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
     <title>Kontakt</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="gridcontainer-1">
+      <h1></h1>
+    </div>
+    <div class="gridcontainer-2"></div>
+    <div class="gridcontainer-3"></div>
+
+    <!-- Formulär-->
+
+    <container class="kontaktContaioner" class="gridcontainer-4">
+      <h2>Kontakta Konstnärsnämden</h2>
+
+      <form>
+        <div class="runtom">
+          <div class="box">
+            <input type="text" name="fname" id="fname" required />
+            <label for="fname">Förnamn</label>
+          </div>
+          <div class="box">
+            <input type="text" name="ename" id="ename" required />
+            <label for="ename">Efternman</label>
+          </div>
+        </div>
+        <div class="runtom">
+          <div class="box">
+            <input type="email" name="email" id="email" required />
+            <label for="email">E-post</label>
+          </div>
+          <div class="box">
+            <input
+              type="text"
+              name="telefonnummer"
+              id="telefonnummer"
+              required
+            />
+            <label for="telefonnummer">Telefonnummer</label>
+          </div>
+        </div>
+        <div class="runtom">
+          <div class="box">
+            <textarea id="meddelande" required></textarea>
+            <label for="meddelande">Ditt meddelande</label>
+          </div>
+        </div>
+        <input class="kontaktKnapp" type="submit" name="" value="Skicka" />
+      </form>
+    </container>
+    <!-- SLUT - Formulär-->
+  </body>
 </html>

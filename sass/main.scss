@@ -6,19 +6,22 @@
 @import "base/reset";
 @import "base/typography";
 
-@import "layout/navigation";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/footer";
-@import "layout/sidebar";
-@import "layout/forms";
-@import "layout/konstnarsguiden";
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+@import 'layout/konstnarsguiden';
+//@import 'layout/faq';
+//@import 'layout/kontakt';
+@import 'layout/faqkontakt';
 
 @import "components/buttons";
 @import "components/carousel";
 @import "components/cover";
 @import "components/dropdown";
 
-@import "pages/admin";
-@import "pages/theme";
+//@import 'pages/admin';
+//@import 'pages/theme';
 
