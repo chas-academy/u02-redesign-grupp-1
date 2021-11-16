@@ -1,20 +1,17 @@
 @media only screen and (max-width: 700px) {
   .border {
-    width: 90%;
+    width: 80%;
     height: 66%;
   }
   .border-slider {
-    width: 95%;
+    width: $contentWidth;
     height: 300px;
   }
   .slidershow {
-    height: 100%;
+    height: $contentWidth2;
   }
   .nyheter h2 {
     font-size: 16px;
-  }
-  .nyheter a {
-    margin: 20px 0 -45px 0;
   }
 
   .slideshow-item-text1,
@@ -34,10 +31,6 @@
       font-size: 16px;
       display: flex;
     }
-  }
-
-  .nyheter {
-    width: 95%;
   }
 
   .slideshow-item-text1 a {
@@ -74,15 +67,15 @@
 
 @media only screen and (min-width: 600px) and (max-width: 999px) {
   .border {
-    width: 90%;
+    width: 80%;
     height: 70%;
   }
   .border-slider {
-    width: 85%;
+    width: $contentWidth;
     height: 500px;
   }
   .slidershow {
-    height: 100%;
+    height: $contentWidth2;
   }
   .slideshow-item-text1,
   .slideshow-item-text2,
@@ -90,10 +83,6 @@
   .slideshow-item-text4,
   .slideshow-item-text5 {
     top: 40%;
-  }
-
-  .nyheter {
-    width: 85%;
   }
 
   .slideshow-item-text1 a {
