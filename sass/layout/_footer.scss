@@ -2,6 +2,10 @@
 @import '../abstracts/mixins'; 
 
 footer {
+    /* width: $contentWidth;
+    margin-left: auto;
+    margin-right: auto; */
+    @include content-centering;
     background: $backgroundColor1;
     color: $textColor1;
     /*
@@ -62,10 +66,15 @@ footer {
         } */
         @include footer-icons;
     }
-    @include media-q (650px) {
+    @include media-q ($mobileWidthL) {  //650px
         display: flex;
         flex-direction: column;
-    }
+       /*  .iconPanel {
+            img {
+                width: 10%;
+            }
+    } */
 }
 
 
+}
