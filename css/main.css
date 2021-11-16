@@ -1,13 +1,3 @@
-/* $regFontSize: 1rem;
-$bigFontSize: 1.5rem;
-
-$mainFont:    Helvetica, sans-serif;
-$specialFont: arial; */
-/* $regFontSize: 1rem;
-$bigFontSize: 1.5rem;
-
-$mainFont:    Helvetica, sans-serif;
-$specialFont: arial; */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 * {
   padding: 0;
@@ -16,6 +6,7 @@ $specialFont: arial; */
           box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 /* $regFontSize: 1rem;
 $bigFontSize: 1.5rem;
 
@@ -34,6 +25,17 @@ $specialFont: arial; */
 
 .head_menu img {
   max-width: 200px;
+=======
+/* .menu_main {
+    @include main-nav;
+    background: $backgroundColor1;
+} */
+.dws_menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 55% 25%;
+      grid-template-columns: 20% 55% 25%;
+>>>>>>> origin/temp
 }
 
 .dws-menu {
@@ -70,6 +72,7 @@ $specialFont: arial; */
   color: #454547;
   text-decoration: none;
   text-transform: uppercase;
+<<<<<<< HEAD
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -113,6 +116,29 @@ header {
   font-family: Cuprum, Arial, Helvetica, sans-serif;
   min-height: 350px;
   width: 100%;
+=======
+  color: #0a0a0a;
+  padding: 13px;
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.topmenu li a:hover {
+  background-color: rgba(10, 10, 10, 0.9);
+  color: goldenrod;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url("../../images/bg_header_1.jpg") center center/cover no-repeat;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+>>>>>>> origin/temp
   position: relative;
   padding: 15px;
 }
@@ -125,22 +151,24 @@ header {
 .head_rest h1 {
   text-align: center;
   font-size: 40px;
+<<<<<<< HEAD
   font-family: Arial, Helvetica, sans-serif;
   margin: 100px 0 30px 0;
   color: #fff;
+=======
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin-top: 100px;
+  color: #c8c8c8;
+>>>>>>> origin/temp
 }
 
-/* $regFontSize: 1rem;
-$bigFontSize: 1.5rem;
-
-$mainFont:    Helvetica, sans-serif;
-$specialFont: arial; */
-/* $regFontSize: 1rem;
-$bigFontSize: 1.5rem;
-
-$mainFont:    Helvetica, sans-serif;
-$specialFont: arial; */
 footer {
+  /* width: $contentWidth;
+    margin-left: auto;
+    margin-right: auto; */
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   background: rgba(10, 10, 10, 0.9);
   color: #c8c8c8;
   /*
@@ -224,7 +252,7 @@ footer .iconPanel img:hover {
           filter: invert(100%);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 736px) {
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -233,6 +261,11 @@ footer .iconPanel img:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    /*  .iconPanel {
+            img {
+                width: 10%;
+            }
+    } */
   }
 }
 
@@ -278,8 +311,10 @@ form button:before {
 
 .guidesection {
   width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
-  background-color: gray;
+  background-color: #787878;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   display: -webkit-box;
@@ -289,8 +324,6 @@ form button:before {
   padding: 20px 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 30px;
   margin-bottom: 5%;
 }
@@ -355,7 +388,7 @@ a:link:active, a:visited:active {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 736px) {
   .kguide {
     width: 100%;
   }
@@ -482,13 +515,13 @@ a:link:active, a:visited:active {
   height: 450px;
   position: relative;
   border-radius: 2px;
-  background: #3b3b3b;
+  background: rgba(10, 10, 10, 0.9);
 }
 
 .border-slider {
   width: 70%;
   height: 600px;
-  background: #fafafa;
+  background: white;
   margin: 0 auto;
 }
 
@@ -560,9 +593,17 @@ a:link:active, a:visited:active {
 }
 
 .nyheter h2 {
-  color: #141414;
+  color: #0a0a0a;
   font-size: 16px;
+<<<<<<< HEAD
   font-weight: 500;
+=======
+  font-weight: bold;
+}
+
+.slide h2 {
+  color: #c8c8c8;
+>>>>>>> origin/temp
 }
 
 .slidershow {
@@ -632,7 +673,7 @@ a:link:active, a:visited:active {
 .bar {
   width: 50px;
   height: 10px;
-  border: 2px solid #fff;
+  border: 2px solid white;
   margin: 6px;
   cursor: pointer;
   -webkit-transition: 0.4s;
@@ -640,11 +681,11 @@ a:link:active, a:visited:active {
 }
 
 .bar:hover {
-  background: #fff;
+  background: white;
 }
 
 .bar:checked {
-  background: #fff;
+  background: white;
 }
 
 input[name="r"] {
