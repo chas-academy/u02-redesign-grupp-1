@@ -77,4 +77,221 @@
     width: 100%;
   }
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sectionFaq {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  /* //Thomas
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+}
+
+.faqContaioner {
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  width: 70%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5 px;
+}
+
+.ruta {
+  background-color: #e8e8e8;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0.5rem 2px 0.5rem rbga(0, 0, 0, 0.15);
+          box-shadow: 0.5rem 2px 0.5rem rbga(0, 0, 0, 0.15);
+}
+
+.lankfraga {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  background-color: #333;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.figur {
+  color: blanchedalmond;
+  padding: 0.5rem;
+}
+
+#minus {
+  display: none;
+}
+
+#plus {
+  color: white;
+}
+
+.svar {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #d8d8d8;
+  -webkit-transition: max-height 0.6s;
+  transition: max-height 0.6s;
+}
+
+.svar p {
+  font-size: 1em;
+  color: black;
+  padding: 2rem;
+}
+
+.ruta:target .svar {
+  max-height: 20rem;
+}
+
+.ruta:target #plus {
+  display: none;
+}
+
+.ruta:target #minus {
+  display: block;
+}
+
+.gridsection {
+  display: -ms-grid;
+  display: grid;
+  height: auto;
+  width: 100%;
+  /* 
+       grid-template-areas: 
+       ". header header .
+       . sidebar content .
+       . kontakt kontakt .";  */
+}
+
+.gridcontainer-1 {
+  grid-area: header;
+}
+
+.gridcontainer-2 {
+  grid-area: content;
+}
+
+.gridcontainer-3 {
+  grid-area: sidebar;
+}
+
+.gridcontainer-4 {
+  grid-area: kontakt;
+}
+
+.kontaktContaioner {
+  /*    //Thomas
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; */
+  height: 50%;
+  width: 80%;
+  padding: 20px;
+  background: black;
+}
+
+.kontaktContaioner h2 {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.runtom {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.runtom .box {
+  width: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+.runtom .box input {
+  width: 100%;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+}
+
+.runtom .box input:focus,
+.runtom .box input:valid {
+  padding: 20px 10px;
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+}
+
+.runtom .box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.runtom .box textarea {
+  width: 100%;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+}
+
+.runtom .box textarea:focus,
+.runtom .box textarea:valid {
+  padding: 20px 10px;
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+}
+
+.kontaktKnapp {
+  background: #d8d8d8;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+}
 /*# sourceMappingURL=main.css.map */
