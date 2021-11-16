@@ -1,10 +1,22 @@
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
 // @import 'vendors/bootstrap';
 
-@import "base/reset";
-@import "base/typography";
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+@import 'layout/konstnarsguiden';
 
 @import 'layout/navigation';
 @import 'layout/grid';
@@ -16,9 +28,10 @@
 //@import 'layout/faq';
 //@import 'layout/kontakt';
 @import 'layout/faqkontakt'; //careful, might break layout of main
-
+@import 'layout/stipendier';
 @import "components/buttons";
 @import "components/carousel";
+@import "components/carouselMQ";
 @import "components/cover";
 @import "components/dropdown";
 

@@ -1,93 +1,97 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/main.css" rel="stylesheet" />
     <title>Konstnärsnämnden</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
 
-    </head>
-    <body>
-      <header>
-
-
-
-
-        <!-- ALISHER'S DEL -->
-        <nav class="dws_menu">
-          <a href="#" class="navbar_logo"><img src="images/logo_header.gif" alt="Logo_konstnarsnamnden"></a>
-          <ul class="topmenu">
-            <li><a href="#">Nyheter</a>
-              <ul class="submenu">
-                <li><a href="#">Pressmeddelande</a></li>
-                <li><a href="#">Sociala medier</a></li>
-                <li><a href="#">Publikationer</a></li>
-                <li><a href="#">Nyhetsbrev</a></li>
-                <li><a href="#">Prenumerera</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Stipendier</a>
-              <ul class="submenu">
-                <li><a href="subpages/ansok-har.html">Ansökan/Blanketter</a></li>
+  <!-- ALISHER'S DEL -->
+    <header>
+      <div class="head_menu">
+        <a href=""><img src="images/logo.png" alt="logo"></a>
+        <nav class="dws-menu">
+          <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+          <label for="menu" class="toggleMenu"><i class="fa fa-bars"></i>Meny</label>
+          <ul>
+            <li><a href="#">hemsida</a></li>
+            <li>
+              <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
+              <a href="#">Ansökan</a>
+              <label for="sub_m1" class="toggleSubmenu"><i class="fa"></i></label>
+              <ul>
+                <li><a href="#">Ansökan/Blanketter</a></li>
                 <li><a href="#">Ansökningstider</a></li>
-                <li><a href="#">Ansökningsgrupp</a></li>
-                <li><a href="">Långtidsstipendier</a></li>
-                <li><a href="">Redovisning</a></li>
-                <li><a href="">Analys och utredning</a></li>
-                <li><a href="">Villkor</a></li>
+                <li><a href="#">Långtidsstipendier</a></li>
+                <li><a href="#">Ansökningsgroup</a></li>
+                <li><a href="#">Andra bidragsgivare</a></li>
               </ul>
             </li>
-            <li><a href="#">Global</a>
-              <ul class="submenu">
-                <li><a href="#">EU:s kulturprogram</a></li>
-                <li><a href="#">Internationellt utbyte</a></li>
-                <li><a href="#">OMC</a></li>
-                <li><a href="#">Kulturråd i utlandet</a></li>
-                <li><a href="#">FN/Unesco</a></li>
+            <li>
+              <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m2">
+              <a href="#">Aktuellt</a>
+              <label for="sub_m2" class="toggleSubmenu"><i class="fa"></i></label>
+              <ul>
+                <li><a href="#">Nyheter</a></li>
+                <li><a href="#">Kalendarium</a></li>
+                <li><a href="#">Publikationer</a></li>
+                <li><a href="#">Villkor</a></li>
+                <li><a href="#">Länkar</a></li>
+              </ul>
+            </li>
+            <li>
+              <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m3">
+              <a href="#">Program</a>
+              <label for="sub_m3" class="toggleSubmenu"><i class="fa"></i></label>
+              <ul>
                 <li><a href="#">IASPIS</a></li>
+                <li><a href="#">Program för dans</a></li>
+                <li><a href="#">Program för musik</a></li>
+                <li><a href="#">Kulturbryggan</a></li>
+                <li><a href="#">Motverka hot och hat</a></li>
               </ul>
             </li>
-            <li><a href="#">Verksamhet</a>
-              <ul class="submenu">
-                <li><a href="">Konstnärsguiden</a></li>
-                <li><a href="">Kulturbryggan</a></li>
-                <li><a href="">Kalendarium</a></li>
-                <li><a href="">Motverka hot och hat</a></li>
-                <li><a href="">Juridiskt stöd</a></li>
-                <li><a href="">Vanliga frågor</a></li>
+            <li>
+              <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m4">
+              <a href="#">Vad vi gör</a>
+              <label for="sub_m4" class="toggleSubmenu"><i class="fa"></i></label>
+              <ul>
+                <li><a href="#">Internationellt</a></li>
+                <li><a href="#">Jämställdhet</a></li>
+                <li><a href="#">Regeringsuppdrag</a></li>
+                <li><a href="#">Analys och utredning</a></li>
               </ul>
             </li>
-            <li><a href="#">Om Oss</a>
-              <ul class="submenu">
-                <li><a href="">Budgetunderlag</a></li>
-                <li><a href="">Organisation</a></li>
-                <li><a href="">Personal</a></li>
-                <li><a href="">Regleringsbrev</a></li>
-                <li><a href="">Lediga tjänster</a></li>
-                <li><a href="">Kontakt</a></li>
+            <li>
+              <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m5">
+              <a href="#">Om oss</a>
+              <label for="sub_m5" class="toggleSubmenu"><i class="fa"></i></label>
+              <ul>
+                <li><a href="#">Om konstnärsnämnden</a></li>
+                <li><a href="#">Personal</a></li>
+                <li><a href="#">Lediga tjänster</a></li>
+                <li><a href="#">Vanliga frågor</a></li>
+                <li><a href="#">Kontakt</a></li>
               </ul>
-            </li>   
+            </li>
           </ul>
-          <div class="header_search">
-            <form>
-              <input type="text" placeholder="Sök...">
-              <button type="submit"></button>
-            </form>
-            <div class="lang_buttons">
-              <a href="" class="button sv_lang"><img src="images/sv_lang_icon.png" alt="svenska"></a>
-              <a href="" class="button en_lang"><img src="images/en_lang_icon.png" alt="english"></a>
-            </div>
-          </div>
         </nav>
-        <button type="submit" class="head_btn log_btn">logga in</button>
-        <button type="submit" class="head_btn apply_btn">ansök</button>
-        <h1>Välkommen till Konstnärsnämnden</h1>
+        <div class="header_search">
+          <form>
+            <input type="text" placeholder="Sök...">
+            <button type="submit"></button>
+          </form>
+          <div class="lang_buttons">
+            <a href="" class="lang_select sv_lang">SV</a>
+            <a href="" class="lang_select en_lang">EN</a>
+          </div>
+        
       </header>
   
-
-
-
 
 <!-- DAVID'S DEL -->
  <div class="nyheter">
@@ -106,23 +110,43 @@
 
       <div class="slide s1">
           <img src="/images/nrem uppsala.png" alt="NREM Del 1: K-Complex från föreställning">
-          <h2>Nya konstnärliga butiker finns nu!</h2>
+          <div class="slideshow-item-text1">
+            <h3>Cullberg-Stipendium</h3>
+            <p>Söndagen den sjunde november så utdelades Cullberg-Stipendiumet ut till en lycklig vinnare!</p>
+            <a href="#">Läs Mer</a>
+          </div>
       </div>
-      <div class="slide">
+      <div class="slide s2">
           <img src="/images/pexels-photo-1053687.jpeg" alt="Redskaper för en perfekt målning">
-          <h2></h2>
+          <div class="slideshow-item-text2">
+            <h3>Perfekta Målningen</h3>
+            <p>Läs mer om de perfekta redskapen och miljöerna för att uppnå det perfekta resultatet.</p>
+            <a href="#">Läs Mer</a>
+          </div>
       </div>
-      <div class="slide">
+      <div class="slide s3">
           <img src="/images/pexels-photo-8036865.jpeg" alt="Okänd Konstnär säljer tavla för 1 miljon kr">
-          <h2></h2>
+          <div class="slideshow-item-text3">
+            <h3>Okänd Artist dyker upp</h3>
+            <p>Läs mer om den okända konstnären som sålde sin första tavla för en miljon kronor.</p>
+            <a href="#">Läs Mer</a>
+          </div>
       </div>
-      <div class="slide">
+      <div class="slide s4">
           <img src="/images/pexels-photo-8832898.jpeg" alt="Surrealism blir allt mer populärt">
-          <h2></h2>
+          <div class="slideshow-item-text4">
+            <h3>Surrealism</h3>
+            <p>Surrealism i konst blir allt mer vanligt och populärt, läs mer om du vill ta reda på varför och vad som gör det så speciellt.</p>
+            <a href="#">Läs Mer</a>
+          </div>
       </div>
-      <div class="slide">
+      <div class="slide s5">
           <img src="/images/pexels-una-laurencic-20967.jpg" alt="De 3 välkända tavlorna i Vatikanstaten">
-          <h2></h2>
+          <div class="slideshow-item-text5">
+            <h3>De tre tavlorna</h3>
+            <p>Vatikanstaten har gått ut med att de tre välkända tavlorna fortfarande inte har hittats.</p>
+            <a href="#">Läs Mer</a>
+          </div>
       </div>
   </div>
 
@@ -136,18 +160,97 @@
   </div>  
 </div>   
 
-<form action="#">
+<form class="subscribe" action="#">
   <h3>Prenumerera på våra nyheter:</h3>
   <label for="Email">Email</label>
   <input type="email">
-  <img src="/images/Group 34.png" alt="Send">
+  <button><img src="/images/Group 34.png" alt="Send"></button>
 </form>
 
 </section> 
 
-
-
-
+<!-- Simon'S DEL -->
+<section class="bakgrund">
+  <!-- En rad-->
+  <div class="rad">
+  <h2 class="stor_rubrik">Stipendier och bidrag</h2>
+  <span class="bild">
+    <img class="bild" src="images/stipendier och bidrag bild1.png" alt="2 kvinnor & 1 man">
+  </span>
+  <span class="stil">
+    <p>Konstnärsnämnden fördelar ett brett spektrum av stipendier och bidrag till yrkesverksamma konstnärer inom bild, form, musik, teater, dans och film. Stödet riktar sig främst till dig som är enskild frilansande konstnär, bosatt i Sverige och/eller med din konstnärliga verksamhet här.
+      Som yrkesverksam konstnär kan du söka stöd för såväl en kort utlandsresa som ett omfattande konstnärligt projekt. Du kan även söka arbetsstipendium som är ett allmänt stöd för fortsatt konstnärlig verksamhet.</p>
+      <br> <a class="knapp" href="Google.com">ANSÖK</a>
+    </span>
+  </div>
+  <!-- En rad Slut-->
+  <!-- En rad-->
+  <div class="rad">
+    <span class="stil">
+      <h2 class="rubrik">Bild & Form</h2>
+      <br>
+      <p>Konstnärsnämnden fördelar ett brett spektrum av stipendier och bidrag till yrkesverksamma konstnärer inom bild, form, musik, teater, dans och film. Stödet riktar sig främst till dig som är enskild frilansande konstnär, bosatt i Sverige och/eller med din konstnärliga verksamhet här.
+        Som yrkesverksam konstnär kan du söka stöd för såväl en kort utlandsresa som ett omfattande konstnärligt projekt. Du kan även söka arbetsstipendium som är ett allmänt stöd för fortsatt konstnärlig verksamhet.</p>
+      </span>
+    <span class="bild">
+        <img class="bild" src="images/Bilder och form 2.png" alt="bild på träd">
+    </span>
+    </div>
+    <!-- En rad Slut-->
+    <!-- En rad-->
+  <div class="rad">
+    <span class="bild">
+      <img class="bild" src="images/dans och cirkus.png" alt="Kvinnor som dansar på scen">
+    </span>
+    <span class="stil">
+      <h2 class="rubrik">Dans & Cirkus</h2>
+      <br>
+      <p>Konstnärsnämnden stödjer yrkesverksamma konstnärer inom dans och cirkus genom olika typer av stipendier och bidrag.
+        Konstnärsnämndens stipendier och bidrag inom dans och cirkus kan sökas av yrkesverksamma konstnärliga utövare och konstnärliga upphovspersoner inom dans- och cirkusområdena.</p>
+      </span>
+    </div>
+    <!-- En rad Slut-->
+  <!-- En rad-->
+  <div class="rad">
+    <span class="stil">
+      <h2 class="rubrik">Film</h2>
+      <br>
+      <p>Konstnärsnämnden stödjer yrkesverksamma filmare genom olika typer av stipendier och bidrag. Den större delen av pengarna delas ut i form av projektstöd till kort- och dokumentärfilm samt utvecklingsprojekt i längre format.
+        Samtliga stipendier och bidrag är avsedda för enskilda yrkesverksamma, främst frilansande, konstnärer utan fast heltidsanställning.</p>
+      </span>
+      <span class="bild">
+        <img class="bild" src="images/film.png" alt="Stor videokamera">
+      </span>
+    </div>
+    <!-- En rad Slut-->
+  <!-- En rad-->
+  <div class="rad">
+    <span class="bild">
+      <img class="bild" src="images/musik.png" alt="6st människor med musikinstrument">
+    </span>
+    <span class="stil">
+      <h2 class="rubrik">Musik</h2>
+      <br>
+      <p>Konstnärsnämnden stödjer yrkesverksamma musiker och komponister genom olika typer av stipendier och bidrag.
+        Samtliga stipendier och bidrag är avsedda för enskilda och huvudsakligen frilansande konstnärer utan fast anställning. Institutioner, fria grupper och motsvarande hänvisar vi till Statens kulturråd.</p>
+      </span>
+    </div>
+    <!-- En rad Slut-->
+  <!-- En rad-->
+  <div class="rad">
+    <span class="stil">
+      <h2 class="rubrik">Teater</h2>
+      <br>
+      <p>Konstnärsnämnden stödjer yrkesverksamma konstnärer inom teaterområdet genom olika typer av stipendier och bidrag.
+        Inom ramen för teater behandlar vi även ansökningar från performance, mim, clown, samtida opera och musikteater och andra scenkonstuttryck.
+         Samtida cirkus hänvisas till dans.</p>
+      </span>
+      <span class="bild">
+        <img class="bild" src="images/teater.png" alt="Teater på scen">
+      </span>
+    </div>
+    <!-- En rad Slut-->
+  </section>
 
 <!-- AHMET'S DEL -->
 <a href="#" class="klank">Konstnärsguiden >></a>
@@ -179,6 +282,12 @@
           <img src="images/image 91.png" alt="Företagande-logo"/>
           </a>
         </div>
+      </div>
+      <div class="head_rest">
+        <button type="submit" class="head_btn log_btn">logga in</button>
+        <button type="submit" class="head_btn apply_btn">ansök</button>
+        <h1>Välkommen till konstnärsnämnden</h1>
+      </div>
 
         <div class="kguide">
           <a href="#" class="ngt">
@@ -225,10 +334,7 @@
         </a>
           </div>
       </section>
-    
-
-
-
+   
 
 <!-- THOMAS' DEL -->
     <footer>
@@ -292,5 +398,6 @@ only needed for flexbox, can be removed if gridbox is used instead -->
         <!-- Really?? -->
       </div>
     </footer>
+
   </body>
 </html>
