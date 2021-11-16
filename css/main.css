@@ -1304,8 +1304,8 @@ input[name="r"] {
             transform: translateY(-400%);
   }
   .slideshow-item-text3 a {
-    -webkit-transform: translateY(-500%);
-            transform: translateY(-500%);
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
   }
   .slideshow-item-text4 a {
     -webkit-transform: translateY(-400%);
