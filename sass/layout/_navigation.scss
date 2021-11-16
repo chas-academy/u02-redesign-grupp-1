@@ -1,7 +1,9 @@
+
 .head_menu{
     background-image: url("../images/ep_naturalwhite.png");
     height: 70px;
     padding: 8px 0 5px 10px;
+
 
     img{
         max-width: 200px;
@@ -15,6 +17,7 @@
     ol{
     list-style: none;
     }
+
 
     > ul{
         display: flex;

@@ -1,5 +1,5 @@
 .guidesection {
-  width: 75%;
+  width: 95%;
   height: auto;
   background-color: gray;
   justify-content: space-around;
@@ -10,29 +10,29 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;
+  margin-bottom: 5%;
 }
 
-.guidesection > a {
-    color: inherit;
-    text-decoration: none;
-}
+// .guidesection > a {
+//     color: inherit;
+//     text-decoration: none;
+// }
 
 .kguide {
   background-color: white;
   height: auto;
-  width: 20%;
+  width: 22%;
   display: flex;
   margin: 20px;
   border-radius: 30px;
-  padding: 10px;
-
 }
 
-.kguide > p {
+.kguide  p {
     display: flex;
     width: 50%;
     vertical-align: middle;
     margin: auto;
+  
 }
 
 .kguide > img {
@@ -44,3 +44,38 @@
     margin-left: auto;
 }
 
+.ngt {
+  height: auto;
+  width: 100%;
+  display: flex;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.kguide a {
+  text-decoration: none; 
+
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:link:active, a:visited:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.klank {
+  padding: 2% 0% 1% 4%;
+  display: flex;
+}
+
+@media screen
+    and (max-width : 767px) { 
+      .kguide {
+      
+        width: 100%;
+      }
+    }
