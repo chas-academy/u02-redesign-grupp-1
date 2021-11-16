@@ -6,26 +6,6 @@
           box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-/* $regFontSize: 1rem;
-$bigFontSize: 1.5rem;
-
-$mainFont:    Helvetica, sans-serif;
-$specialFont: arial; */
-/* $regFontSize: 1rem;
-$bigFontSize: 1.5rem;
-
-$mainFont:    Helvetica, sans-serif;
-$specialFont: arial; */
-.head_menu {
-  background-image: url("../images/ep_naturalwhite.png");
-  height: 70px;
-  padding: 8px 0 5px 10px;
-}
-
-.head_menu img {
-  max-width: 200px;
-=======
 /* .menu_main {
     @include main-nav;
     background: $backgroundColor1;
@@ -35,19 +15,18 @@ $specialFont: arial; */
   display: grid;
   -ms-grid-columns: 20% 55% 25%;
       grid-template-columns: 20% 55% 25%;
->>>>>>> origin/temp
 }
 
-.dws-menu {
+.dws_menu .dws-menu {
   margin-top: -55px;
 }
 
-.dws-menu ul,
-.dws-menu ol {
+.dws_menu .dws-menu ul,
+.dws_menu .dws-menu ol {
   list-style: none;
 }
 
-.dws-menu > ul {
+.dws_menu .dws-menu > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,67 +35,19 @@ $specialFont: arial; */
           justify-content: center;
 }
 
-.dws-menu > ul li {
+.dws_menu .dws-menu li {
+  height: 45px;
+  max-width: 200px;
+  min-width: 140px;
+  text-align: center;
   position: relative;
+  background-color: goldenrod;
 }
 
-.dws-menu > ul li a {
+.dws_menu .dws-menu li a {
   display: block;
-  background: #c9c9c9;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c9c9c9), color-stop(2%, #f6f6f6), color-stop(98%, #c4c5c7), to(#757577));
-  background: linear-gradient(to bottom, #c9c9c9 0%, #f6f6f6 2%, #c4c5c7 98%, #757577 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 );
-  padding: 18px 30px 18px 40px;
-  font-size: 15px;
-  font-weight: 700;
-  color: #454547;
   text-decoration: none;
   text-transform: uppercase;
-<<<<<<< HEAD
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.dws-menu li a:hover {
-  background: #e0e1e5;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e0e1e5), color-stop(2%, #454547), color-stop(98%, #454547), to(#e0e1e5));
-  background: linear-gradient(to bottom, #e0e1e5 0%, #454547 2%, #454547 98%, #e0e1e5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e1e5', endColorstr='#e0e1e5',GradientType=0 );
-  color: #ffffff;
-  -webkit-box-shadow: 1px 5px 10px -5px black;
-          box-shadow: 1px 5px 10px -5px black;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.header_search {
-  position: absolute;
-  top: 65px;
-  right: 15px;
-}
-
-.header_search .lang_select {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: absolute;
-  right: 35px;
-  top: -53px;
-  color: black;
-}
-
-.header_search .sv_lang {
-  right: 60px;
-}
-
-header {
-  font-family: Cuprum, Arial, Helvetica, sans-serif;
-  min-height: 350px;
-  width: 100%;
-=======
   color: #0a0a0a;
   padding: 13px;
   font-weight: bold;
@@ -124,7 +55,7 @@ header {
   transition: all 0.5s ease;
 }
 
-.topmenu li a:hover {
+.dws_menu .dws-menu li a:hover {
   background-color: rgba(10, 10, 10, 0.9);
   color: goldenrod;
   -webkit-transition: all 0.5s ease;
@@ -138,7 +69,6 @@ header {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
->>>>>>> origin/temp
   position: relative;
   padding: 15px;
 }
@@ -151,15 +81,9 @@ header {
 .head_rest h1 {
   text-align: center;
   font-size: 40px;
-<<<<<<< HEAD
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 100px 0 30px 0;
-  color: #fff;
-=======
   font-family: Roboto, Arial, Helvetica, sans-serif;
   margin-top: 100px;
   color: #c8c8c8;
->>>>>>> origin/temp
 }
 
 footer {
@@ -578,32 +502,26 @@ a:link:active, a:visited:active {
       align-self: center;
 }
 
-.nyheter {
-  margin: 0 auto;
-  width: 70%;
-}
-
 .nyheter a {
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0;
-  margin: 20px 0 -30px 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 0 0 1rem 18rem;
 }
 
 .nyheter h2 {
   color: #0a0a0a;
   font-size: 16px;
-<<<<<<< HEAD
-  font-weight: 500;
-=======
   font-weight: bold;
 }
 
 .slide h2 {
   color: #c8c8c8;
->>>>>>> origin/temp
 }
 
 .slidershow {
