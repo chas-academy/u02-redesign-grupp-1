@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/main.css" rel="stylesheet" />
@@ -15,74 +15,83 @@
 
 
         <!-- ALISHER'S DEL -->
-        <nav class="dws_menu">
-          <a href="#" class="navbar_logo"><img src="images/logo_header.gif" alt="Logo_konstnarsnamnden"></a>
-          <ul class="topmenu">
-            <li><a href="#">Nyheter</a>
-              <ul class="submenu">
-                <li><a href="#">Pressmeddelande</a></li>
-                <li><a href="#">Sociala medier</a></li>
-                <li><a href="#">Publikationer</a></li>
-                <li><a href="#">Nyhetsbrev</a></li>
-                <li><a href="#">Prenumerera</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Stipendier</a>
-              <ul class="submenu">
-                <li><a href="subpages/ansok-har.html">Ansökan/Blanketter</a></li>
-                <li><a href="#">Ansökningstider</a></li>
-                <li><a href="#">Ansökningsgrupp</a></li>
-                <li><a href="">Långtidsstipendier</a></li>
-                <li><a href="">Redovisning</a></li>
-                <li><a href="">Analys och utredning</a></li>
-                <li><a href="">Villkor</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Global</a>
-              <ul class="submenu">
-                <li><a href="#">EU:s kulturprogram</a></li>
-                <li><a href="#">Internationellt utbyte</a></li>
-                <li><a href="#">OMC</a></li>
-                <li><a href="#">Kulturråd i utlandet</a></li>
-                <li><a href="#">FN/Unesco</a></li>
-                <li><a href="#">IASPIS</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Verksamhet</a>
-              <ul class="submenu">
-                <li><a href="">Konstnärsguiden</a></li>
-                <li><a href="">Kulturbryggan</a></li>
-                <li><a href="">Kalendarium</a></li>
-                <li><a href="">Motverka hot och hat</a></li>
-                <li><a href="">Juridiskt stöd</a></li>
-                <li><a href="">Vanliga frågor</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Om Oss</a>
-              <ul class="submenu">
-                <li><a href="">Budgetunderlag</a></li>
-                <li><a href="">Organisation</a></li>
-                <li><a href="">Personal</a></li>
-                <li><a href="">Regleringsbrev</a></li>
-                <li><a href="">Lediga tjänster</a></li>
-                <li><a href="">Kontakt</a></li>
-              </ul>
-            </li>   
-          </ul>
+        <div class="head_menu">
+          <a href=""><img src="images/logo.png" alt="logo"></a>
+          <nav class="dws-menu">
+            <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+            <label for="menu" class="toggleMenu"><i class="fa fa-bars"></i>Meny</label>
+            <ul>
+              <li><a href="#">hemsida</a></li>
+              <li>
+                <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
+                <a href="#">Ansökan</a>
+                <label for="sub_m1" class="toggleSubmenu"><i class="fa"></i></label>
+                <ul>
+                  <li><a href="/subpages/ansok-har.html">Ansökan/Blanketter</a></li>
+                  <li><a href="#">Ansökningstider</a></li>
+                  <li><a href="#">Långtidsstipendier</a></li>
+                  <li><a href="#">Ansökningsgroup</a></li>
+                  <li><a href="#">Andra bidragsgivare</a></li>
+                </ul>
+              </li>
+              <li>
+                <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m2">
+                <a href="#">Aktuellt</a>
+                <label for="sub_m2" class="toggleSubmenu"><i class="fa"></i></label>
+                <ul>
+                  <li><a href="#">Nyheter</a></li>
+                  <li><a href="#">Kalendarium</a></li>
+                  <li><a href="#">Publikationer</a></li>
+                  <li><a href="#">Villkor</a></li>
+                  <li><a href="#">Länkar</a></li>
+                </ul>
+              </li>
+              <li>
+                <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m3">
+                <a href="#">Program</a>
+                <label for="sub_m3" class="toggleSubmenu"><i class="fa"></i></label>
+                <ul>
+                  <li><a href="#">IASPIS</a></li>
+                  <li><a href="#">Program för dans</a></li>
+                  <li><a href="#">Program för musik</a></li>
+                  <li><a href="#">Kulturbryggan</a></li>
+                  <li><a href="#">Motverka hot och hat</a></li>
+                </ul>
+              </li>
+              <li>
+                <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m4">
+                <a href="#">Vad vi gör</a>
+                <label for="sub_m4" class="toggleSubmenu"><i class="fa"></i></label>
+                <ul>
+                  <li><a href="#">Internationellt</a></li>
+                  <li><a href="#">Jämställdhet</a></li>
+                  <li><a href="#">Regeringsuppdrag</a></li>
+                  <li><a href="#">Analys och utredning</a></li>
+                </ul>
+              </li>
+              <li>
+                <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m5">
+                <a href="#">Om oss</a>
+                <label for="sub_m5" class="toggleSubmenu"><i class="fa"></i></label>
+                <ul>
+                  <li><a href="#">Om konstnärsnämnden</a></li>
+                  <li><a href="#">Personal</a></li>
+                  <li><a href="#">Lediga tjänster</a></li>
+                  <li><a href="#">Vanliga frågor</a></li>
+                  <li><a href="#">Kontakt</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
           <div class="header_search">
             <form>
               <input type="text" placeholder="Sök...">
               <button type="submit"></button>
             </form>
             <div class="lang_buttons">
-              <a href="" class="button sv_lang"><img src="images/sv_lang_icon.png" alt="svenska"></a>
-              <a href="" class="button en_lang"><img src="images/en_lang_icon.png" alt="english"></a>
+              <a href="" class="lang_select sv_lang">SV</a>
+              <a href="" class="lang_select en_lang">EN</a>
             </div>
-          </div>
-        </nav>
-        <button type="submit" class="head_btn log_btn">logga in</button>
-        <button type="submit" class="head_btn apply_btn">ansök</button>
-        <h1>Välkommen till Konstnärsnämnden</h1>
       </header>
   
 
