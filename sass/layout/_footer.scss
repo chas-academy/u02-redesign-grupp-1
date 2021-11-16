@@ -2,8 +2,13 @@
 @import '../abstracts/mixins'; 
 
 footer {
-    background: $backgroundColor1;
-    color: $textColor1;
+    width: $contentWidth2;
+    /*
+    margin-left: auto;
+    margin-right: auto; */
+    @include content-centering;
+    background: $backgroundColor3;
+    color: $textColor2;
     /*
     display: flex;
     justify-content: space-around;
@@ -15,13 +20,14 @@ footer {
     justify-content: stretch;
     //align-items: end;
     //grid-area:  a b c;
-
+   
     .footerContainer1 {
+        
         //grid-area: a;
         grid-column: 1;
         grid-row: 1;
-        border: dashed red; //debug
-        border-bottom: solid $textColor1;
+        //border: dashed red; //debug
+        border-bottom: solid $textColor2;
         //text styles -> should be moved to separate mixin in abstracts?
         h2 {
             font-size: 1rem;
@@ -33,7 +39,7 @@ footer {
         //grid-area: b;
         grid-column: 2;
         grid-row: 1;
-        border: dashed green; //debug
+        //border: dashed green; //debug
         h2, ul {
             list-style: none;
             padding: 0 20px 0 20px;
@@ -44,7 +50,7 @@ footer {
         //grid-area: b;
         grid-column: 1;
         grid-row: 2;
-        border: dashed rgb(255, 255, 3); //debug
+        //border: dashed rgb(255, 255, 3); //debug
         p {padding: 0px 20px 0px 20px;} 
     }
     .iconPanel {
@@ -55,17 +61,23 @@ footer {
         justify-content: flex-end;
         gap: 10px;
         padding: 0px 20px 0px 20px;
-        border: dashed blue; //debug
+        //border: dashed blue; //debug
         /* 
         img {
             filter: invert(90%);
         } */
         @include footer-icons;
+        @include auto-img-size;
     }
-    @include media-q (650px) {
-        //display: flex;
+    @include media-q ($mobileWidthL) {  //650px
+        display: flex;
         flex-direction: column;
-    }
+       /*  .iconPanel {
+            img {
+                width: 10%;
+            }
+    } */
 }
 
 
+}

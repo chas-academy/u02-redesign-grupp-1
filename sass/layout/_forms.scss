@@ -1,0 +1,40 @@
+form {
+width: auto;
+padding-top: 5px;
+margin-top: -45px;
+position: relative;
+
+    input{
+        width: 100px;
+        height: 25px;
+        position: absolute;
+        top: 21px;
+        right: 15px;
+        padding-left: 10px;
+        border-radius: 42px;
+        border: 2px solid #324b4e;
+        background: #F9F0DA;
+        outline: none;
+        transition: .3s linear;
+
+        &:focus {
+        width: 190px;
+        }
+    }
+
+    button {
+        width: 20px;
+        height: 20px;
+        background: url("../../images/search_icon.png") center no-repeat;
+        border: none;
+        position: absolute;
+        top: 25px;
+        right: 22px; 
+        cursor: pointer;
+    
+        &:before {
+            color: #324b4e;
+        }
+    }
+}
+

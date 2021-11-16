@@ -1,0 +1,81 @@
+.guidesection {
+  //width: $contentWidth; //95%
+  @include content-centering;
+  height: auto;
+  background-color: $backgroundColor3; //grey
+  justify-content: space-around;
+  display: flex;
+  /* padding: px; */
+  padding:20px 0;
+  flex-wrap: wrap;
+  //margin-left: auto;
+  //margin-right: auto;
+  border-radius: 30px;
+  margin-bottom: 5%;
+ 
+}
+
+// .guidesection > a {
+//     color: inherit;
+//     text-decoration: none;
+// }
+
+.kguide {
+  background-color: $backgroundColor2;
+  height: auto;
+  width: $divWidth;
+  display: flex;
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.kguide  p {
+    display: flex;
+    width: 50%;
+    vertical-align: middle;
+    margin: auto;
+  
+}
+
+.kguide > img {
+    width: auto;
+    height: 50%;
+    vertical-align: middle;
+    margin-top: inherit;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ngt {
+  height: auto;
+  width: 100%;
+  display: flex;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.kguide a {
+  text-decoration: none; 
+
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:link:active, a:visited:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.klank {
+  padding: 2% 0% 1% 4%;
+  display: flex;
+}
+
+@include media-q ($mobileWidthL) { 
+      .kguide {
+        width: 100%;
+      }
+    }

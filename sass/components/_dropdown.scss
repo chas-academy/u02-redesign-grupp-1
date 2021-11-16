@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .fa-bars:before {
+    content: "\f0c9";
+  }
+
+.dws-menu li ul{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+
+.dws-menu li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    background: #e4e4e5;
+}
+
+.dws-menu li > ul li ul{
+    position: absolute;
+    right: -150px;
+    top: 0;
+}
+
+.dws-menu li:hover > ul{
+    display: block;
+}
+
+.dws-menu [type="checkbox"],
+.dws-menu label.toggleSubmenu{
+    display: none;
+}
+
+.dws-menu label.toggleMenu{
+    background: rgb(201,201,201);
+    background: -moz-linear-gradient(top,  rgba(201,201,201,1) 0%, rgba(246,246,246,1) 2%, rgba(196,197,199,1) 98%, rgba(117,117,119,1) 100%);
+    background: -webkit-linear-gradient(top,  #c9c9c9 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); 
+    background: linear-gradient(to bottom,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 ); 
+
+    display: none;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+.dws-menu label.toggleMenu .fa{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+
+@media all and (max-width: 1100px){
+    header img{
+        width: 180px;
+        margin: 10px auto;
+    }
+    .head_menu {
+        min-height: 150px;
+        max-height: 4000px;
+    }
+    .dws-menu{
+        overflow: hidden;
+        margin: 15px 0 0 0;
+    }
+    .dws-menu ul{
+        display: block;
+        max-height: 0;
+        transition: max-height 0.3s;
+    }
+    .dws-menu li>ul li ul{
+        position: absolute;
+        right: auto;
+        top: auto;
+    }
+    .dws-menu label.toggleMenu{
+        display: block;
+    }
+    input.toggleMenu:checked + label.toggleMenu{
+        background: #000;
+        color: #fff;
+    }
+    input.toggleMenu:checked ~ ul,
+    input.toggleSubmenu:checked ~ ul{
+        display: block;
+        position: relative;
+        max-height: 5000px;
+        transition: max-height 2s ease-in;
+    }
+    .dws-menu label.toggleSubmenu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        display: block;
+    }
+    input.toggleSubmenu:checked ~ a{
+        background: #454547;
+        color: #fff;
+    }
+    .dws-menu label.toggleSubmenu .fa:before{
+        content: "\f0d7";
+        color: #454547;
+    }
+    .dws-menu label.toggleSubmenu .fa{
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+    .dws-menu input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before{
+        content: "\f0d8";
+        color: #ffffff;
+    }
+
+    .lang_select {
+        position: absolute;
+        right: 35px;
+        top: -15px;
+    }
+}
