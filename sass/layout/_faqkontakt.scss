@@ -5,7 +5,7 @@
 }
 
 .sectionFaq {
-  width: $contentWidth;//100%;
+  width: $contentWidth; //100%;
   //height: 100vh;
   height: 50%; //Thomas
   background-color: $backgroundColor2; //white
@@ -100,13 +100,13 @@
   height: auto;
   width: $contentWidth; //100%
   // Thomas
-
+  /* 
   grid-template-areas:
     ". header header ."
     ". sidebar content ."
-    ". kontakt kontakt .";
+    ". kontakt kontakt ."; */
 }
-.gridcontainer-1 {    //does not exist
+/* .gridcontainer-1 {    //does not exist
   grid-area: header;
 }
 .gridcontainer-2 {    //does not exist
@@ -118,15 +118,15 @@
 
 .gridcontainer-4 {    //exists!
   grid-area: kontakt;
-}
+} */
 //------
 
 // kontakt formulär
 .kontaktContaioner {
-  /*    //Thomas
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end; */
+/*   //Thomas
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
   //height: 50%; //Thomas
   //width: 80%;
   padding: 20px;
@@ -134,7 +134,7 @@
 
   h2 {
     color: $textColor2; //white
-    font-size: 3em;
+    font-size: $bigFontSize;//3em;
     text-align: center;
     margin-bottom: 30px;
   }
@@ -173,7 +173,7 @@
       top: 0;
       left: 0;
       color: $textColor2; //white
-      font-size: $regFontSize;//18px;
+      font-size: $regFontSize; //18px;
       font-weight: bold;
     }
 
@@ -204,7 +204,7 @@
   font-size: 20px;
   border-radius: 5px;
   cursor: pointer;
-  color: black;
+  color: $textColor2;//black;
 }
 
 // kontakt formulär slut

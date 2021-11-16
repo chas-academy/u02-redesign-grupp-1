@@ -422,47 +422,38 @@ a:link:active, a:visited:active {
       grid-template-columns: repeat(2, 2fr);
   height: auto;
   width: 95%;
-      grid-template-areas: ". header header ." ". sidebar content ." ". kontakt kontakt .";
+  /* 
+  grid-template-areas:
+    ". header header ."
+    ". sidebar content ."
+    ". kontakt kontakt ."; */
 }
 
-.gridcontainer-1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
+/* .gridcontainer-1 {    //does not exist
   grid-area: header;
 }
-
-.gridcontainer-2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
+.gridcontainer-2 {    //does not exist
   grid-area: content;
 }
-
-.gridcontainer-3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+.gridcontainer-3 {    //does not exist
   grid-area: sidebar;
 }
 
-.gridcontainer-4 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
+.gridcontainer-4 {    //exists!
   grid-area: kontakt;
-}
-
+} */
 .kontaktContaioner {
-  /*    //Thomas
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end; */
+  /*   //Thomas
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
   padding: 20px;
   background: white;
 }
 
 .kontaktContaioner h2 {
   color: #0a0a0a;
-  font-size: 3em;
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -533,7 +524,7 @@ a:link:active, a:visited:active {
   font-size: 20px;
   border-radius: 5px;
   cursor: pointer;
-  color: black;
+  color: #0a0a0a;
 }
 
 .lang_buttons {
