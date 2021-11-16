@@ -2,21 +2,10 @@
 @import 'base/reset';
 @import 'base/typography';
 
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
-
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
 // @import 'vendors/bootstrap';
-
-@import 'layout/navigation';
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/sidebar';
-@import 'layout/forms';
-@import 'layout/konstnarsguiden';
 
 @import 'layout/navigation';
 @import 'layout/grid';
