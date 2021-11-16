@@ -445,19 +445,13 @@ a:link:active, a:visited:active {
   width: 95%;
 }
 
-.gridsection {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (2fr)[2];
-      grid-template-columns: repeat(2, 2fr);
-  height: auto;
-  width: 95%;
+
   /* 
   grid-template-areas:
     ". header header ."
     ". sidebar content ."
     ". kontakt kontakt ."; */
-}
+
 
 /* .gridcontainer-1 {    //does not exist
   grid-area: header;
@@ -677,10 +671,10 @@ a:link:active, a:visited:active {
 }
 
 .border-slider {
-  width: 70%;
+  width: 95%;
   height: 600px;
-  background: white;
-  margin: 0 auto;
+  background: #ebebeb;
+  margin: 0 auto 5rem auto;
 }
 
 .subscribe {
@@ -700,7 +694,7 @@ a:link:active, a:visited:active {
 }
 
 .subscribe input {
-  background-color: #fff;
+  background-color: white;
   width: 350px;
   height: 20px;
   -webkit-transition: none;
@@ -736,6 +730,13 @@ a:link:active, a:visited:active {
       align-self: center;
 }
 
+.nyheter {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .nyheter a {
   text-decoration: none;
   display: -webkit-box;
@@ -744,14 +745,15 @@ a:link:active, a:visited:active {
   padding: 0;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
-  margin: 0 0 1rem 18rem;
+          justify-content: flex-start;
+  margin: 0 auto -2.5rem auto;
+  width: 95%;
 }
 
 .nyheter h2 {
   color: #0a0a0a;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .slide h2 {
@@ -777,7 +779,7 @@ a:link:active, a:visited:active {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.2);
-  color: #fff;
+  color: white;
   padding: 2px 1px;
 }
 
@@ -907,7 +909,7 @@ input[name="r"] {
 
 @media only screen and (max-width: 700px) {
   .border {
-    width: 90%;
+    width: 80%;
     height: 66%;
   }
   .border-slider {
@@ -919,9 +921,6 @@ input[name="r"] {
   }
   .nyheter h2 {
     font-size: 16px;
-  }
-  .nyheter a {
-    margin: 20px 0 -45px 0;
   }
   .slideshow-item-text1,
   .slideshow-item-text2,
@@ -955,28 +954,25 @@ input[name="r"] {
     display: -ms-flexbox;
     display: flex;
   }
-  .nyheter {
-    width: 95%;
-  }
   .slideshow-item-text1 a {
     -webkit-transform: translateY(-400%);
             transform: translateY(-400%);
   }
   .slideshow-item-text2 a {
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%);
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
   }
   .slideshow-item-text3 a {
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%);
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
   }
   .slideshow-item-text4 a {
     -webkit-transform: translateY(-400%);
             transform: translateY(-400%);
   }
   .slideshow-item-text5 a {
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%);
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
   }
   .bar {
     width: 40px;
@@ -994,11 +990,11 @@ input[name="r"] {
 
 @media only screen and (min-width: 600px) and (max-width: 999px) {
   .border {
-    width: 90%;
+    width: 80%;
     height: 70%;
   }
   .border-slider {
-    width: 85%;
+    width: 95%;
     height: 500px;
   }
   .slidershow {
@@ -1010,9 +1006,6 @@ input[name="r"] {
   .slideshow-item-text4,
   .slideshow-item-text5 {
     top: 40%;
-  }
-  .nyheter {
-    width: 85%;
   }
   .slideshow-item-text1 a {
     -webkit-transform: translateY(-300%);
