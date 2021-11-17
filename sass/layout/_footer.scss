@@ -9,6 +9,7 @@ footer {
     @include content-centering;
     background: $backgroundColor3;
     color: $textColor2;
+    border-top: 5px solid $backgroundColor1;
     /*
     display: flex;
     justify-content: space-around;
@@ -27,13 +28,13 @@ footer {
         grid-column: 1;
         grid-row: 1;
         //border: dashed red; //debug
-        border-bottom: solid $textColor2;
+        border-bottom: 2px solid $textColor2;
         //text styles -> should be moved to separate mixin in abstracts?
         h2 {
-            font-size: 1rem;
+            font-size: $mediumFontsize;
             padding: 0px 20px 0px 20px;
         }
-        //padding: 0 10px 0 10px; 
+        padding: 10px 0 10px 0; 
     }
     .footerContainer2 {
         //grid-area: b;
@@ -42,16 +43,17 @@ footer {
         //border: dashed green; //debug
         h2, ul {
             list-style: none;
-            padding: 0 20px 0 20px;
+            padding: $regPadding;
             // add command to align list items with kontakt
         }
+        border-bottom: 2px solid $textColor2;
     }
     .footerContainer3 {
         //grid-area: b;
         grid-column: 1;
         grid-row: 2;
         //border: dashed rgb(255, 255, 3); //debug
-        p {padding: 0px 20px 0px 20px;} 
+        p {padding: $regPadding;} 
     }
     .iconPanel {
        // grid-area: c;
@@ -60,7 +62,7 @@ footer {
         display: flex;
         justify-content: flex-end;
         gap: 10px;
-        padding: 0px 20px 0px 20px;
+        padding: $regPadding;
         //border: dashed blue; //debug
         /* 
         img {
@@ -72,11 +74,7 @@ footer {
     @include media-q ($mobileWidthL) {  //650px
         display: flex;
         flex-direction: column;
-       /*  .iconPanel {
-            img {
-                width: 10%;
-            }
-    } */
+        @include auto-img-size;
 }
 
 
