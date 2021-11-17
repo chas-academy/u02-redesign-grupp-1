@@ -416,9 +416,7 @@ a:link:active, a:visited:active {
   }
 }
 
-/* 
-@import 'layout/faq';
-@import 'layout/kontakt';
+/*
 @import 'layout/faqkontakt'; //careful, might break layout of main
 */
 .bakgrund {
@@ -439,13 +437,13 @@ a:link:active, a:visited:active {
 }
 
 .bakgrund .bild {
-  width: 400px;
-  height: 272.18px;
+  width: auto;
+  height: auto;
 }
 
 .bakgrund .stil {
   display: inline-block;
-  width: 550px;
+  width: 95%;
   padding: 20px;
   font-family: Roboto Slab;
   font-style: normal;
