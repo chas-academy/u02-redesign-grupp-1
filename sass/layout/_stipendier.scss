@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-}
+
 
 .bild {
 width: 400px;
@@ -64,4 +64,12 @@ height: 272.18px;
     text-align: center;
     
     color: #000000;
+}
+
+@include media-q ($mobileWidthL) { 
+    display: flex;
+        flex-direction: column;
+        @include auto-img-size;
+  }
+
 }

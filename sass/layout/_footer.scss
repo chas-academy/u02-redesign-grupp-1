@@ -71,6 +71,7 @@ footer {
         @include footer-icons;
         @include auto-img-size;
     }
+
     @include media-q ($mobileWidthL) {  //650px
         display: flex;
         flex-direction: column;

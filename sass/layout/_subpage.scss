@@ -1,25 +1,24 @@
-.bakgrund {
+.sp-bakgrund {
     background: $backgroundColor2; //#EBEBEB;
-    width: $contentWidth; //95%;
+    //width: $contentWidth; //95%;
     height: auto;
-    justify-content: space-around;
-    display: flex;
+    //justify-content: space-around;
+    //display: flex;
     /* padding: px; */
-    padding:20px 0;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+    //padding:20px 0;
+    //flex-wrap: wrap;
+    @include content-centering;
 }
 
-.bild {
+/* .bild {
 width: 400px;
 height: 272.18px;
-}
+} */
 
 .stil {
    
     display: inline-block;
-    width: 550px;
+    //width: 550px;
     padding: 20px;
 
     font-family: Roboto Slab;
@@ -51,6 +50,7 @@ height: 272.18px;
 
 .rubrik {                                // eg Dans & Cirkus, Film
     text-align: center;
+    color: #af0c0c; //for debugging
 }
 
 .stor_rubrik {                          // only Stipendier och bidrag
@@ -63,5 +63,5 @@ height: 272.18px;
     align-items: center;
     text-align: center;
     
-    color: #000000;
+    color: #af0c0c; //for debugging
 }
