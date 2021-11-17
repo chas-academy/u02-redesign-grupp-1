@@ -10,25 +10,54 @@
     @include content-centering;
 }
 
-/* .bild {
-width: 400px;
-height: 272.18px;
-} */
-
-.stil {
+.sp-stil {
    
     display: inline-block;
     //width: 550px;
     padding: 20px;
 
-    font-family: Roboto Slab;
+    font-family: $specialFont; //Roboto Slab;
+    /*
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     color: #000000;
+    */
 
 }
-/* .knapp {
+
+.sp-rad {
+    padding: 30px;
+}
+
+.sp-rubrik {                                // eg Dans & Cirkus, Film
+    text-align: center;
+    color: #af0c0c; //for debugging
+}
+
+/*
+.sp-stor_rubrik {                          // only Stipendier och bidrag
+    font-family: $mainFont; //Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #af0c0c; //for debugging
+}
+
+
+
+ .bild {
+width: 400px;
+height: 272.18px;
+} 
+
+
+ .knapp {
     background-color: $backgroundSpecial;//#ffd000;
 
     color: black;
@@ -43,25 +72,3 @@ height: 272.18px;
     font-size: 16px;
 
 } */
-
-.rad {
-    padding: 30px;
-}
-
-.rubrik {                                // eg Dans & Cirkus, Film
-    text-align: center;
-    color: #af0c0c; //for debugging
-}
-
-.stor_rubrik {                          // only Stipendier och bidrag
-    font-family: $mainFont; //Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    color: #af0c0c; //for debugging
-}

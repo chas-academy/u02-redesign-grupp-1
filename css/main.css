@@ -90,7 +90,6 @@
 
 header {
   font-family: Cuprum, Arial, Helvetica, sans-serif;
-  min-height: 350px;
   width: 100%;
   position: relative;
 }
@@ -225,7 +224,7 @@ footer .iconPanel img {
 }
 
 .sp-bakgrund {
-  background: white;
+  background: #bebebe;
   height: auto;
   /* padding: px; */
   width: 100%;
@@ -233,21 +232,50 @@ footer .iconPanel img {
   margin-right: auto;
 }
 
-/* .bild {
-width: 400px;
-height: 272.18px;
-} */
-.stil {
+.sp-stil {
   display: inline-block;
   padding: 20px;
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  color: #000000;
+  font-family: Roboto Slab, Arial;
+  /*
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+    */
 }
 
-/* .knapp {
+.sp-rad {
+  padding: 30px;
+}
+
+.sp-rubrik {
+  text-align: center;
+  color: #af0c0c;
+}
+
+/*
+.sp-stor_rubrik {                          // only Stipendier och bidrag
+    font-family: $mainFont; //Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #af0c0c; //for debugging
+}
+
+
+
+ .bild {
+width: 400px;
+height: 272.18px;
+} 
+
+
+ .knapp {
     background-color: $backgroundSpecial;//#ffd000;
 
     color: black;
@@ -262,31 +290,6 @@ height: 272.18px;
     font-size: 16px;
 
 } */
-.rad {
-  padding: 30px;
-}
-
-.rubrik {
-  text-align: center;
-  color: #af0c0c;
-}
-
-.stor_rubrik {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  color: #af0c0c;
-}
-
 form {
   width: auto;
   padding-top: 5px;
@@ -348,7 +351,7 @@ form button:before {
 }
 
 .kguide {
-  background-color: white;
+  background-color: #bebebe;
   height: auto;
   width: 22%;
   display: -webkit-box;
@@ -577,7 +580,7 @@ a:link:active, a:visited:active {
 }
 
 .subscribe input {
-  background-color: white;
+  background-color: #bebebe;
   width: 350px;
   height: 20px;
   -webkit-transition: none;
@@ -662,7 +665,7 @@ a:link:active, a:visited:active {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.2);
-  color: white;
+  color: #bebebe;
   padding: 2px 1px;
 }
 
@@ -710,7 +713,7 @@ a:link:active, a:visited:active {
 .bar {
   width: 50px;
   height: 10px;
-  border: 2px solid white;
+  border: 2px solid #bebebe;
   margin: 6px;
   cursor: pointer;
   -webkit-transition: 0.4s;
@@ -718,11 +721,11 @@ a:link:active, a:visited:active {
 }
 
 .bar:hover {
-  background: white;
+  background: #bebebe;
 }
 
 .bar:checked {
-  background: white;
+  background: #bebebe;
 }
 
 input[name="r"] {
