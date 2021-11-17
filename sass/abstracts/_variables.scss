@@ -1,20 +1,31 @@
-$backgroundColor1: rgba(10, 10, 10, 0.9);
-$textColor1: rgba(200, 200, 200, 1);
-$navBarBackground: rgba(0, 0, 0, 0.74);
 // colors
 $backgroundColor1: rgba(10, 10, 10, 0.9);
+$backgroundColor2: rgba(255, 255, 255, 1);
+$backgroundColor3: rgba(120, 120, 120, 1);
+$backgroundSpecial: goldenrod;
 $textColor1: rgba(200, 200, 200, 1);
+$textColor2: rgba(10, 10, 10, 1);
+$navBarBackground: rgba(0, 0, 0, 0.74);
 $highlightColor: rgb(255, 0, 0);
 
 // units for width, height etc;
 $numberOfItems: 5;
 
+$contentWidth: 95%;
+$contentWidth2: 100%;
+$divWidth: 22%;
+$mobileWidthP: 414px;
+$mobileWidthL: 736px;
+
+
 // typography
-/* $regFontSize: 1rem;
+$regFontSize: 16px; //1rem
+
+// not used yet
 $bigFontSize: 1.5rem;
 
-$mainFont:    Helvetica, sans-serif;
-$specialFont: arial; */
+$mainFont:    Roboto, Arial, Helvetica, sans-serif; //Helvetica, sans-serif;
+$specialFont: arial; //or rather something SPECIAL
 
 
 

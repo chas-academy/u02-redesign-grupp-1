@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sectionFaq {
+  width: $contentWidth; //100%;
+  //height: 100vh;
+  height: 50%; //Thomas
+  background-color: $backgroundColor2; //white
+  /* //Thomas
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+  display: flex;
+  //justify-content: center;
+  //align-items: center;
+  font-size: 20px;
+}
+
+.faqContaioner {
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  width: 70%;
+  max-width: 80rem; //vad ska vi ha?
+  margin: 0 auto;
+  padding: 0 1.5 px;
+}
+
+.ruta {
+  background-color: $backgroundColor3; //#e8e8e8
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0.5rem 2px 0.5rem rbga(0, 0, 0, 0.15);
+}
+
+.lankfraga {
+  font-size: 1.5rem;
+  color: $textColor2; //white
+  text-decoration: none;
+  background-color: $backgroundColor3; //#333;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.figur {
+  color: $textColor2; //blanchedalmond;
+  padding: 0.5rem;
+}
+
+#minus {
+  display: none;
+}
+#plus {
+  color: $textColor2; //white
+}
+
+.svar {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: $backgroundColor3; //#e8e8e8
+  transition: max-height 0.6s;
+  p {
+    font-size: 1em;
+    color: black;
+    padding: 2rem;
+  }
+}
+
+.ruta:target .svar {
+  max-height: 20rem;
+}
+
+.ruta:target #plus {
+  display: none;
+}
+
+.ruta:target #minus {
+  display: block;
+}
+
+// kontakt formulär
+
+// Grid funkar inte
+.formPart {
+  width: $contentWidth;
+}
+
+.gridsection {
+  display: grid;
+  // Thomas
+  grid-template-columns: repeat(2, 2fr);
+  height: auto;
+  width: $contentWidth; //100%
+  // Thomas
+  /* 
+  grid-template-areas:
+    ". header header ."
+    ". sidebar content ."
+    ". kontakt kontakt ."; */
+}
+/* .gridcontainer-1 {    //does not exist
+  grid-area: header;
+}
+.gridcontainer-2 {    //does not exist
+  grid-area: content;
+}
+.gridcontainer-3 {    //does not exist
+  grid-area: sidebar;
+}
+
+.gridcontainer-4 {    //exists!
+  grid-area: kontakt;
+} */
+//------
+
+// kontakt formulär
+.kontaktContaioner {
+/*   //Thomas
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
+  //height: 50%; //Thomas
+  //width: 80%;
+  padding: 20px;
+  background: $backgroundColor2; //black
+
+  h2 {
+    color: $textColor2; //white
+    font-size: $bigFontSize;//3em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.runtom {
+  //width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  gap: 30px;
+  margin-bottom: 30px;
+
+  .box {
+    //width: 100%;
+    position: relative;
+    padding: 20px;
+
+    input {
+      //width: 100%;
+      font-size: 20px;
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $backgroundColor3; //rgba(255, 255, 255, 0.8)
+      transition: 0.4s linear;
+    }
+    input:focus,
+    input:valid {
+      padding: 20px 10px;
+      background: $backgroundColor3; //rgba(255, 255, 255, 0.8)
+      margin-top: 10px;
+    }
+    label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $textColor2; //white
+      font-size: $regFontSize; //18px;
+      font-weight: bold;
+    }
+
+    textarea {
+      //width: 100%;
+      font-size: 20px;
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $backgroundColor3; //rgba(255, 255, 255, 0.8)
+      transition: 0.4s linear;
+    }
+
+    textarea:focus,
+    textarea:valid {
+      padding: 20px 10px;
+      background: $backgroundColor3; //rgba(255, 255, 255, 0.8)
+      margin-top: 10px;
+    }
+  }
+}
+
+.kontaktKnapp {
+  background: $backgroundColor3; //#d8d8d8
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: $textColor2;//black;
+}
+
+// kontakt formulär slut
