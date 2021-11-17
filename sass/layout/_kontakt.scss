@@ -3,45 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+/*body {
   min-height: 150vh; //menu
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 
-// Grid funkar inte
-.gridsection {
-  display: grid;
-  // Thomas
-  //grid-template-columns: repeat(2, 2fr);
-  height: auto;
-  width: 100%;
-  // Thomas
-  /* 
-     grid-template-areas: 
-     ". header header .
-     . sidebar content .
-     . kontakt kontakt .";  */
-}
-.gridcontainer-1 {
-  grid-area: header;
-}
-.gridcontainer-2 {
-  grid-area: content;
-}
-.gridcontainer-3 {
-  grid-area: sidebar;
-}
 
-.gridcontainer-4 {
-  grid-area: kontakt;
-}
-//------
 
 // kontakt formulär
 .kontaktContaioner {
-  /*    //Thomas
+      //Thomas
     display: flex;
     flex-direction: column;
     justify-content: flex-end; */
