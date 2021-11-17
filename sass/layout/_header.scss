@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@400;500;700&display=swap');
+
 header {
     box-sizing: border-box;
     background: url("../../images/bg_header_1.jpg") center center/cover no-repeat;
     //width: $contentWidth2; //100%
     @include content-centering;
     position: relative;
-    padding: 15px;
 }
 
 .head_rest{
-    background: url('../images/head_bg_2.jpg') center center/cover no-repeat;
+    background: url('../images/head_bg_3.jpg') center center/cover no-repeat;
     height: 300px;
 
     h1 {
@@ -19,5 +20,3 @@ header {
         color: $textColor1; //#fff
     }
 }
-
-
