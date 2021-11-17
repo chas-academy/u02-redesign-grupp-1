@@ -445,13 +445,19 @@ a:link:active, a:visited:active {
   width: 95%;
 }
 
-
+.gridsection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[2];
+      grid-template-columns: repeat(2, 2fr);
+  height: auto;
+  width: 95%;
   /* 
   grid-template-areas:
     ". header header ."
     ". sidebar content ."
     ". kontakt kontakt ."; */
-
+}
 
 /* .gridcontainer-1 {    //does not exist
   grid-area: header;
@@ -621,7 +627,6 @@ a:link:active, a:visited:active {
   color: #000000;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 600px) {
   .bakgrund {
     display: -webkit-box;
@@ -646,14 +651,6 @@ a:link:active, a:visited:active {
   }
 }
 
-.lang_buttons {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-}
-
-=======
->>>>>>> 3a96f3414cda4ef159a115b86df0e245644b9bc8
 .head_btn {
   text-decoration: none;
   display: inline-block;
