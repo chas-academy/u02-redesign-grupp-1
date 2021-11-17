@@ -118,6 +118,7 @@ footer {
   margin-right: auto;
   background: #787878;
   color: #0a0a0a;
+  border-top: 5px solid rgba(10, 10, 10, 0.9);
   /*
     display: flex;
     justify-content: space-around;
@@ -135,7 +136,8 @@ footer .footerContainer1 {
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
-  border-bottom: solid #0a0a0a;
+  border-bottom: 2px solid #0a0a0a;
+  padding: 10px 0 10px 0;
 }
 
 footer .footerContainer1 h2 {
@@ -148,11 +150,12 @@ footer .footerContainer2 {
   grid-column: 2;
   -ms-grid-row: 1;
   grid-row: 1;
+  border-bottom: 2px solid #0a0a0a;
 }
 
 footer .footerContainer2 h2, footer .footerContainer2 ul {
   list-style: none;
-  padding: 0 20px 0 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 footer .footerContainer3 {
@@ -163,7 +166,7 @@ footer .footerContainer3 {
 }
 
 footer .footerContainer3 p {
-  padding: 0px 20px 0px 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 footer .iconPanel {
@@ -178,7 +181,7 @@ footer .iconPanel {
       -ms-flex-pack: end;
           justify-content: flex-end;
   gap: 10px;
-  padding: 0px 20px 0px 20px;
+  padding: 10px 20px 10px 20px;
   /* 
         img {
             filter: invert(90%);
@@ -188,11 +191,16 @@ footer .iconPanel {
 footer .iconPanel img {
   -webkit-filter: invert(10%);
           filter: invert(10%);
+  /*  &:hover {
+            filter: invert(100%);
+        } */
 }
 
-footer .iconPanel img:hover {
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+@media (hover: hover) {
+  footer .iconPanel img:hover {
+    -webkit-filter: invert(90%);
+            filter: invert(90%);
+  }
 }
 
 footer .iconPanel img {
@@ -202,7 +210,6 @@ footer .iconPanel img {
 
 @media screen and (max-width: 736px) {
   footer {
-    font-size: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -210,12 +217,74 @@ footer .iconPanel img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    /*  .iconPanel {
-            img {
-                width: 10%;
-            }
-    } */
   }
+  footer img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.sp-bakgrund {
+  background: white;
+  height: auto;
+  /* padding: px; */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .bild {
+width: 400px;
+height: 272.18px;
+} */
+.stil {
+  display: inline-block;
+  padding: 20px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #000000;
+}
+
+/* .knapp {
+    background-color: $backgroundSpecial;//#ffd000;
+
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+
+    font-family: $mainFont; //Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+
+} */
+.rad {
+  padding: 30px;
+}
+
+.rubrik {
+  text-align: center;
+  color: #af0c0c;
+}
+
+.stor_rubrik {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #af0c0c;
 }
 
 form {
@@ -259,6 +328,96 @@ form button:before {
   color: #324b4e;
 }
 
+.guidesection {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  background-color: #787878;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* padding: px; */
+  padding: 20px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 30px;
+  margin-bottom: 5%;
+}
+
+.kguide {
+  background-color: white;
+  height: auto;
+  width: 22%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.kguide p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.kguide > img {
+  width: auto;
+  height: 50%;
+  vertical-align: middle;
+  margin-top: inherit;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ngt {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.kguide a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:link:active, a:visited:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.klank {
+  padding: 2% 0% 1% 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 736px) {
+  .kguide {
+    width: 100%;
+  }
+}
+
+/* 
+@import 'layout/faq';
+@import 'layout/kontakt';
+@import 'layout/faqkontakt'; //careful, might break layout of main
+*/
 .bakgrund {
   background: #EBEBEB;
   width: 95%;
@@ -276,12 +435,12 @@ form button:before {
   margin-right: auto;
 }
 
-.bild {
+.bakgrund .bild {
   width: 400px;
   height: 272.18px;
 }
 
-.stil {
+.bakgrund .stil {
   display: inline-block;
   width: 550px;
   padding: 20px;
@@ -292,7 +451,7 @@ form button:before {
   color: #000000;
 }
 
-.knapp {
+.bakgrund .knapp {
   background-color: #ffd000;
   color: black;
   padding: 10px 10px;
@@ -305,15 +464,15 @@ form button:before {
   font-size: 16px;
 }
 
-.rad {
+.bakgrund .rad {
   padding: 30px;
 }
 
-.rubrik {
+.bakgrund .rubrik {
   text-align: center;
 }
 
-.stor_rubrik {
+.bakgrund .stor_rubrik {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -327,6 +486,22 @@ form button:before {
           align-items: center;
   text-align: center;
   color: #000000;
+}
+
+@media screen and (max-width: 736px) {
+  .bakgrund {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bakgrund img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .head_btn {
