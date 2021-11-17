@@ -9,10 +9,10 @@
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-}
+
 
 .bild {
-width: 400px;
+width:  400px; 
 height: 272.18px;
 }
 
@@ -54,6 +54,7 @@ height: 272.18px;
 }
 
 .stor_rubrik {
+    
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -64,4 +65,23 @@ height: 272.18px;
     text-align: center;
     
     color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+
+
+display: flex;
+flex-direction: column;
+
+.bild {
+    width: 100%;//  400px; 
+    height: auto; //272.18px;
+    }
+    .stil {
+        width: 100%;
+}
+.stor_rubrik {
+    justify-content: center;
+}
+}
 }

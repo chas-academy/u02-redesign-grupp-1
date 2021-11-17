@@ -359,12 +359,12 @@ a:link:active, a:visited:active {
   margin-right: auto;
 }
 
-.bild {
+.bakgrund .bild {
   width: 400px;
   height: 272.18px;
 }
 
-.stil {
+.bakgrund .stil {
   display: inline-block;
   width: 550px;
   padding: 20px;
@@ -375,7 +375,7 @@ a:link:active, a:visited:active {
   color: #000000;
 }
 
-.knapp {
+.bakgrund .knapp {
   background-color: #ffd000;
   color: black;
   padding: 10px 10px;
@@ -388,15 +388,15 @@ a:link:active, a:visited:active {
   font-size: 16px;
 }
 
-.rad {
+.bakgrund .rad {
   padding: 30px;
 }
 
-.rubrik {
+.bakgrund .rubrik {
   text-align: center;
 }
 
-.stor_rubrik {
+.bakgrund .stor_rubrik {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -410,6 +410,30 @@ a:link:active, a:visited:active {
           align-items: center;
   text-align: center;
   color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .bakgrund {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bakgrund .bild {
+    width: 100%;
+    height: auto;
+  }
+  .bakgrund .stil {
+    width: 100%;
+  }
+  .bakgrund .stor_rubrik {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .lang_buttons {
