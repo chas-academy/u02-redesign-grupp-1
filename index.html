@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/css/main.css" rel="stylesheet" />
+    <!-- <link href="/css/main.css" rel="stylesheet" /> -->
     <title>Konstnärsnämnden</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <!-- ALISHER'S DEL -->
 
-  <!-- ALISHER'S DEL -->
     <header>
       <div class="head_menu">
-        <a href=""><img src="images/logo.png" alt="logo"></a>
+        <a href=""><img src="images/logo.png" alt="logo" /></a>
         <nav class="dws-menu">
-          <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
-          <label for="menu" class="toggleMenu"><i class="fa fa-bars"></i>Meny</label>
+          <input type="checkbox" name="toggle" id="menu" class="toggleMenu" />
+          <label for="menu" class="toggleMenu"
+            ><i class="fa fa-bars"></i>Meny</label
+          >
           <ul>
             <li><a href="#">hemsida</a></li>
             <li>
-              <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
+              <input
+                type="checkbox"
+                name="toggle"
+                class="toggleSubmenu"
+                id="sub_m1"
+              />
               <a href="#">Ansökan</a>
-              <label for="sub_m1" class="toggleSubmenu"><i class="fa"></i></label>
+              <label for="sub_m1" class="toggleSubmenu"
+                ><i class="fa"></i
+              ></label>
               <ul>
-                <li><a href="#">Ansökan/Blanketter</a></li>
-                <li><a href="#">Ansökningstider</a></li>
-                <li><a href="#">Långtidsstipendier</a></li>
+                <li><a href="./html/ansok.html">Ansökan/Blanketter</a></li>
+                <li><a href="./html/stipendierobidrag.html">Stipendier och Bidrag</a></li>  <!-- <li><a href="#">Ansökningstider</a></li>-->
+                <!--<li><a href="#">Långtidsstipendier</a></li>
                 <li><a href="#">Ansökningsgroup</a></li>
-                <li><a href="#">Andra bidragsgivare</a></li>
+                <li><a href="#">Andra bidragsgivare</a></li> -->
               </ul>
             </li>
             <li>
-              <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m2">
+              <input
+                type="checkbox"
+                name="toggle"
+                class="toggleSubmenu"
+                id="sub_m2"
+              />
               <a href="#">Aktuellt</a>
-              <label for="sub_m2" class="toggleSubmenu"><i class="fa"></i></label>
+              <label for="sub_m2" class="toggleSubmenu"
+                ><i class="fa"></i
+              ></label>
               <ul>
-                <li><a href="#">Nyheter</a></li>
-                <li><a href="#">Kalendarium</a></li>
-                <li><a href="#">Publikationer</a></li>
-                <li><a href="#">Villkor</a></li>
-                <li><a href="#">Länkar</a></li>
+                <li><a href="./html/nyheter.html">Nyheter</a></li>
+                <li><a href="./html/kaledarium.html">Kalendarium</a></li>
+                <li><a href="./html/publikationer.html">Publikationer</a></li>
+                <!-- <li><a href="#">Villkor</a></li>
+                <li><a href="#">Länkar</a></li> -->
               </ul>
             </li>
             <li>
-              <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m3">
+              <input
+                type="checkbox"
+                name="toggle"
+                class="toggleSubmenu"
+                id="sub_m3"
+              />
               <a href="#">Program</a>
-              <label for="sub_m3" class="toggleSubmenu"><i class="fa"></i></label>
-              <ul>
+              <label for="sub_m3" class="toggleSubmenu"
+                ><i class="fa"></i
+              ></label>
+              <ul> <!--Do these remain empty? -->
                 <li><a href="#">IASPIS</a></li>
                 <li><a href="#">Program för dans</a></li>
                 <li><a href="#">Program för musik</a></li>
@@ -56,44 +79,63 @@
               </ul>
             </li>
             <li>
-              <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m4">
+              <input
+                type="checkbox"
+                name="toggle"
+                class="toggleSubmenu"
+                id="sub_m4"
+              />
               <a href="#">Vad vi gör</a>
-              <label for="sub_m4" class="toggleSubmenu"><i class="fa"></i></label>
+              <label for="sub_m4" class="toggleSubmenu"
+                ><i class="fa"></i
+              ></label>
               <ul>
-                <li><a href="#">Internationellt</a></li>
-                <li><a href="#">Jämställdhet</a></li>
-                <li><a href="#">Regeringsuppdrag</a></li>
-                <li><a href="#">Analys och utredning</a></li>
+                <li><a href="./html/internationellt.html">Internationellt</a></li>
+                <li><a href="./html/jamstaldhet.html">Jämställdhet</a></li>
+                <li><a href="./html/regeringsuppdrag.html">Regeringsuppdrag</a></li>
+                <li><a href="./html/analysoutredning.html">Analys och utredning</a></li>
               </ul>
             </li>
             <li>
-              <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m5">
+              <input
+                type="checkbox"
+                name="toggle"
+                class="toggleSubmenu"
+                id="sub_m5"
+              />
               <a href="#">Om oss</a>
-              <label for="sub_m5" class="toggleSubmenu"><i class="fa"></i></label>
+              <label for="sub_m5" class="toggleSubmenu"
+                ><i class="fa"></i
+              ></label>
               <ul>
-                <li><a href="#">Om konstnärsnämnden</a></li>
-                <li><a href="#">Personal</a></li>
-                <li><a href="#">Lediga tjänster</a></li>
-                <li><a href="#">Vanliga frågor</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="./html/om_oss.html">Om konstnärsnämnden</a></li>
+               <!-- <li><a href="#">Personal</a></li>
+                <li><a href="#">Lediga tjänster</a></li>-->
+                <li><a href="./html/faq.html">Vanliga frågor</a></li>
+                <li><a href="./html/kontakt.html">Kontakt</a></li>
               </ul>
             </li>
           </ul>
         </nav>
-        <div class="header_search">
-          <form>
-            <input type="text" placeholder="Sök...">
-            <button type="submit"></button>
-          </form>
-          <div class="lang_buttons">
-            <a href="" class="lang_select sv_lang">SV</a>
-            <a href="" class="lang_select en_lang">EN</a>
-          </div>
-        
-      </header>
-  
+      </div>
+      <!--Thomas-->
 
-<!-- DAVID'S DEL -->
+      <div class="header_search">
+        <form>
+          <input type="text" placeholder="Sök..." />
+          <button type="submit"></button>
+        </form>
+        <div class="lang_buttons">
+          <a href="index.html" class="lang_select sv_lang">SV</a>
+          <a href="#" class="lang_select en_lang">EN</a> <!-- add English page? -->
+        </div>
+      </div>
+      <!--Thomas-->
+    </header>
+    <!-- Alisher s del end -->
+
+    <!-- DAVID'S DEL -->
+  
  <div class="nyheter">
  <a href="#"><h2>Senaste Nyheter >></h2></a>
 </div>
@@ -169,10 +211,11 @@
 
 </section> 
 
-<!-- Simon'S DEL -->
+    <!-- Simon'S DEL -->
+    
 <section class="bakgrund">
-  <!-- En rad-->
-  <div class="rad">
+ 
+  <div class="rad"> 
   <h2 class="stor_rubrik">Stipendier och bidrag</h2>
   <span class="bild">
     <img class="bild" src="images/stipendier och bidrag bild1.png" alt="2 kvinnor & 1 man">
@@ -183,8 +226,7 @@
       <br> <a class="knapp" href="Google.com">ANSÖK</a>
     </span>
   </div>
-  <!-- En rad Slut-->
-  <!-- En rad-->
+ 
   <div class="rad">
     <span class="stil">
       <h2 class="rubrik">Bild & Form</h2>
@@ -196,8 +238,7 @@
         <img class="bild" src="images/Bilder och form 2.png" alt="bild på träd">
     </span>
     </div>
-    <!-- En rad Slut-->
-    <!-- En rad-->
+  
   <div class="rad">
     <span class="bild">
       <img class="bild" src="images/dans och cirkus.png" alt="Kvinnor som dansar på scen">
@@ -209,8 +250,7 @@
         Konstnärsnämndens stipendier och bidrag inom dans och cirkus kan sökas av yrkesverksamma konstnärliga utövare och konstnärliga upphovspersoner inom dans- och cirkusområdena.</p>
       </span>
     </div>
-    <!-- En rad Slut-->
-  <!-- En rad-->
+  
   <div class="rad">
     <span class="stil">
       <h2 class="rubrik">Film</h2>
@@ -222,8 +262,7 @@
         <img class="bild" src="images/film.png" alt="Stor videokamera">
       </span>
     </div>
-    <!-- En rad Slut-->
-  <!-- En rad-->
+
   <div class="rad">
     <span class="bild">
       <img class="bild" src="images/musik.png" alt="6st människor med musikinstrument">
@@ -235,8 +274,7 @@
         Samtliga stipendier och bidrag är avsedda för enskilda och huvudsakligen frilansande konstnärer utan fast anställning. Institutioner, fria grupper och motsvarande hänvisar vi till Statens kulturråd.</p>
       </span>
     </div>
-    <!-- En rad Slut-->
-  <!-- En rad-->
+  
   <div class="rad">
     <span class="stil">
       <h2 class="rubrik">Teater</h2>
@@ -249,150 +287,127 @@
         <img class="bild" src="images/teater.png" alt="Teater på scen">
       </span>
     </div>
-    <!-- En rad Slut-->
+  
   </section>
+  
+    <!-- AHMET'S DEL -->
+    <a href="#" class="klank">Konstnärsguiden >></a>
 
-<!-- AHMET'S DEL -->
-<a href="#" class="klank">Konstnärsguiden >></a>
-
-      <section class="guidesection">
-        <div class="kguide">
-          <a href="#" class="ngt">
-          <p>
-            Olika typer av inkomster
-          </p>
-          <img src="images/image 22.png" alt="Olika typer av inkomster-logo"/>
+    <section class="guidesection">
+      <div class="kguide">
+        <a href="#" class="ngt">
+          <p>Olika typer av inkomster</p>
+          <img src="images/image 22.png" alt="Olika typer av inkomster-logo" />
         </a>
-        </div>
-
-        <div class="kguide">
-          <a href="#" class="ngt">
-          <p>
-            Stipendier och bidrag
-          </p>
-          <img src="images/image 23.png" alt="Stipendier och bidrag-logo"/>
-        </a>
-        </div>
-
-        <div class="kguide">
-          <a href="#" class="ngt">
-          <p>
-            Företagande
-          </p>
-          <img src="images/image 91.png" alt="Företagande-logo"/>
-          </a>
-        </div>
       </div>
 
-        <div class="kguide">
-          <a href="#" class="ngt">
-          <p>
-            Skatt och deklaration
-          </p>
-          <img src="images/image 25.png" alt="Skatt och deklaration-logo"/>
-          </a>
-        </div>
-
-        <div class="kguide">
-          <a href="#" class="ngt">
-          <p>
-            Socialförsäkring, ersättning och bidragssystem
-          </p>
-          <img src="images/image 26.png" alt="Försäkringskassa-logo"/>
-          </a>
-        </div>
-
-        <div class="kguide">
-          <a href="#" class="ngt">
-          <p>
-            Pension
-          </p>
-          <img src="images/image 27.png" alt="Pension-logo"/>
+      <div class="kguide">
+        <a href="#" class="ngt">
+          <p>Stipendier och bidrag</p>
+          <img src="images/image 23.png" alt="Stipendier och bidrag-logo" />
         </a>
-        </div>
+      </div>
 
-        <div class="kguide">
-          <a href="#" class="ngt">
-          <p>
-            Arbeta och bo utomlands
-          </p>
-          <img src="images/image 29.png" alt="Arbeta och bo utomlands-logo"/>
+      <div class="kguide">
+        <a href="#" class="ngt">
+          <p>Företagande</p>
+          <img src="images/image 91.png" alt="Företagande-logo" />
         </a>
-        </div>
+      </div>
+      <!--</div> Thomas -->
 
-        <div class="kguide">
-          <a href="#" class="ngt">
-          <p>
-            Studielån och skulder
-          </p>
-          <img src="images/image 28.png" alt="Studielån och skulder-logo"/>
+      <div class="kguide">
+        <a href="#" class="ngt">
+          <p>Skatt och deklaration</p>
+          <img src="images/image 25.png" alt="Skatt och deklaration-logo" />
         </a>
-          </div>
-      </section>
-   
+      </div>
 
-<!-- THOMAS' DEL -->
+      <div class="kguide">
+        <a href="#" class="ngt">
+          <p>Socialförsäkring, ersättning och bidragssystem</p>
+          <img src="images/image 26.png" alt="Försäkringskassa-logo" />
+        </a>
+      </div>
+
+      <div class="kguide">
+        <a href="#" class="ngt">
+          <p>Pension</p>
+          <img src="images/image 27.png" alt="Pension-logo" />
+        </a>
+      </div>
+
+      <div class="kguide">
+        <a href="#" class="ngt">
+          <p>Arbeta och bo utomlands</p>
+          <img src="images/image 29.png" alt="Arbeta och bo utomlands-logo" />
+        </a>
+      </div>
+
+      <div class="kguide">
+        <a href="#" class="ngt">
+          <p>Studielån och skulder</p>
+          <img src="images/image 28.png" alt="Studielån och skulder-logo" />
+        </a>
+      </div>
+    </section>
+
+    <!-- THOMAS' DEL -->
     <footer>
       <!--<div class="footerMain">
 only needed for flexbox, can be removed if gridbox is used instead -->
-        <div class="footerContainer1">
-          <h2>Motverka hot och hat – en vägledning</h2>
-        </div>
-        <div class="footerContainer2">
-          <h2>KONTAKT</h2>
-          <ul>
-            <li>E-post: info@konstnarsnamnden.se</li>
+      <div class="footerContainer1">
+        <h2>Motverka hot och hat – en vägledning</h2>
+      </div>
+      <div class="footerContainer2">
+        <h2>KONTAKT</h2>
+        <ul>
+          <li>E-post: info@konstnarsnamnden.se</li>
 
-            <li>Telefon: 08 - 506 550 00</li>
+          <li>Telefon: 08 - 506 550 00</li>
 
-            <li>
-              Adress: Konstnärsnämnden, Maria skolgata 83, 2 tr, 118 53
-              Stockholm
-            </li>
-          </ul>
-        </div>
-<!--</div>
+          <li>
+            Adress: Konstnärsnämnden, Maria skolgata 83, 2 tr, 118 53 Stockholm
+          </li>
+        </ul>
+      </div>
+      <!--</div>
       only needed for flexbox, can be removed if gridbox is used instead -->
       <div class="footerContainer3">
-      <p>&copy Konstnärnämden   2011-2021</p>
+        <p>&copy; Konstnärsnämden 2011-2021</p>
       </div>
       <div class="iconPanel">
         <a href="#" class="icon"
           ><img
-            src="images/icons/5282541_fb_social media_facebook_facebook logo_social network_icon.png"
+            src="images/icons/5282541_fb_social_media_facebook_facebook_logo_social_network_icon.png"
             alt="Facebook-logo"
         /></a>
         <a href="#" class="icon"
           ><img
-            src="images//icons/5282551_tweet_twitter_twitter logo_icon.png"
+            src="images//icons/5282551_tweet_twitter_twitter_logo_icon.png"
             alt="Twitter-logo"
         /></a>
-
         <a href="#" class="icon"
           ><img
-            src="images//icons/5282544_camera_instagram_social media_social network_instagram logo_icon.png"
+            src="images//icons/5282544_camera_instagram_social_media_social_network_instagram_logo_icon.png"
             alt="Instagram-logo"
         /></a>
-        <!-- Really?? -->
         <a href="#" class="icon"
           ><img
-            src="images//icons/5282542_linkedin_network_social network_linkedin logo_icon.png"
+            src="images//icons/5282542_linkedin_network_social_network_linkedin_logo_icon.png"
             alt="LinkedIn-logo"
         /></a>
         <a href="#" class="icon"
           ><img
-            src="images//icons/5282546_chat_facebook_message_messenger_messenger logo_icon.png"
+            src="images//icons/5282546_chat_facebook_message_messenger_messenger_logo_icon.png"
             alt="Messenger-logo"
         /></a>
-        <!-- Really?? -->
         <a href="#" class="icon"
           ><img
-            src="images//icons/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.png"
+            src="images//icons/5282549_call_chat_mobile_whatsapp_whatsapp_logo_icon.png"
             alt="Whatsapp-logo"
         /></a>
-        <!-- Really?? -->
       </div>
     </footer>
-
   </body>
 </html>

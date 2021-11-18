@@ -44,6 +44,10 @@
     transition: all 0.3s ease;
     }
 
+    ul:active{
+        margin-bottom: 100px;
+    } 
+
     li a:hover{
     background: rgb(224,225,229);
     background: -moz-linear-gradient(top,  rgba(224,225,229,1) 0%, rgba(69,69,71,1) 2%, rgba(69,69,71,1) 98%, rgba(224,225,229,1) 100%);
@@ -55,6 +59,7 @@
     box-shadow: 1px 5px 10px -5px black;
     transition: all 0.3s ease;
     }
+   
 }
 
 .header_search {

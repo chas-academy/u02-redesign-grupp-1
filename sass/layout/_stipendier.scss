@@ -1,11 +1,11 @@
 .bakgrund {
     background: #EBEBEB;
-    width: 95%;
+    width: $contentWidth;//95%;
     height: auto;
     justify-content: space-around;
     display: flex;
     /* padding: px; */
-    padding:20px 0;
+    padding: 20px 0;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
@@ -19,7 +19,7 @@ height: 272.18px;
 .stil {
    
     display: inline-block;
-    width: 550px;
+    width: 550px; //$contentWidth; 
     padding: 20px;
 
     font-family: Roboto Slab;
