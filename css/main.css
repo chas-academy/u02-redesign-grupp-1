@@ -228,14 +228,14 @@ footer .iconPanel img {
   }
 }
 
-form {
+.searchbar_form {
   width: auto;
   padding-top: 5px;
   margin-top: -45px;
   position: relative;
 }
 
-form input {
+.searchbar_form input {
   width: 100px;
   height: 25px;
   position: absolute;
@@ -244,17 +244,17 @@ form input {
   padding-left: 10px;
   border-radius: 42px;
   border: 2px solid #324b4e;
-  background: #F9F0DA;
+  background: #f9f0da;
   outline: none;
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
-form input:focus {
+.searchbar_form input:focus {
   width: 190px;
 }
 
-form button {
+.searchbar_form button {
   width: 20px;
   height: 20px;
   background: url("../../images/search_icon.png") center no-repeat;
@@ -265,7 +265,7 @@ form button {
   cursor: pointer;
 }
 
-form button:before {
+.searchbar_form button:before {
   color: #324b4e;
 }
 
@@ -531,7 +531,7 @@ a:link:active, a:visited:active {
   transition: none;
   padding: 0;
   position: relative;
-  border-radius: 2px;
+  border-radius: 4px;
   top: 0;
   right: 0;
 }
