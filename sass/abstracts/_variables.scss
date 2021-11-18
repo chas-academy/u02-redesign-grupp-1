@@ -1,6 +1,6 @@
 // colors
 $backgroundColor1: rgba(10, 10, 10, 0.9);
-$backgroundColor2: rgba(255, 255, 255, 1);
+$backgroundColor2: rgba(190, 190, 190, 1); //rgba(255, 255, 255, 1);
 $backgroundColor3: rgba(120, 120, 120, 1);
 $backgroundSpecial: goldenrod;
 $textColor1: rgba(200, 200, 200, 1);
@@ -14,18 +14,20 @@ $numberOfItems: 5;
 $contentWidth: 95%;
 $contentWidth2: 100%;
 $divWidth: 22%;
+$regPadding: 10px 20px 10px 20px;
+
 $mobileWidthP: 414px;
 $mobileWidthL: 736px;
 
 
 // typography
 $regFontSize: 16px; //1rem
-
+$mediumFontsize: 1rem;
 // not used yet
 $bigFontSize: 1.5rem;
 
 $mainFont:    Roboto, Arial, Helvetica, sans-serif; //Helvetica, sans-serif;
-$specialFont: arial; //or rather something SPECIAL
+$specialFont: Roboto Slab, Arial; //or rather something SPECIAL
 
 
 

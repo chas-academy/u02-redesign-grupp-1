@@ -51,14 +51,29 @@
   margin-right: auto;
 }
 
+// at everyone - consider using this to remove hover-effect for touch devices.
+@mixin media-set {
+  @media (hover: hover) {
+    a:hover {
+      color: $highlight-color;
+    }
+  }
+}
+
 @mixin footer-icons {
     img {
         filter: invert(10%);
-        &:hover {
+       /*  &:hover {
             filter: invert(100%);
-        }
+        } */
+        @media (hover: hover) {  //to remove the 'highlight remains'issue on hover-enabled devices!
+          &:hover {
+            filter: invert(90%);
+          }
+          
         
     }
+}
 }
 
 @mixin auto-img-size {
@@ -70,6 +85,8 @@
 
 @mixin media-q ($arg){                          //parse in width in px
     @media screen and (max-width: $arg) {
+      //display: flex;
+      //font-size: $regFontSize;//16px; //out commented because it causes a parse error 
         @content;                               //parse in other stuff where mixin in called
                                                 // could consider if statement to auto select the right media query based on screen size etc.
     }

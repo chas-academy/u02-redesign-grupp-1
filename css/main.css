@@ -90,7 +90,6 @@
 
 header {
   font-family: Cuprum, Arial, Helvetica, sans-serif;
-  min-height: 350px;
   width: 100%;
   position: relative;
 }
@@ -118,6 +117,7 @@ footer {
   margin-right: auto;
   background: #787878;
   color: #0a0a0a;
+  border-top: 5px solid rgba(10, 10, 10, 0.9);
   /*
     display: flex;
     justify-content: space-around;
@@ -135,7 +135,8 @@ footer .footerContainer1 {
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
-  border-bottom: solid #0a0a0a;
+  border-bottom: 2px solid #0a0a0a;
+  padding: 10px 0 10px 0;
 }
 
 footer .footerContainer1 h2 {
@@ -148,11 +149,12 @@ footer .footerContainer2 {
   grid-column: 2;
   -ms-grid-row: 1;
   grid-row: 1;
+  border-bottom: 2px solid #0a0a0a;
 }
 
 footer .footerContainer2 h2, footer .footerContainer2 ul {
   list-style: none;
-  padding: 0 20px 0 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 footer .footerContainer3 {
@@ -163,7 +165,7 @@ footer .footerContainer3 {
 }
 
 footer .footerContainer3 p {
-  padding: 0px 20px 0px 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 footer .iconPanel {
@@ -178,7 +180,7 @@ footer .iconPanel {
       -ms-flex-pack: end;
           justify-content: flex-end;
   gap: 10px;
-  padding: 0px 20px 0px 20px;
+  padding: 10px 20px 10px 20px;
   /* 
         img {
             filter: invert(90%);
@@ -188,11 +190,16 @@ footer .iconPanel {
 footer .iconPanel img {
   -webkit-filter: invert(10%);
           filter: invert(10%);
+  /*  &:hover {
+            filter: invert(100%);
+        } */
 }
 
-footer .iconPanel img:hover {
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+@media (hover: hover) {
+  footer .iconPanel img:hover {
+    -webkit-filter: invert(90%);
+            filter: invert(90%);
+  }
 }
 
 footer .iconPanel img {
@@ -209,11 +216,10 @@ footer .iconPanel img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    /*  .iconPanel {
-            img {
-                width: 10%;
-            }
-    } */
+  }
+  footer img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -278,7 +284,7 @@ form button:before {
 }
 
 .kguide {
-  background-color: white;
+  background-color: #bebebe;
   height: auto;
   width: 22%;
   display: -webkit-box;
@@ -343,214 +349,9 @@ a:link:active, a:visited:active {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.sectionFaq {
-  width: 95%;
-  height: 50%;
-  background-color: white;
-  /* //Thomas
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 20px;
-}
-
-.faqContaioner {
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  width: 70%;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 0 1.5 px;
-}
-
-.ruta {
-  background-color: #787878;
-  border-radius: 0.4rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  -webkit-box-shadow: 0.5rem 2px 0.5rem rbga(0, 0, 0, 0.15);
-          box-shadow: 0.5rem 2px 0.5rem rbga(0, 0, 0, 0.15);
-}
-
-.lankfraga {
-  font-size: 1.5rem;
-  color: #0a0a0a;
-  text-decoration: none;
-  background-color: #787878;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1rem;
-}
-
-.figur {
-  color: #0a0a0a;
-  padding: 0.5rem;
-}
-
-#minus {
-  display: none;
-}
-
-#plus {
-  color: #0a0a0a;
-}
-
-.svar {
-  max-height: 0;
-  overflow: hidden;
-  position: relative;
-  background-color: #787878;
-  -webkit-transition: max-height 0.6s;
-  transition: max-height 0.6s;
-}
-
-.svar p {
-  font-size: 1em;
-  color: black;
-  padding: 2rem;
-}
-
-.ruta:target .svar {
-  max-height: 20rem;
-}
-
-.ruta:target #plus {
-  display: none;
-}
-
-.ruta:target #minus {
-  display: block;
-}
-
-.formPart {
-  width: 95%;
-}
-
-
-  /* 
-  grid-template-areas:
-    ". header header ."
-    ". sidebar content ."
-    ". kontakt kontakt ."; */
-
-
-/* .gridcontainer-1 {    //does not exist
-  grid-area: header;
-}
-.gridcontainer-2 {    //does not exist
-  grid-area: content;
-}
-.gridcontainer-3 {    //does not exist
-  grid-area: sidebar;
-}
-
-.gridcontainer-4 {    //exists!
-  grid-area: kontakt;
-} */
-.kontaktContaioner {
-  /*   //Thomas
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; */
-  padding: 20px;
-  background: white;
-}
-
-.kontaktContaioner h2 {
-  color: #0a0a0a;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.runtom {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 30px;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-
-.runtom .box {
-  position: relative;
-  padding: 20px;
-}
-
-.runtom .box input {
-  font-size: 20px;
-  background: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #787878;
-  -webkit-transition: 0.4s linear;
-  transition: 0.4s linear;
-}
-
-.runtom .box input:focus,
-.runtom .box input:valid {
-  padding: 20px 10px;
-  background: #787878;
-  margin-top: 10px;
-}
-
-.runtom .box label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #0a0a0a;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.runtom .box textarea {
-  font-size: 20px;
-  background: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #787878;
-  -webkit-transition: 0.4s linear;
-  transition: 0.4s linear;
-}
-
-.runtom .box textarea:focus,
-.runtom .box textarea:valid {
-  padding: 20px 10px;
-  background: #787878;
-  margin-top: 10px;
-}
-
-.kontaktKnapp {
-  background: #787878;
-  padding: 15px 30px;
-  border: none;
-  outline: none;
-  font-size: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  color: #0a0a0a;
-}
-
+/*
+@import 'layout/faqkontakt'; //careful, might break layout of main
+*/
 .bakgrund {
   background: #EBEBEB;
   width: 95%;
@@ -568,14 +369,14 @@ a:link:active, a:visited:active {
   margin-right: auto;
 }
 
-.bild {
-  width: 400px;
-  height: 272.18px;
+.bakgrund .bild {
+  width: auto;
+  height: auto;
 }
 
-.stil {
+.bakgrund .stil {
   display: inline-block;
-  width: 550px;
+  width: 95%;
   padding: 20px;
   font-family: Roboto Slab;
   font-style: normal;
@@ -584,7 +385,7 @@ a:link:active, a:visited:active {
   color: #000000;
 }
 
-.knapp {
+.bakgrund .knapp {
   background-color: #ffd000;
   color: black;
   padding: 10px 10px;
@@ -597,15 +398,15 @@ a:link:active, a:visited:active {
   font-size: 16px;
 }
 
-.rad {
+.bakgrund .rad {
   padding: 30px;
 }
 
-.rubrik {
+.bakgrund .rubrik {
   text-align: center;
 }
 
-.stor_rubrik {
+.bakgrund .stor_rubrik {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -619,6 +420,22 @@ a:link:active, a:visited:active {
           align-items: center;
   text-align: center;
   color: #000000;
+}
+
+@media screen and (max-width: 736px) {
+  .bakgrund {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bakgrund img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .head_btn {
@@ -694,7 +511,7 @@ a:link:active, a:visited:active {
 }
 
 .subscribe input {
-  background-color: white;
+  background-color: #bebebe;
   width: 350px;
   height: 20px;
   -webkit-transition: none;
@@ -779,7 +596,7 @@ a:link:active, a:visited:active {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.2);
-  color: white;
+  color: #bebebe;
   padding: 2px 1px;
 }
 
@@ -827,7 +644,7 @@ a:link:active, a:visited:active {
 .bar {
   width: 50px;
   height: 10px;
-  border: 2px solid white;
+  border: 2px solid #bebebe;
   margin: 6px;
   cursor: pointer;
   -webkit-transition: 0.4s;
@@ -835,11 +652,11 @@ a:link:active, a:visited:active {
 }
 
 .bar:hover {
-  background: white;
+  background: #bebebe;
 }
 
 .bar:checked {
-  background: white;
+  background: #bebebe;
 }
 
 input[name="r"] {

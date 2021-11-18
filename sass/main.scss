@@ -6,23 +6,29 @@
 @import "abstracts/mixins";
 
 // @import 'vendors/bootstrap';
-
+ 
 @import 'layout/navigation';
-@import 'layout/grid';
-@import 'layout/header';
+@import 'layout/header'; 
+
 @import 'layout/footer';
-@import 'layout/sidebar';
+//@import 'layout/subpage';
+
+
 @import 'layout/forms';
 @import 'layout/konstnarsguiden';
+
 //@import 'layout/faq';
 //@import 'layout/kontakt';
+/*
 @import 'layout/faqkontakt'; //careful, might break layout of main
+*/
 @import 'layout/stipendier';
+
 @import "components/buttons";
 @import "components/carousel";
 @import "components/carouselMQ";
-@import "components/cover";
-@import "components/dropdown";
+@import "components/dropdown"; 
+
 
 //@import 'pages/admin';
 //@import 'pages/theme';

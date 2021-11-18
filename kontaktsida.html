@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="../css/main.css" />
-    <title>Om oss</title>
-</head>
-<body>
-     <!-- ALISHER'S DEL -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link href="header_footer.html" rel="import" /> this should not require JS but does not work -->
+  </head>
+  <body>
+    
+
+    <!-- ALISHER'S DEL -->
 
     <header>
       <div class="head_menu">
-        <a href=""><img src="../images/logo.png" alt="logo" /></a>
+        <a href=""><img src="images/logo.png" alt="logo" /></a>
         <nav class="dws-menu">
           <input type="checkbox" name="toggle" id="menu" class="toggleMenu" />
           <label for="menu" class="toggleMenu"
             ><i class="fa fa-bars"></i>Meny</label
           >
           <ul>
-            <li><a href="../index.html">hemsida</a></li>
+            <li><a href="#">hemsida</a></li>
             <li>
               <input
                 type="checkbox"
@@ -32,11 +36,11 @@
                 ><i class="fa"></i
               ></label>
               <ul>
-                <li><a href="./ansok.html">Ansökan/Blanketter</a></li>
-                <li><a href="./stipendierobidrag.html">Stipendier och Bidrag</a></li>  <!-- <li><a href="#">Ansökningstider</a></li>-->
-                <!--<li><a href="#">Långtidsstipendier</a></li>
+                <li><a href="#">Ansökan/Blanketter</a></li>
+                <li><a href="#">Ansökningstider</a></li>
+                <li><a href="#">Långtidsstipendier</a></li>
                 <li><a href="#">Ansökningsgroup</a></li>
-                <li><a href="#">Andra bidragsgivare</a></li> -->
+                <li><a href="#">Andra bidragsgivare</a></li>
               </ul>
             </li>
             <li>
@@ -51,11 +55,11 @@
                 ><i class="fa"></i
               ></label>
               <ul>
-                <li><a href="./nyheter.html">Nyheter</a></li>
-                <li><a href="./kaledarium.html">Kalendarium</a></li>
-                <li><a href="./publikationer.html">Publikationer</a></li>
-                <!-- <li><a href="#">Villkor</a></li>
-                <li><a href="#">Länkar</a></li> -->
+                <li><a href="#">Nyheter</a></li>
+                <li><a href="#">Kalendarium</a></li>
+                <li><a href="#">Publikationer</a></li>
+                <li><a href="#">Villkor</a></li>
+                <li><a href="#">Länkar</a></li>
               </ul>
             </li>
             <li>
@@ -69,7 +73,7 @@
               <label for="sub_m3" class="toggleSubmenu"
                 ><i class="fa"></i
               ></label>
-              <ul> <!--Do these remain empty? -->
+              <ul>
                 <li><a href="#">IASPIS</a></li>
                 <li><a href="#">Program för dans</a></li>
                 <li><a href="#">Program för musik</a></li>
@@ -89,10 +93,10 @@
                 ><i class="fa"></i
               ></label>
               <ul>
-                <li><a href="./internationellt.html">Internationellt</a></li>
-                <li><a href="./jamstaldhet.html">Jämställdhet</a></li>
-                <li><a href="./regeringsuppdrag.html">Regeringsuppdrag</a></li>
-                <li><a href="./analysoutredning.html">Analys och utredning</a></li>
+                <li><a href="#">Internationellt</a></li>
+                <li><a href="#">Jämställdhet</a></li>
+                <li><a href="#">Regeringsuppdrag</a></li>
+                <li><a href="#">Analys och utredning</a></li>
               </ul>
             </li>
             <li>
@@ -107,11 +111,11 @@
                 ><i class="fa"></i
               ></label>
               <ul>
-                <li><a href="./om_oss.html">Om konstnärsnämnden</a></li>
-               <!-- <li><a href="#">Personal</a></li>
-                <li><a href="#">Lediga tjänster</a></li>-->
-                <li><a href="./faq.html">Vanliga frågor</a></li>
-                <li><a href="./kontakt.html">Kontakt</a></li>
+                <li><a href="#">Om konstnärsnämnden</a></li>
+                <li><a href="#">Personal</a></li>
+                <li><a href="#">Lediga tjänster</a></li>
+                <li><a href="#">Vanliga frågor</a></li>
+                <li><a href="#">Kontakt</a></li>
               </ul>
             </li>
           </ul>
@@ -125,8 +129,8 @@
           <button type="submit"></button>
         </form>
         <div class="lang_buttons">
-          <a href="index.html" class="lang_select sv_lang">SV</a>
-          <a href="#" class="lang_select en_lang">EN</a> <!-- add English page? -->
+          <a href="" class="lang_select sv_lang">SV</a>
+          <a href="" class="lang_select en_lang">EN</a>
         </div>
       </div>
       <!--Thomas-->
@@ -134,7 +138,51 @@
     <!-- Alisher s del end -->
 
 
-     <!-- THOMAS' DEL -->
+
+
+    <!-- Formulär-->
+    <div class="formular">
+
+    
+      <container class="kontaktContaioner" >
+          <h2>Kontakta Konstnärsnämden</h2>
+          
+          <form>
+              <div class="runtom">
+                  <div class="box">
+                      <input class="inputfaq" type="text" name="fname" id="fname" required>
+                      <label class="labelfaq" for="fname">Förnamn</label>
+                  </div>
+                  <div class="box">
+                      <input class="inputfaq" type="text" name="ename" id="ename" required>
+                      <label class="labelfaq" for="ename">Efternman</label>
+                  </div>
+              </div>
+              <div class="runtom">
+                  <div class="box">
+                      <input class="inputfaq" type="email" name="email" id="email" required>
+                      <label class="labelfaq" for="email">E-post</label>
+                  </div>
+                  <div class="box">
+                      <input class="inputfaq" type="text" name="telefonnummer" id="telefonnummer" required>
+                      <label class="labelfaq" for="telefonnummer">Telefonnummer</label>
+                  </div>
+              </div>
+              <div class="runtom">
+                  <div class="box">
+                      <textarea class="textareafaq" id="meddelande" required></textarea>
+                      <label class="labelfaq" for="meddelande">Ditt meddelande</label>
+                  </div>
+  
+              </div>
+              <input class="kontaktKnapp" type="submit" name="" value="Skicka">
+          </form>
+     
+      </container>
+  </div>
+  <!-- SLUT - Formulär-->
+  
+    <!-- THOMAS' DEL -->
     <footer>
       <!--<div class="footerMain">
 only needed for flexbox, can be removed if gridbox is used instead -->
@@ -156,41 +204,44 @@ only needed for flexbox, can be removed if gridbox is used instead -->
       <!--</div>
       only needed for flexbox, can be removed if gridbox is used instead -->
       <div class="footerContainer3">
-        <p>&copy; Konstnärsnämden 2011-2021</p>
+        <p>&copy Konstnärnämden 2011-2021</p>
       </div>
-      <div class="../iconPanel">
+      <div class="iconPanel">
         <a href="#" class="icon"
           ><img
-            src="../images/icons/5282541_fb_social_media_facebook_facebook_logo_social_network_icon.png"
+            src="images/icons/5282541_fb_social media_facebook_facebook logo_social network_icon.png"
             alt="Facebook-logo"
         /></a>
         <a href="#" class="icon"
           ><img
-            src="../images//icons/5282551_tweet_twitter_twitter_logo_icon.png"
+            src="images//icons/5282551_tweet_twitter_twitter logo_icon.png"
             alt="Twitter-logo"
         /></a>
+
         <a href="#" class="icon"
           ><img
-            src="../images//icons/5282544_camera_instagram_social_media_social_network_instagram_logo_icon.png"
+            src="images//icons/5282544_camera_instagram_social media_social network_instagram logo_icon.png"
             alt="Instagram-logo"
         /></a>
+        <!-- Really?? -->
         <a href="#" class="icon"
           ><img
-            src="../images//icons/5282542_linkedin_network_social_network_linkedin_logo_icon.png"
+            src="images//icons/5282542_linkedin_network_social network_linkedin logo_icon.png"
             alt="LinkedIn-logo"
         /></a>
         <a href="#" class="icon"
           ><img
-            src="../images//icons/5282546_chat_facebook_message_messenger_messenger_logo_icon.png"
+            src="images//icons/5282546_chat_facebook_message_messenger_messenger logo_icon.png"
             alt="Messenger-logo"
         /></a>
+        <!-- Really?? -->
         <a href="#" class="icon"
           ><img
-            src="../images//icons/5282549_call_chat_mobile_whatsapp_whatsapp_logo_icon.png"
+            src="images//icons/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.png"
             alt="Whatsapp-logo"
         /></a>
+        <!-- Really?? -->
       </div>
     </footer>
-
-</body>
+  </body>
 </html>

@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 
 
 .formular {
@@ -16,6 +17,24 @@
 // kontakt formulär
 .kontaktContaioner{
   width: 60%; /* ändra beroende på mobil eller webb */
+=======
+/*body {
+  min-height: 150vh; //menu
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+
+
+// kontakt formulär
+.kontaktContaioner {
+      //Thomas
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
+  width: 80%;
+>>>>>>> thomas
   padding: 20px;
   background: black;
 

@@ -1,25 +1,25 @@
 .bakgrund {
     background: #EBEBEB;
-    width: 95%;
+    width: $contentWidth;//95%;
     height: auto;
     justify-content: space-around;
     display: flex;
     /* padding: px; */
-    padding:20px 0;
+    padding: 20px 0;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-}
+
 
 .bild {
-width: 400px;
-height: 272.18px;
+width: auto; //[]400px;
+height: auto; //272.18px;
 }
 
 .stil {
    
     display: inline-block;
-    width: 550px;
+    width: $contentWidth; //550px;
     padding: 20px;
 
     font-family: Roboto Slab;
@@ -64,4 +64,13 @@ height: 272.18px;
     text-align: center;
     
     color: #000000;
+}
+
+@include media-q ($mobileWidthL) { 
+    display: flex;
+        flex-direction: column;
+        @include auto-img-size;
+        //width code
+  }
+
 }
