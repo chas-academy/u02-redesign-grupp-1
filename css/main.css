@@ -5,6 +5,19 @@
   margin: 0;
 }
 
+/* 
+@mixin main-nav {
+    li {
+        width: (100% / $numberOfItems);
+    }
+
+    a {
+        color: $textColor1;
+        &:hover {
+            color: $highlightColor;
+        }
+    }
+} */
 .head_menu {
   background-image: url("../images/ep_naturalwhite.png");
   height: 70px;
@@ -94,6 +107,7 @@
 
 header {
   font-family: Cuprum, Arial, Helvetica, sans-serif;
+  min-height: 350px;
   width: 100%;
   position: relative;
 }
@@ -111,14 +125,10 @@ header {
   color: #c8c8c8;
 }
 
+/* @import "../abstracts/variables"; //should use 'use'?
+@import "../abstracts/mixins"; */
 footer {
   width: 100%;
-  /*
-    margin-left: auto;
-    margin-right: auto; */
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   background: #787878;
   color: #0a0a0a;
   border-top: 5px solid rgba(10, 10, 10, 0.9);
@@ -156,7 +166,8 @@ footer .footerContainer2 {
   border-bottom: 2px solid #0a0a0a;
 }
 
-footer .footerContainer2 h2, footer .footerContainer2 ul {
+footer .footerContainer2 h2,
+footer .footerContainer2 ul {
   list-style: none;
   padding: 10px 20px 10px 20px;
 }

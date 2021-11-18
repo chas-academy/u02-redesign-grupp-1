@@ -31,7 +31,7 @@
     padding: 0 10px 0 10px; 
     // what else?
 }
-
+/* 
 @mixin main-nav {
     li {
         width: (100% / $numberOfItems);
@@ -43,7 +43,7 @@
             color: $highlightColor;
         }
     }
-}
+} */
 
 @mixin content-centering {
   width: $contentWidth2;
@@ -70,8 +70,7 @@
           &:hover {
             filter: invert(90%);
           }
-          
-        
+
     }
 }
 }

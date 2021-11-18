@@ -35,40 +35,10 @@
     color: #af0c0c; //for debugging
 }
 
-/*
-.sp-stor_rubrik {                          // only Stipendier och bidrag
-    font-family: $mainFont; //Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    color: #af0c0c; //for debugging
-}
-
-
-
- .bild {
-width: 400px;
+ .sp-bild {
+/* width: 400px;
 height: 272.18px;
+ */
+@include auto-img-size;
 } 
 
-
- .knapp {
-    background-color: $backgroundSpecial;//#ffd000;
-
-    color: black;
-    padding: 10px 10px;
-    text-align: center;
-    display: inline-block;
-    border-radius: 10px;
-
-    font-family: $mainFont; //Roboto Slab;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-
-} */
