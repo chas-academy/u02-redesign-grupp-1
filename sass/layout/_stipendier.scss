@@ -12,14 +12,14 @@
 
 
 .bild {
-width: auto; //[]400px;
-height: auto; //272.18px;
+width:  400px; 
+height: 272.18px;
 }
 
 .stil {
    
     display: inline-block;
-    width: $contentWidth; //550px;
+    width: 550px; //$contentWidth; 
     padding: 20px;
 
     font-family: Roboto Slab;
@@ -54,6 +54,7 @@ height: auto; //272.18px;
 }
 
 .stor_rubrik {
+    
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -66,11 +67,21 @@ height: auto; //272.18px;
     color: #000000;
 }
 
-@include media-q ($mobileWidthL) { 
-    display: flex;
-        flex-direction: column;
-        @include auto-img-size;
-        //width code
-  }
+@media screen and (max-width: 600px) {
 
+
+display: flex;
+flex-direction: column;
+
+.bild {
+    width: 100%;//  400px; 
+    height: auto; //272.18px;
+    }
+    .stil {
+        width: 100%;
+}
+.stor_rubrik {
+    justify-content: center;
+}
+}
 }

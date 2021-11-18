@@ -122,7 +122,7 @@ header {
   font-size: 40px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   margin-top: 100px;
-  color: #c8c8c8;
+  color: white;
 }
 
 /* @import "../abstracts/variables"; //should use 'use'?
@@ -238,14 +238,14 @@ footer .iconPanel img {
   }
 }
 
-form {
+.searchbar_form {
   width: auto;
   padding-top: 5px;
   margin-top: -45px;
   position: relative;
 }
 
-form input {
+.searchbar_form input {
   width: 100px;
   height: 25px;
   position: absolute;
@@ -254,17 +254,17 @@ form input {
   padding-left: 10px;
   border-radius: 42px;
   border: 2px solid #324b4e;
-  background: #F9F0DA;
+  background: #f9f0da;
   outline: none;
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
-form input:focus {
+.searchbar_form input:focus {
   width: 190px;
 }
 
-form button {
+.searchbar_form button {
   width: 20px;
   height: 20px;
   background: url("../../images/search_icon.png") center no-repeat;
@@ -275,7 +275,7 @@ form button {
   cursor: pointer;
 }
 
-form button:before {
+.searchbar_form button:before {
   color: #324b4e;
 }
 
@@ -385,13 +385,13 @@ a:link:active, a:visited:active {
 }
 
 .bakgrund .bild {
-  width: auto;
-  height: auto;
+  width: 400px;
+  height: 272.18px;
 }
 
 .bakgrund .stil {
   display: inline-block;
-  width: 95%;
+  width: 550px;
   padding: 20px;
   font-family: Roboto Slab;
   font-style: normal;
@@ -437,7 +437,7 @@ a:link:active, a:visited:active {
   color: #000000;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 600px) {
   .bakgrund {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -447,9 +447,17 @@ a:link:active, a:visited:active {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .bakgrund img {
-    max-width: 100%;
+  .bakgrund .bild {
+    width: 100%;
     height: auto;
+  }
+  .bakgrund .stil {
+    width: 100%;
+  }
+  .bakgrund .stor_rubrik {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -526,14 +534,14 @@ a:link:active, a:visited:active {
 }
 
 .subscribe input {
-  background-color: #bebebe;
+  background-color: white;
   width: 350px;
   height: 20px;
   -webkit-transition: none;
   transition: none;
   padding: 0;
   position: relative;
-  border-radius: 2px;
+  border-radius: 4px;
   top: 0;
   right: 0;
 }
@@ -546,7 +554,7 @@ a:link:active, a:visited:active {
           box-shadow: none;
   cursor: pointer;
   position: relative;
-  top: -2px;
+  top: 0;
   right: 0;
 }
 
@@ -589,7 +597,7 @@ a:link:active, a:visited:active {
 }
 
 .slide h2 {
-  color: #c8c8c8;
+  color: white;
 }
 
 .slidershow {
@@ -611,7 +619,7 @@ a:link:active, a:visited:active {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.2);
-  color: #bebebe;
+  color: white;
   padding: 2px 1px;
 }
 
@@ -654,12 +662,13 @@ a:link:active, a:visited:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: white;
 }
 
 .bar {
   width: 50px;
   height: 10px;
-  border: 2px solid #bebebe;
+  border: 2px solid white;
   margin: 6px;
   cursor: pointer;
   -webkit-transition: 0.4s;
@@ -667,11 +676,11 @@ a:link:active, a:visited:active {
 }
 
 .bar:hover {
-  background: #bebebe;
+  background: white;
 }
 
 .bar:checked {
-  background: #bebebe;
+  background: white;
 }
 
 input[name="r"] {
@@ -811,12 +820,13 @@ input[name="r"] {
     margin: 6px 6px 0 6px;
   }
   .subscribe input {
+    height: 15px;
     width: 190px;
   }
   .subscribe img {
     width: 20px;
     height: 20px;
-    margin-top: 2px;
+    margin-top: 0;
   }
 }
 
@@ -862,7 +872,7 @@ input[name="r"] {
 }
 
 @font-face {
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
@@ -967,6 +977,7 @@ input[name="r"] {
     max-height: 5000px;
     -webkit-transition: max-height 2s ease-in;
     transition: max-height 2s ease-in;
+    z-index: 1;
   }
   .dws-menu label.toggleSubmenu {
     position: absolute;

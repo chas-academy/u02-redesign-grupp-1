@@ -3,22 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*body {
-  min-height: 150vh; //menu
+// christophers del
+
+.formular {
   display: flex;
   justify-content: center;
-  align-items: center;
-}*/
-
+  justify-content: center;
+  align-items: center; 
+}
 
 
 // kontakt formulär
-.kontaktContaioner {
-      //Thomas
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; 
-  width: 80%;
+.kontaktContaioner{
+  width: 60%; /* ändra beroende på mobil eller webb */
   padding: 20px;
   background: black;
 
@@ -99,5 +96,6 @@
   color: black;
 
 }
+
 
 
