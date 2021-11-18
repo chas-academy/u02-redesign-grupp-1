@@ -24,7 +24,7 @@
     transform: translateY(-140%);
   }
   input {
-    background-color: $backgroundColor2;
+    background-color: $textColor1;
     width: 350px;
     height: 20px;
     transition: none;
@@ -41,7 +41,7 @@
     box-shadow: none;
     cursor: pointer;
     position: relative;
-    top: -2px;
+    top: 0;
     right: 0;
   }
   img {
@@ -96,7 +96,7 @@
   left: 0;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.2);
-  color: $backgroundColor2;
+  color: $textColor1;
   padding: 2px 1px;
   h3 {
     text-transform: uppercase;
@@ -125,23 +125,24 @@
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  color: $textColor1;
 }
 
 .bar {
   width: 50px;
   height: 10px;
-  border: 2px solid $backgroundColor2; //#fff
+  border: 2px solid $textColor1; //#fff
   margin: 6px;
   cursor: pointer;
   transition: 0.4s;
 }
 
 .bar:hover {
-  background: $backgroundColor2; //#fff
+  background: $textColor1; //#fff
 }
 
 .bar:checked {
-  background: $backgroundColor2; //#fff
+  background: $textColor1; //#fff
 }
 
 input[name="r"] {

@@ -94,6 +94,7 @@
 
 header {
   font-family: Cuprum, Arial, Helvetica, sans-serif;
+  min-height: 350px;
   width: 100%;
   position: relative;
 }
@@ -108,7 +109,7 @@ header {
   font-size: 40px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   margin-top: 100px;
-  color: #c8c8c8;
+  color: white;
 }
 
 footer {
@@ -523,7 +524,7 @@ a:link:active, a:visited:active {
 }
 
 .subscribe input {
-  background-color: #bebebe;
+  background-color: white;
   width: 350px;
   height: 20px;
   -webkit-transition: none;
@@ -543,7 +544,7 @@ a:link:active, a:visited:active {
           box-shadow: none;
   cursor: pointer;
   position: relative;
-  top: -2px;
+  top: 0;
   right: 0;
 }
 
@@ -586,7 +587,7 @@ a:link:active, a:visited:active {
 }
 
 .slide h2 {
-  color: #c8c8c8;
+  color: white;
 }
 
 .slidershow {
@@ -608,7 +609,7 @@ a:link:active, a:visited:active {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.2);
-  color: #bebebe;
+  color: white;
   padding: 2px 1px;
 }
 
@@ -651,12 +652,13 @@ a:link:active, a:visited:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: white;
 }
 
 .bar {
   width: 50px;
   height: 10px;
-  border: 2px solid #bebebe;
+  border: 2px solid white;
   margin: 6px;
   cursor: pointer;
   -webkit-transition: 0.4s;
@@ -664,11 +666,11 @@ a:link:active, a:visited:active {
 }
 
 .bar:hover {
-  background: #bebebe;
+  background: white;
 }
 
 .bar:checked {
-  background: #bebebe;
+  background: white;
 }
 
 input[name="r"] {
@@ -808,12 +810,13 @@ input[name="r"] {
     margin: 6px 6px 0 6px;
   }
   .subscribe input {
+    height: 15px;
     width: 190px;
   }
   .subscribe img {
     width: 20px;
     height: 20px;
-    margin-top: 2px;
+    margin-top: 0;
   }
 }
 
@@ -859,7 +862,7 @@ input[name="r"] {
 }
 
 @font-face {
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
@@ -964,6 +967,7 @@ input[name="r"] {
     max-height: 5000px;
     -webkit-transition: max-height 2s ease-in;
     transition: max-height 2s ease-in;
+    z-index: 1;
   }
   .dws-menu label.toggleSubmenu {
     position: absolute;
