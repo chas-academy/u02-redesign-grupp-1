@@ -11,7 +11,7 @@
 .border-slider {
   width: $contentWidth;
   height: 600px;
-  background: #ebebeb;
+  background: $backgroundColor3; //#ebebeb; same color
   margin: 0 auto 5rem auto;
 }
 
@@ -107,7 +107,7 @@
     font-weight: 400;
     text-decoration: none;
     border: none;
-    color: #fff;
+    color: $textColor1; //#fff;
     text-decoration: underline;
   }
 }

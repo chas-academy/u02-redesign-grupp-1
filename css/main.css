@@ -1,5 +1,36 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+/* 
+@mixin regular-text($font-color: #d6d6d6) {
+  font: {
+    family: Arial; //some google font?
+    size: 1rem;
+    weight: normal;
+  }
+  color: $font-color;
+}
+
+@mixin large-text($font-color: #d6d6d6) {
+  font: {
+    family: Arial;
+    size: 1.5rem;
+    weight: bold;
+  }
+  color: $font-color;
+}
+
+@mixin small-text($font-color: #d6d6d6) {
+  font: {                                       //note the use of namespace! compiles to font-family, font-size, font-weight
+    family: Arial;
+    size: 20px;
+    weight: bold;
+  }
+  color: $font-color;
+}
+
+@mixin normal-box () {
+    padding: 0 10px 0 10px; 
+    // what else?
+} */
 /* 
 @mixin main-nav {
     li {
@@ -123,17 +154,15 @@ header {
   font-size: 40px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   margin-top: 100px;
-  color: white;
+  color: #fafafa;
 }
 
-/* @import "../abstracts/variables"; //should use 'use'?
-@import "../abstracts/mixins"; */
 footer {
   bottom: 0;
   width: 100%;
-  background: #d6d6d6;
-  color: #0a0a0a;
-  border-top: 5px solid rgba(10, 10, 10, 0.9);
+  background: #bebebe;
+  color: black;
+  border-top: 5px solid #141414;
   /*
     display: flex;
     justify-content: space-around;
@@ -151,7 +180,7 @@ footer .footerContainer1 {
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
-  border-bottom: 2px solid #0a0a0a;
+  border-bottom: 2px solid black;
   padding: 10px 0 10px 0;
 }
 
@@ -165,7 +194,7 @@ footer .footerContainer2 {
   grid-column: 2;
   -ms-grid-row: 1;
   grid-row: 1;
-  border-bottom: 2px solid #0a0a0a;
+  border-bottom: 2px solid black;
 }
 
 footer .footerContainer2 h2,
@@ -214,8 +243,8 @@ footer .iconPanel img {
 
 @media (hover: hover) {
   footer .iconPanel img:hover {
-    -webkit-filter: invert(30%);
-            filter: invert(30%);
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
   }
 }
 
@@ -301,7 +330,7 @@ footer .iconPanel img {
 }
 
 .kguide {
-  background-color: white;
+  background-color: #fafafa;
   height: auto;
   width: 22%;
   display: -webkit-box;
@@ -398,7 +427,7 @@ a:link:active, a:visited:active {
 }
 
 .ruta {
-  background-color: #d6d6d6;
+  background-color: #ebebeb;
   border-radius: 0.4rem;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -408,9 +437,9 @@ a:link:active, a:visited:active {
 
 .lankfraga {
   font-size: 1.5rem;
-  color: #0a0a0a;
+  color: black;
   text-decoration: none;
-  background-color: #d6d6d6;
+  background-color: #ebebeb;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,7 +454,7 @@ a:link:active, a:visited:active {
 }
 
 .figur {
-  color: #0a0a0a;
+  color: black;
   padding: 0.5rem;
 }
 
@@ -434,14 +463,14 @@ a:link:active, a:visited:active {
 }
 
 #plus {
-  color: #0a0a0a;
+  color: black;
 }
 
 .svar {
   max-height: 0;
   overflow: hidden;
   position: relative;
-  background-color: #d6d6d6;
+  background-color: #ebebeb;
   -webkit-transition: max-height 0.6s;
   transition: max-height 0.6s;
 }
@@ -575,7 +604,7 @@ a:link:active, a:visited:active {
 @import 'layout/faqkontakt'; //careful, might break layout of main
 */
 .bakgrund {
-  background: #EBEBEB;
+  background: #ebebeb;
   width: 95%;
   height: auto;
   -ms-flex-pack: distribute;
@@ -599,21 +628,20 @@ a:link:active, a:visited:active {
   display: inline-block;
   width: 550px;
   padding: 20px;
-  font-family: Roboto Slab;
+  font-family: Roboto Slab, Arial;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  color: #000000;
 }
 
 .bakgrund .knapp {
-  background-color: #ffd000;
+  background-color: goldenrod;
   color: black;
   padding: 10px 10px;
   text-align: center;
   display: inline-block;
   border-radius: 10px;
-  font-family: Roboto Slab;
+  font-family: Roboto Slab, Arial;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -628,7 +656,7 @@ a:link:active, a:visited:active {
 }
 
 .bakgrund .stor_rubrik {
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -640,10 +668,9 @@ a:link:active, a:visited:active {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  color: #000000;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 736px) {
   .bakgrund {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -713,7 +740,7 @@ a:link:active, a:visited:active {
   height: 450px;
   position: relative;
   border-radius: 2px;
-  background: rgba(10, 10, 10, 0.9);
+  background: #141414;
 }
 
 .border-slider {
@@ -740,7 +767,7 @@ a:link:active, a:visited:active {
 }
 
 .subscribe input {
-  background-color: white;
+  background-color: #fafafa;
   width: 350px;
   height: 20px;
   -webkit-transition: none;
@@ -797,13 +824,13 @@ a:link:active, a:visited:active {
 }
 
 .nyheter h2 {
-  color: #0a0a0a;
+  color: black;
   font-size: 16px;
   font-weight: 500;
 }
 
 .slide h2 {
-  color: white;
+  color: #fafafa;
 }
 
 .slidershow {
@@ -825,7 +852,7 @@ a:link:active, a:visited:active {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.2);
-  color: white;
+  color: #fafafa;
   padding: 2px 1px;
 }
 
@@ -847,7 +874,7 @@ a:link:active, a:visited:active {
   font-weight: 400;
   text-decoration: none;
   border: none;
-  color: #fff;
+  color: #fafafa;
   text-decoration: underline;
 }
 
@@ -868,13 +895,13 @@ a:link:active, a:visited:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
+  color: #fafafa;
 }
 
 .bar {
   width: 50px;
   height: 10px;
-  border: 2px solid white;
+  border: 2px solid #fafafa;
   margin: 6px;
   cursor: pointer;
   -webkit-transition: 0.4s;
@@ -882,11 +909,11 @@ a:link:active, a:visited:active {
 }
 
 .bar:hover {
-  background: white;
+  background: #fafafa;
 }
 
 .bar:checked {
-  background: white;
+  background: #fafafa;
 }
 
 input[name="r"] {

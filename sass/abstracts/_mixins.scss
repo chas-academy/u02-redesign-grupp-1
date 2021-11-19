@@ -1,5 +1,5 @@
 @import 'variables';
-
+/* 
 @mixin regular-text($font-color: #d6d6d6) {
   font: {
     family: Arial; //some google font?
@@ -30,7 +30,7 @@
 @mixin normal-box () {
     padding: 0 10px 0 10px; 
     // what else?
-}
+} */
 /* 
 @mixin main-nav {
     li {
@@ -68,7 +68,7 @@
         } */
         @media (hover: hover) {  //to remove the 'highlight remains'issue on hover-enabled devices!
           &:hover {
-            filter: invert(30%);
+            filter: invert(100%);
           }
 
     }

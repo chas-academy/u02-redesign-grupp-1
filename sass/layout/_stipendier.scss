@@ -1,5 +1,5 @@
 .bakgrund {
-    background: #EBEBEB;
+    background: $backgroundColor3; //#EBEBEB;
     width: $contentWidth;//95%;
     height: auto;
     justify-content: space-around;
@@ -21,23 +21,23 @@ height: 272.18px;
     width: 550px; //$contentWidth; 
     padding: 20px;
 
-    font-family: Roboto Slab;
+    font-family: $specialFont; //Roboto Slab;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    color: #000000;
+    //color: #000000;
 
 }
 .knapp {
-    background-color: #ffd000;
+    background-color: $backgroundSpecial; //#ffd000;
 
-    color: black;
+    color: $textColor2; //black;
     padding: 10px 10px;
     text-align: center;
     display: inline-block;
     border-radius: 10px;
 
-    font-family: Roboto Slab;
+    font-family: $specialFont; //Roboto Slab;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -54,7 +54,7 @@ height: 272.18px;
 
 .stor_rubrik {
     
-    font-family: Roboto;
+    font-family: $mainFont; //Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -63,10 +63,10 @@ height: 272.18px;
     align-items: center;
     text-align: center;
     
-    color: #000000;
+    //color: #000000;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $mobileWidthL) {          //600px
 
 
 display: flex;

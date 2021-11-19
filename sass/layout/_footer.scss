@@ -1,6 +1,3 @@
-/* @import "../abstracts/variables"; //should use 'use'?
-@import "../abstracts/mixins"; */
-
 footer {
   //position: absolute;
   bottom: 0;
@@ -9,7 +6,7 @@ footer {
   width: $contentWidth2;
   
   //@include content-centering;
-  background: $backgroundColor3;
+  background: $backgroundColor2;
   color: $textColor2;
   border-top: 5px solid $backgroundColor1;
   /*
