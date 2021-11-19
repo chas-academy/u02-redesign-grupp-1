@@ -1,8 +1,8 @@
 .guidesection {
-  //width: $contentWidth; //95%
   @include content-centering;
+  width: $contentWidth;
   height: auto;
-  background-color: $backgroundColor3; //grey
+  background-color: $backgroundColor4; //grey
   justify-content: space-around;
   display: flex;
   /* padding: px; */
