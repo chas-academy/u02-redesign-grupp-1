@@ -1,37 +1,16 @@
-
-
-//@import 'base/typography';
-
 @import "abstracts/variables";
 @import "abstracts/mixins";
-
-
 @import 'base/reset';
-// @import 'vendors/bootstrap';
- 
 @import 'layout/navigation'; //alisher nav
 @import 'layout/header';  //alisher header
-
 @import 'layout/footer';
-//@import 'layout/subpage';
-
-
 @import 'layout/forms';  //alisher s search
 @import 'layout/konstnarsguiden';
-
 @import 'layout/faq';
 @import 'layout/kontakt';
-/*
-@import 'layout/faqkontakt'; //careful, might break layout of main
-*/
 @import 'layout/stipendier';
-
 @import "components/buttons";
 @import "components/carousel";
 @import "components/carouselMQ";
 @import "components/dropdown"; 
-
-
-//@import 'pages/admin';
-//@import 'pages/theme';
 
