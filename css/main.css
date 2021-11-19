@@ -63,8 +63,6 @@
   color: #454547;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .dws-menu ul:active {
@@ -131,7 +129,7 @@ header {
 footer {
   bottom: 0;
   width: 100%;
-  background: #787878;
+  background: #969696;
   color: #0a0a0a;
   border-top: 5px solid rgba(10, 10, 10, 0.9);
   /*
@@ -286,7 +284,7 @@ footer .iconPanel img {
   margin-right: auto;
   width: 95%;
   height: auto;
-  background-color: #787878;
+  background-color: #969696;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   display: -webkit-box;
@@ -301,7 +299,7 @@ footer .iconPanel img {
 }
 
 .kguide {
-  background-color: #bebebe;
+  background-color: white;
   height: auto;
   width: 22%;
   display: -webkit-box;
@@ -398,7 +396,7 @@ a:link:active, a:visited:active {
 }
 
 .ruta {
-  background-color: #787878;
+  background-color: #969696;
   border-radius: 0.4rem;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -410,7 +408,7 @@ a:link:active, a:visited:active {
   font-size: 1.5rem;
   color: #0a0a0a;
   text-decoration: none;
-  background-color: #787878;
+  background-color: #969696;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,7 +439,7 @@ a:link:active, a:visited:active {
   max-height: 0;
   overflow: hidden;
   position: relative;
-  background-color: #787878;
+  background-color: #969696;
   -webkit-transition: max-height 0.6s;
   transition: max-height 0.6s;
 }
