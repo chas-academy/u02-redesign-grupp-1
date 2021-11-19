@@ -584,7 +584,6 @@ a:link:active, a:visited:active {
   display: -ms-flexbox;
   display: flex;
   /* padding: px; */
-  padding: 20px 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: auto;
