@@ -1,166 +1,203 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Ansökan</title>
-</head>
-<body>
- <!-- ALISHER'S DEL -->
- <header>
-  <div class="head_menu">
-    <a href=""><img src="images/logo.png" alt="logo" /></a>
-    <nav class="dws-menu">
-      <input type="checkbox" name="toggle" id="menu" class="toggleMenu" />
-      <label for="menu" class="toggleMenu"
-        ><i class="fa fa-bars"></i>Meny</label
-      >
-      <ul>
-        <li><a href="./index.html">hemsida</a></li>
-        <li>
-          <input
-            type="checkbox"
-            name="toggle"
-            class="toggleSubmenu"
-            id="sub_m1"
-          />
-          <a href="#">Ansökan</a>
-          <label for="sub_m1" class="toggleSubmenu"
-            ><i class="fa"></i
-          ></label>
+  </head>
+  <body>
+    <!-- ALISHER'S DEL -->
+    <header>
+      <div class="head_menu">
+        <a href=""><img src="images/logo.png" alt="logo" /></a>
+        <nav class="dws-menu">
+          <input type="checkbox" name="toggle" id="menu" class="toggleMenu" />
+          <label for="menu" class="toggleMenu"
+            ><i class="fa fa-bars"></i>Meny</label
+          >
           <ul>
-            <li><a href="./ansok.html">Ansökan/Blanketter</a></li>
+            <li><a href="./index.html">hemsida</a></li>
             <li>
-              <a href="./stipendierobidrag.html">Stipendier och Bidrag</a>
-            </li>
-            <!-- <li><a href="#">Ansökningstider</a></li>-->
-            <!--<li><a href="#">Långtidsstipendier</a></li>
+              <input
+                type="checkbox"
+                name="toggle"
+                class="toggleSubmenu"
+                id="sub_m1"
+              />
+              <a href="#">Ansökan</a>
+              <label for="sub_m1" class="toggleSubmenu"
+                ><i class="fa"></i
+              ></label>
+              <ul>
+                <li><a href="./ansok.html">Ansökan/Blanketter</a></li>
+                <li>
+                  <a href="./stipendierobidrag.html">Stipendier och Bidrag</a>
+                </li>
+                <!-- <li><a href="#">Ansökningstider</a></li>-->
+                <!--<li><a href="#">Långtidsstipendier</a></li>
             <li><a href="#">Ansökningsgroup</a></li>
             <li><a href="#">Andra bidragsgivare</a></li> -->
-          </ul>
-        </li>
-        <li>
-          <input
-            type="checkbox"
-            name="toggle"
-            class="toggleSubmenu"
-            id="sub_m2"
-          />
-          <a href="#">Aktuellt</a>
-          <label for="sub_m2" class="toggleSubmenu"
-            ><i class="fa"></i
-          ></label>
-          <ul>
-            <li><a href="./nyheter.html">Nyheter</a></li>
-            <li><a href="./kaledarium.html">Kalendarium</a></li>
-            <li><a href="./publikationer.html">Publikationer</a></li>
-            <!-- <li><a href="#">Villkor</a></li>
-            <li><a href="#">Länkar</a></li> -->
-          </ul>
-        </li>
-        <li>
-          <input
-            type="checkbox"
-            name="toggle"
-            class="toggleSubmenu"
-            id="sub_m3"
-          />
-          <a href="#">Program</a>
-          <label for="sub_m3" class="toggleSubmenu"
-            ><i class="fa"></i
-          ></label>
-          <ul>
-            <!--Do these remain empty? -->
-            <li><a href="#">IASPIS</a></li>
-            <li><a href="#">Program för dans</a></li>
-            <li><a href="#">Program för musik</a></li>
-            <li><a href="#">Kulturbryggan</a></li>
-            <li><a href="#">Motverka hot och hat</a></li>
-          </ul>
-        </li>
-        <li>
-          <input
-            type="checkbox"
-            name="toggle"
-            class="toggleSubmenu"
-            id="sub_m4"
-          />
-          <a href="#">Vad vi gör</a>
-          <label for="sub_m4" class="toggleSubmenu"
-            ><i class="fa"></i
-          ></label>
-          <ul>
-            <li><a href="./internationellt.html">Internationellt</a></li>
-            <li><a href="./jamstaldhet.html">Jämställdhet</a></li>
-            <li><a href="./regeringsuppdrag.html">Regeringsuppdrag</a></li>
+              </ul>
+            </li>
             <li>
-              <a href="./analysoutredning.html">Analys och utredning</a>
+              <input
+                type="checkbox"
+                name="toggle"
+                class="toggleSubmenu"
+                id="sub_m2"
+              />
+              <a href="#">Aktuellt</a>
+              <label for="sub_m2" class="toggleSubmenu"
+                ><i class="fa"></i
+              ></label>
+              <ul>
+                <li><a href="./nyheter.html">Nyheter</a></li>
+                <li><a href="./kaledarium.html">Kalendarium</a></li>
+                <li><a href="./publikationer.html">Publikationer</a></li>
+                <!-- <li><a href="#">Villkor</a></li>
+            <li><a href="#">Länkar</a></li> -->
+              </ul>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="toggle"
+                class="toggleSubmenu"
+                id="sub_m3"
+              />
+              <a href="#">Program</a>
+              <label for="sub_m3" class="toggleSubmenu"
+                ><i class="fa"></i
+              ></label>
+              <ul>
+                <!--Do these remain empty? -->
+                <li><a href="#">IASPIS</a></li>
+                <li><a href="#">Program för dans</a></li>
+                <li><a href="#">Program för musik</a></li>
+                <li><a href="#">Kulturbryggan</a></li>
+                <li><a href="#">Motverka hot och hat</a></li>
+              </ul>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="toggle"
+                class="toggleSubmenu"
+                id="sub_m4"
+              />
+              <a href="#">Vad vi gör</a>
+              <label for="sub_m4" class="toggleSubmenu"
+                ><i class="fa"></i
+              ></label>
+              <ul>
+                <li><a href="./internationellt.html">Internationellt</a></li>
+                <li><a href="./jamstaldhet.html">Jämställdhet</a></li>
+                <li><a href="./regeringsuppdrag.html">Regeringsuppdrag</a></li>
+                <li>
+                  <a href="./analysoutredning.html">Analys och utredning</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="toggle"
+                class="toggleSubmenu"
+                id="sub_m5"
+              />
+              <a href="#">Om oss</a>
+              <label for="sub_m5" class="toggleSubmenu"
+                ><i class="fa"></i
+              ></label>
+              <ul>
+                <li><a href="./kuppgifter.html">Om konstnärsnämnden</a></li>
+                <!-- should be the right page?! -->
+                <!-- <li><a href="#">Personal</a></li>
+            <li><a href="#">Lediga tjänster</a></li>-->
+                <li><a href="./faq.html">Vanliga frågor</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+              </ul>
             </li>
           </ul>
-        </li>
-        <li>
-          <input
-            type="checkbox"
-            name="toggle"
-            class="toggleSubmenu"
-            id="sub_m5"
-          />
-          <a href="#">Om oss</a>
-          <label for="sub_m5" class="toggleSubmenu"
-            ><i class="fa"></i
-          ></label>
-          <ul>
-            <li><a href="./kuppgifter.html">Om konstnärsnämnden</a></li>
-            <!-- should be the right page?! -->
-            <!-- <li><a href="#">Personal</a></li>
-            <li><a href="#">Lediga tjänster</a></li>-->
-            <li><a href="./faq.html">Vanliga frågor</a></li>
-            <li><a href="./kontakt.html">Kontakt</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <!--Thomas-->
+        </nav>
+      </div>
+      <!--Thomas-->
 
-  <div class="header_search">
-    <form class="searchbar_form">
-      <input type="text" placeholder="Sök..." />
-      <button type="submit"></button>
-    </form>
-    <div class="lang_buttons">
-      <a href="index.html" class="lang_select sv_lang">SV</a>
-      <a href="#" class="lang_select en_lang">EN</a>
-      <!-- add English page? -->
-    </div>
-  </div>
-  <div class="head_rest">
-  </div>
-  <!--Thomas-->
-</header>
+      <div class="header_search">
+        <form class="searchbar_form">
+          <input type="text" placeholder="Sök..." />
+          <button type="submit"></button>
+        </form>
+        <div class="lang_buttons">
+          <a href="index.html" class="lang_select sv_lang">SV</a>
+          <a href="#" class="lang_select en_lang">EN</a>
+          <!-- add English page? -->
+        </div>
+      </div>
+      <div class="head_rest"></div>
+      <!--Thomas-->
+    </header>
     <!-- Alisher s del end -->
+    <section class="bakgrund">
+      <!-- En rad-->
+      <div class="rad">
+        <div class="stil">
+          <h2>Ansök via Konstnärsnämndens e-tjänst</h2>
+          <p>
+            Här kan du läsa om hur du loggar in och fyller i din ansökan i
+            Konstnärsnämndens e-tjänst.
+          </p>
+          <h3>Digital ansökan</h3>
+          <ul>
+            <li>Du måste ha e-legitimation</li>
+            <li>
+              Ansökan bör göras från en dator, inte telefon eller surfplatta
+            </li>
+            <li>
+              Ansök i god tid. Sista ansökningsdagen kan det vara hög belastning
+              på vårt ansökningssystem.
+            </li>
+          </ul>
+          <p>Vad krävs för att kunna logga in?</p>
+          <p>
+            Allt som behövs för att kunna använda verktyget är en dator med
+            anslutning till Internet och något av de certifikat som systemet
+            stödjer, dvs samtliga svenska e-legitimationer.
+          </p>
+          <p>
+            CSign fungerar både på PC, Mac och Linux och alla webbläsare.
+            Eftersom alla certifikat inte har samma breda stöd så kan det dock
+            förekomma begränsningar för vissa kombinationer av certifikat och
+            webbläsare.
+          </p>
+          <ul>
+            <li>
+              Kontakta Konstnärsnämnden om du trots ovanstående inte kan logga
+              in i e-tjänsten: Telefon: 08 - 506 550 00 E-post:<a
+                href="mailto:info@konstnarsnamnden.se"
+                >info@konstnarsnamnden.se</a
+              >
+            </li>
+          </ul>
+          <a class="knapp" href="https://www.konstnarsnamnden.se/minaarenden"
+            >Inloggning e-ansökan</a
+          >
+          <h3>Ansökan via pappersblankett</h3>
+          <p>
+            Om du inte har möjlighet att genomföra en digital ansökan kan du
+            skicka in din ansökan på papper.
+          </p>
+          <p>
+            <a href="https://www.konstnarsnamnden.se/blanketter"
+              >Klicka här för att ladda ner pappersblanketter</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
 
-<h2>Ansök via Konstnärsnämndens e-tjänst</h2>
-<p>Här kan du läsa om hur du loggar in och fyller i din ansökan i Konstnärsnämndens e-tjänst.</p>
-<h3>Digital ansökan</h3>
-<ul>
-    <li>Du måste ha e-legitimation</li>
-    <li>Ansökan bör göras från en dator, inte telefon eller surfplatta</li>
-    <li>Ansök i god tid. Sista ansökningsdagen kan det vara hög belastning på vårt ansökningssystem.</li>
-</ul>
-<p>Vad krävs för att kunna logga in?</p>
-<p>Allt som behövs för att kunna använda verktyget är en dator med anslutning till Internet och något av de certifikat som systemet stödjer, dvs samtliga svenska e-legitimationer.</p>
-<p>CSign fungerar både på PC, Mac och Linux och alla webbläsare. Eftersom alla certifikat inte har samma breda stöd så kan det dock förekomma begränsningar för vissa kombinationer av certifikat och webbläsare.</p>
-<ul>
-    <li>Kontakta Konstnärsnämnden om du trots ovanstående inte kan logga in i e-tjänsten: Telefon: 08 - 506 550 00 E-post:<a href="mailto:info@konstnarsnamnden.se">info@konstnarsnamnden.se</a></li>
-</ul>
-<a class="knapp" href="https://www.konstnarsnamnden.se/minaarenden">Inloggning e-ansökan</a>
-<h3>Ansökan via pappersblankett</h3>
-<p>Om du inte har möjlighet att genomföra en digital ansökan kan du skicka in din ansökan på papper.</p>
-<p><a href="https://www.konstnarsnamnden.se/blanketter">Klicka här för att ladda ner pappersblanketter</a></p>
-  
     <!-- THOMAS' DEL -->
     <footer>
       <!--<div class="footerMain">
