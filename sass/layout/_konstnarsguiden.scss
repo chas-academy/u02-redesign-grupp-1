@@ -1,6 +1,6 @@
 .guidesection {
-  //width: $contentWidth; //95%
   @include content-centering;
+  width: $contentWidth; //95%
   height: auto;
   background-color: $backgroundColor3; //grey
   justify-content: space-around;

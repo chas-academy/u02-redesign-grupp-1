@@ -282,9 +282,9 @@ footer .iconPanel img {
 }
 
 .guidesection {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  width: 95%;
   height: auto;
   background-color: #787878;
   -ms-flex-pack: distribute;
