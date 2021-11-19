@@ -214,8 +214,8 @@ footer .iconPanel img {
 
 @media (hover: hover) {
   footer .iconPanel img:hover {
-    -webkit-filter: invert(90%);
-            filter: invert(90%);
+    -webkit-filter: invert(30%);
+            filter: invert(30%);
   }
 }
 

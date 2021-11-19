@@ -68,7 +68,7 @@
         } */
         @media (hover: hover) {  //to remove the 'highlight remains'issue on hover-enabled devices!
           &:hover {
-            filter: invert(90%);
+            filter: invert(30%);
           }
 
     }
