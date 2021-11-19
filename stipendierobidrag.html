@@ -9,129 +9,138 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-  <!-- ALISHER'S DEL -->
-
-    <header>
-      <div class="head_menu">
-        <a href=""><img src="images/logo.png" alt="logo" /></a>
-        <nav class="dws-menu">
-          <input type="checkbox" name="toggle" id="menu" class="toggleMenu" />
-          <label for="menu" class="toggleMenu"
-            ><i class="fa fa-bars"></i>Meny</label
-          >
+ <!-- ALISHER'S DEL -->
+ <header>
+  <div class="head_menu">
+    <a href=""><img src="images/logo.png" alt="logo" /></a>
+    <nav class="dws-menu">
+      <input type="checkbox" name="toggle" id="menu" class="toggleMenu" />
+      <label for="menu" class="toggleMenu"
+        ><i class="fa fa-bars"></i>Meny</label
+      >
+      <ul>
+        <li><a href="./index.html">hemsida</a></li>
+        <li>
+          <input
+            type="checkbox"
+            name="toggle"
+            class="toggleSubmenu"
+            id="sub_m1"
+          />
+          <a href="#">Ansökan</a>
+          <label for="sub_m1" class="toggleSubmenu"
+            ><i class="fa"></i
+          ></label>
           <ul>
-            <li><a href="#">hemsida</a></li>
+            <li><a href="./ansok.html">Ansökan/Blanketter</a></li>
             <li>
-              <input
-                type="checkbox"
-                name="toggle"
-                class="toggleSubmenu"
-                id="sub_m1"
-              />
-              <a href="#">Ansökan</a>
-              <label for="sub_m1" class="toggleSubmenu"
-                ><i class="fa"></i
-              ></label>
-              <ul>
-                <li><a href="./ansok.html">Ansökan/Blanketter</a></li>
-                <li><a href="./stipendierobidrag.html">Stipendier och Bidrag</a></li>  <!-- <li><a href="#">Ansökningstider</a></li>-->
-                <!--<li><a href="#">Långtidsstipendier</a></li>
-                <li><a href="#">Ansökningsgroup</a></li>
-                <li><a href="#">Andra bidragsgivare</a></li> -->
-              </ul>
+              <a href="./stipendierobidrag.html">Stipendier och Bidrag</a>
             </li>
+            <!-- <li><a href="#">Ansökningstider</a></li>-->
+            <!--<li><a href="#">Långtidsstipendier</a></li>
+            <li><a href="#">Ansökningsgroup</a></li>
+            <li><a href="#">Andra bidragsgivare</a></li> -->
+          </ul>
+        </li>
+        <li>
+          <input
+            type="checkbox"
+            name="toggle"
+            class="toggleSubmenu"
+            id="sub_m2"
+          />
+          <a href="#">Aktuellt</a>
+          <label for="sub_m2" class="toggleSubmenu"
+            ><i class="fa"></i
+          ></label>
+          <ul>
+            <li><a href="./nyheter.html">Nyheter</a></li>
+            <li><a href="./kaledarium.html">Kalendarium</a></li>
+            <li><a href="./publikationer.html">Publikationer</a></li>
+            <!-- <li><a href="#">Villkor</a></li>
+            <li><a href="#">Länkar</a></li> -->
+          </ul>
+        </li>
+        <li>
+          <input
+            type="checkbox"
+            name="toggle"
+            class="toggleSubmenu"
+            id="sub_m3"
+          />
+          <a href="#">Program</a>
+          <label for="sub_m3" class="toggleSubmenu"
+            ><i class="fa"></i
+          ></label>
+          <ul>
+            <!--Do these remain empty? -->
+            <li><a href="#">IASPIS</a></li>
+            <li><a href="#">Program för dans</a></li>
+            <li><a href="#">Program för musik</a></li>
+            <li><a href="#">Kulturbryggan</a></li>
+            <li><a href="#">Motverka hot och hat</a></li>
+          </ul>
+        </li>
+        <li>
+          <input
+            type="checkbox"
+            name="toggle"
+            class="toggleSubmenu"
+            id="sub_m4"
+          />
+          <a href="#">Vad vi gör</a>
+          <label for="sub_m4" class="toggleSubmenu"
+            ><i class="fa"></i
+          ></label>
+          <ul>
+            <li><a href="./internationellt.html">Internationellt</a></li>
+            <li><a href="./jamstaldhet.html">Jämställdhet</a></li>
+            <li><a href="./regeringsuppdrag.html">Regeringsuppdrag</a></li>
             <li>
-              <input
-                type="checkbox"
-                name="toggle"
-                class="toggleSubmenu"
-                id="sub_m2"
-              />
-              <a href="#">Aktuellt</a>
-              <label for="sub_m2" class="toggleSubmenu"
-                ><i class="fa"></i
-              ></label>
-              <ul>
-                <li><a href="./nyheter.html">Nyheter</a></li>
-                <li><a href="./kaledarium.html">Kalendarium</a></li>
-                <li><a href="./publikationer.html">Publikationer</a></li>
-                <!-- <li><a href="#">Villkor</a></li>
-                <li><a href="#">Länkar</a></li> -->
-              </ul>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="toggle"
-                class="toggleSubmenu"
-                id="sub_m3"
-              />
-              <a href="#">Program</a>
-              <label for="sub_m3" class="toggleSubmenu"
-                ><i class="fa"></i
-              ></label>
-              <ul> <!--Do these remain empty? -->
-                <li><a href="#">IASPIS</a></li>
-                <li><a href="#">Program för dans</a></li>
-                <li><a href="#">Program för musik</a></li>
-                <li><a href="#">Kulturbryggan</a></li>
-                <li><a href="#">Motverka hot och hat</a></li>
-              </ul>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="toggle"
-                class="toggleSubmenu"
-                id="sub_m4"
-              />
-              <a href="#">Vad vi gör</a>
-              <label for="sub_m4" class="toggleSubmenu"
-                ><i class="fa"></i
-              ></label>
-              <ul>
-                <li><a href="./internationellt.html">Internationellt</a></li>
-                <li><a href="./jamstaldhet.html">Jämställdhet</a></li>
-                <li><a href="./regeringsuppdrag.html">Regeringsuppdrag</a></li>
-                <li><a href="./analysoutredning.html">Analys och utredning</a></li>
-              </ul>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="toggle"
-                class="toggleSubmenu"
-                id="sub_m5"
-              />
-              <a href="#">Om oss</a>
-              <label for="sub_m5" class="toggleSubmenu"
-                ><i class="fa"></i
-              ></label>
-              <ul>
-                <li><a href="./om_oss.html">Om konstnärsnämnden</a></li>
-               <!-- <li><a href="#">Personal</a></li>
-                <li><a href="#">Lediga tjänster</a></li>-->
-                <li><a href="./faq.html">Vanliga frågor</a></li>
-                <li><a href="./kontakt.html">Kontakt</a></li>
-              </ul>
+              <a href="./analysoutredning.html">Analys och utredning</a>
             </li>
           </ul>
-        </nav>
-      </div>
-      <!--Thomas-->
+        </li>
+        <li>
+          <input
+            type="checkbox"
+            name="toggle"
+            class="toggleSubmenu"
+            id="sub_m5"
+          />
+          <a href="#">Om oss</a>
+          <label for="sub_m5" class="toggleSubmenu"
+            ><i class="fa"></i
+          ></label>
+          <ul>
+            <li><a href="./kuppgifter.html">Om konstnärsnämnden</a></li>
+            <!-- should be the right page?! -->
+            <!-- <li><a href="#">Personal</a></li>
+            <li><a href="#">Lediga tjänster</a></li>-->
+            <li><a href="./faq.html">Vanliga frågor</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!--Thomas-->
 
-      <div class="header_search">
-        <form class="searchbar_form">
-          <input type="text" placeholder="Sök..." />
-          <button type="submit"></button>
-        </form>
-        <div class="lang_buttons">
-          <a href="index.html" class="lang_select sv_lang">SV</a>
-          <a href="#" class="lang_select en_lang">EN</a> <!-- add English page? -->
-        </div>
-      </div>
-      <!--Thomas-->
-    </header>
+  <div class="header_search">
+    <form class="searchbar_form">
+      <input type="text" placeholder="Sök..." />
+      <button type="submit"></button>
+    </form>
+    <div class="lang_buttons">
+      <a href="index.html" class="lang_select sv_lang">SV</a>
+      <a href="#" class="lang_select en_lang">EN</a>
+      <!-- add English page? -->
+    </div>
+  </div>
+  <div class="head_rest">
+  </div>
+  <!--Thomas-->
+</header>
     <!-- Alisher s del end -->
  
 <section class="bakgrund">
@@ -191,7 +200,7 @@
       <!--<div class="footerMain">
 only needed for flexbox, can be removed if gridbox is used instead -->
       <div class="footerContainer1">
-        <h2>Motverka hot och hat – en vägledning</h2>
+        <h2><a href="#">Om webbplatsen</a></h2>
       </div>
       <div class="footerContainer2">
         <h2>KONTAKT</h2>
