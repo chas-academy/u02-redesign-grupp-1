@@ -1,11 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cuprum:wght@400;500;700&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-}
-
 /* 
 @mixin main-nav {
     li {
@@ -19,6 +13,13 @@
         }
     }
 } */
+@import url("https://fonts.googleapis.com/css2?family=Cuprum:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
 .head_menu {
   background-image: url("../images/ep_naturalwhite.png");
   height: 70px;
@@ -114,6 +115,7 @@ header {
 .head_rest {
   background: url("../images/head_bg_3.jpg") center center/cover no-repeat;
   height: 300px;
+  margin-bottom: 50px;
 }
 
 .head_rest h1 {
@@ -129,7 +131,7 @@ header {
 footer {
   bottom: 0;
   width: 100%;
-  background: #969696;
+  background: #d6d6d6;
   color: #0a0a0a;
   border-top: 5px solid rgba(10, 10, 10, 0.9);
   /*
@@ -284,7 +286,7 @@ footer .iconPanel img {
   margin-right: auto;
   width: 95%;
   height: auto;
-  background-color: #969696;
+  background-color: #8a8a8a;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   display: -webkit-box;
@@ -396,7 +398,7 @@ a:link:active, a:visited:active {
 }
 
 .ruta {
-  background-color: #969696;
+  background-color: #d6d6d6;
   border-radius: 0.4rem;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -408,7 +410,7 @@ a:link:active, a:visited:active {
   font-size: 1.5rem;
   color: #0a0a0a;
   text-decoration: none;
-  background-color: #969696;
+  background-color: #d6d6d6;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,7 +441,7 @@ a:link:active, a:visited:active {
   max-height: 0;
   overflow: hidden;
   position: relative;
-  background-color: #969696;
+  background-color: #d6d6d6;
   -webkit-transition: max-height 0.6s;
   transition: max-height 0.6s;
 }
